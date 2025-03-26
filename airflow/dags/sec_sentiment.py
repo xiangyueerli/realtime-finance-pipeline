@@ -108,25 +108,6 @@ with DAG(
             # All tasks are completed, shutdown the executor
             executor.shutdown()
 
-    @task(task_id='t4_item1a_extraction_executor')
-    def item1a_executor(data_folder, save_folder):
-        from common.sec10k_item1a_extractor import process_files_for_cik_with_italic
-        import concurrent.futures
-        import os
-        
-        with concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
-            futures = []
-            for cik in os.listdir(data_folder):
-                print('Processing CIK_executing risk factor process:', cik)
-                future = executor.submit(process_files_for_cik_with_italic, cik, data_folder, save_folder, error_html_csv_path, error_txt_csv_path)
-                futures.append(future)
-            
-            # Wait for all tasks to complete
-            for future in futures:
-                future.result()
-            
-            # All tasks are completed, shutdown the executor
-            executor.shutdown() 
 
     @task(task_id='t5_company_csv_builder')
     def csv_builder(save_folder, firm_dict, columns):
