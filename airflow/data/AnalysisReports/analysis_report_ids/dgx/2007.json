@@ -1,0 +1,146 @@
+{
+    "data": [
+        {
+            "id": "40460",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-07-09T07:40:33-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Quest Diagnostics Seems Primed For Purchase",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20902",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "84156",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3302",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/40460-quest-diagnostics-seems-primed-for-purchase"
+            }
+        },
+        {
+            "id": "36963",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-05-31T06:55:06-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Time Arbitrage and Quest Diagnostics: Stepping Away From the Rat Race",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20297",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "83884",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3302",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/36963-time-arbitrage-and-quest-diagnostics-stepping-away-from-the-rat-race"
+            }
+        },
+        {
+            "id": "32427",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-04-16T08:35:23-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Quest Diagnostics to Acquire AmeriPath for $2B",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20069",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3302",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/32427-quest-diagnostics-to-acquire-ameripath-for-2b"
+            }
+        }
+    ]
+}

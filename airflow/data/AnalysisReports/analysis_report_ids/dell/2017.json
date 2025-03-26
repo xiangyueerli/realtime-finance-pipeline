@@ -1,0 +1,190 @@
+{
+    "data": [
+        {
+            "id": "4116400",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-10-25T14:55:09-04:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dell Technologies: Too Expensive?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "51022",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "569700",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4116400-dell-technologies-too-expensive"
+            }
+        },
+        {
+            "id": "4114399",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-10-18T14:37:47-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dell Technologies Adds Value To VMware's Quality And Momentum",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102553",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "193698",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "569700",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4114399-dell-technologies-adds-value-to-vmwares-quality-and-momentum"
+            }
+        },
+        {
+            "id": "4081369",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-06-14T10:50:26-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Daily Insider Ratings Round Up 6/13/17: DVMT, AREX, SCM, SEAS, ATRS",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "27671",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "569700",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4081369-daily-insider-ratings-round-up-6-13-17-dvmt-arex-scm-seas-atrs"
+            }
+        },
+        {
+            "id": "4066888",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-04-28T16:03:29-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dell Technologies, The Largest Private Tech Company, Opens Its Books",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23005",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "186918",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "569700",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4066888-dell-technologies-largest-private-tech-company-opens-books"
+            }
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+{
+    "data": [
+        {
+            "id": "2128063",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-04-08T05:00:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Broadridge: New Joint Venture And Overseas Expansion A Game Changer",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "54942",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "132009",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1371",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        },
+                        {
+                            "id": "49641",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/2128063-broadridge-new-joint-venture-and-overseas-expansion-a-game-changer"
+            }
+        },
+        {
+            "id": "1927581",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-01-03T15:28:17-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Zacks' Bull Of The Day: Broadridge Financial",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "127159",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1371",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1927581-zacks-bull-of-the-day-broadridge-financial"
+            }
+        }
+    ]
+}

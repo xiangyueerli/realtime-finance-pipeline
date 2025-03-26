@@ -1,0 +1,180 @@
+{
+    "data": [
+        {
+            "id": "56960",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-12-11T13:56:55-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Kroger's Profits Up, But Outlook Falls Short",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21005",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1363",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/56960-krogers-profits-up-but-outlook-falls-short"
+            }
+        },
+        {
+            "id": "47545",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-09-18T12:55:29-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Kroger Surges on Beat and Raise",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21005",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1363",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/47545-kroger-surges-on-beat-and-raise"
+            }
+        },
+        {
+            "id": "44402",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-08-14T12:31:27-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Kroger May Win the Mega-Store Battle",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20370",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1363",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/44402-kroger-may-win-the-mega-store-battle"
+            }
+        },
+        {
+            "id": "29543",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-03-14T07:52:21-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Kroger's Earnings Growth a Huge Bonus",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20171",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1363",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/29543-krogers-earnings-growth-a-huge-bonus"
+            }
+        }
+    ]
+}

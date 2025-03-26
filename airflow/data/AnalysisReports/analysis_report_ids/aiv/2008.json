@@ -1,0 +1,136 @@
+{
+    "data": [
+        {
+            "id": "103018",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-10-30T14:33:27-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Earnings Preview: Apartment Investment & Management",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21445",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4075",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/103018-earnings-preview-apartment-investment-and-management"
+            }
+        },
+        {
+            "id": "88347",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-07-31T15:25:05-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Earnings Preview: Apartment Investment & Management",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21445",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4075",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/88347-earnings-preview-apartment-investment-and-management"
+            }
+        },
+        {
+            "id": "63674",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-02-07T18:05:54-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Earnings Preview: AIMCO",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21445",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4075",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/63674-earnings-preview-aimco"
+            }
+        }
+    ]
+}

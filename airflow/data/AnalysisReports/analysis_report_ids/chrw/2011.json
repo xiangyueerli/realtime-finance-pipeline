@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "296753",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-09-29T16:56:10-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Why It May Be Time To Buy C.H. Robinson Worldwide",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24858",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "94741",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1811",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/296753-why-it-may-be-time-to-buy-c-h-robinson-worldwide"
+            }
+        }
+    ]
+}

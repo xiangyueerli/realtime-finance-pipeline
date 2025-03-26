@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4470776",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-11-19T09:00:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1284285153/image_1284285153.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "LKQ Corporation: A Favorable Risk To Reward Prospect On Automotive Parts",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "69675",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "349853",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5467",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4470776-lkq-corporation-favorable-risk-reward-prospect-automotive-parts"
+            }
+        },
+        {
+            "id": "4452335",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-08-27T18:09:26-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1223981542/image_1223981542.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "LKQ - High Potential Gains, But Not Without Risks",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "92986",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "339193",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5467",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4452335-lkq-high-potential-gains-but-not-without-risks"
+            }
+        },
+        {
+            "id": "4432810",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-06-03T06:03:33-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1209213319/image_1209213319.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "LKQ Corp.: An Attractive Play If The Recovery Persists",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "69675",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "327916",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5467",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4432810-lkq-corp-an-attractive-play-if-the-recovery-persists"
+            }
+        }
+    ]
+}

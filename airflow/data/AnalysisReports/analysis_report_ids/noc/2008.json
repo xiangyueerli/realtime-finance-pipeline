@@ -1,0 +1,141 @@
+{
+    "data": [
+        {
+            "id": "100826",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-10-21T12:52:59-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Earnings Preview: Northrop Grumman Corporation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21445",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1838",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/100826-earnings-preview-northrop-grumman-corporation"
+            }
+        },
+        {
+            "id": "87410",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-07-28T11:50:58-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Earnings Preview: Northrop Grumman Corporation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21445",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1838",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/87410-earnings-preview-northrop-grumman-corporation"
+            }
+        },
+        {
+            "id": "67268",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-03-05T07:54:22-05:00",
+                "isLockedPro": false,
+                "commentCount": 14,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "In Defense of Northrup-Grumman's USAF Contract Win",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21351",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "85458",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1838",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/67268-in-defense-of-northrup-grummans-usaf-contract-win"
+            }
+        }
+    ]
+}

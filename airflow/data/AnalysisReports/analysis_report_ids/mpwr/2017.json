@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "4133430",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-12-22T07:12:31-05:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Semiconductor Stock Risks & Returns: An Understanding Today",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23468",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2041",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4133430-semiconductor-stock-risks-and-returns-understanding-today"
+            }
+        },
+        {
+            "id": "4063323",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-04-20T08:00:02-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Monolithic Power On Track To Deliver Exceptional Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2041",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4063323-monolithic-power-on-track-to-deliver-exceptional-growth"
+            }
+        }
+    ]
+}

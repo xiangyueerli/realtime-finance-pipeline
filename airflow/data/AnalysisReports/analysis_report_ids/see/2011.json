@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "273072",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-06-02T14:50:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Sealed Air Corp.: A Perfect Storm of Confusion",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22561",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3314",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/273072-sealed-air-corp-a-perfect-storm-of-confusion"
+            }
+        }
+    ]
+}

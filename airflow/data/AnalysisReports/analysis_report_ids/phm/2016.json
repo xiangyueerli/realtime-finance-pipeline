@@ -1,0 +1,190 @@
+{
+    "data": [
+        {
+            "id": "4001665",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-08-24T10:10:23-04:00",
+                "isLockedPro": false,
+                "commentCount": 14,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Market Challenge: New Highs For Housing",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "80275",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1248",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4001665-market-challenge-new-highs-for-housing"
+            }
+        },
+        {
+            "id": "3985702",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-07-01T08:01:52-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Activists Ready To Tear Down This Homebuilder",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "41741",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "175396",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1248",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3985702-activists-ready-to-tear-down-this-homebuilder"
+            }
+        },
+        {
+            "id": "3965035",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-04-13T13:03:03-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pulte Homes' Founder's Letter To The Board",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "41741",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1248",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3965035-pulte-homes-founders-letter-to-board"
+            }
+        },
+        {
+            "id": "3964430",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-04-11T11:27:23-04:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PulteGroup: What The Next CEO Needs To Know",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "70355",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1248",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/3964430-pultegroup-what-next-ceo-needs-to-know"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "243810",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-12-28T02:37:57-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ventas Acquires Additional Assets in Wisconsin",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6192",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/243810-ventas-acquires-additional-assets-in-wisconsin"
+            }
+        }
+    ]
+}

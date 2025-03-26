@@ -1,0 +1,141 @@
+{
+    "data": [
+        {
+            "id": "55773",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-11-29T09:02:09-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Heinz Tops Forecasts, Falls Short on Outlook",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20278",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "50821",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "4445",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/55773-heinz-tops-forecasts-falls-short-on-outlook"
+            }
+        },
+        {
+            "id": "45598",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-08-24T08:13:57-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Heinz Fiscal Q1 EPS In-line, Affirms FY EPS at Upper End",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20069",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "50821",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/45598-heinz-fiscal-q1-eps-in-line-affirms-fy-eps-at-upper-end"
+            }
+        },
+        {
+            "id": "44644",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-08-16T04:02:52-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Heinz Trumpets Good News - Anticipating Shareholder Wrath",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20099",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "50821",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/44644-heinz-trumpets-good-news-anticipating-shareholder-wrath"
+            }
+        }
+    ]
+}

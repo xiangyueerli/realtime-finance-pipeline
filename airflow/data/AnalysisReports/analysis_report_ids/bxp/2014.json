@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "2754315",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-12-14T16:32:45-05:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Boston Properties, Inc.: $4.50 Special Dividend Doesn't Make It An Income Stock",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "76105",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5125",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2754315-boston-properties-inc-4_50-special-dividend-doesnt-make-it-an-income-stock"
+            }
+        },
+        {
+            "id": "2503055",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-09-17T22:58:32-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "REIT Focus: Boston Properties, Inc.",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25156",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5125",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2503055-reit-focus-boston-properties-inc"
+            }
+        }
+    ]
+}

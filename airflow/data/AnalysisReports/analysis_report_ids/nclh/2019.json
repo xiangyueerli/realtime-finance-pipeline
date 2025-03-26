@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4309282",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-11-26T14:56:47-05:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Norwegian Cruise Line Is Already Pricing In The Worst",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "39011",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "243054",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "93621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4309282-norwegian-cruise-line-is-already-pricing-in-worst"
+            }
+        },
+        {
+            "id": "4273199",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-07-02T16:16:46-04:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Norwegian Cruise Line: Attractively Valued, But We Are In The Late Stage Of The Economic Cycle",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103321",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "49446",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "93621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4273199-norwegian-cruise-line-attractively-valued-are-in-late-stage-of-economic-cycle"
+            }
+        },
+        {
+            "id": "4243697",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-02-24T20:03:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Norwegian Cruise Line: Solid Fundamentals Seem Priced In",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "92586",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "9137",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "93621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4243697-norwegian-cruise-line-solid-fundamentals-seem-priced-in"
+            }
+        }
+    ]
+}

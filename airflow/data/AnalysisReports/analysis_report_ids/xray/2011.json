@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "258744",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-03-17T09:11:56-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dentsply Withdraws Guidance After Japan Disaster",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2764",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/258744-dentsply-withdraws-guidance-after-japan-disaster"
+            }
+        }
+    ]
+}

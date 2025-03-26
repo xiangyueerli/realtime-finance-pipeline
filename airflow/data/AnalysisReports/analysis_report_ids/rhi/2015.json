@@ -1,0 +1,136 @@
+{
+    "data": [
+        {
+            "id": "3777766",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-12-28T00:15:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Robert Half's Return On Equity Increases Thanks To An Increase In Profit Margins",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "44001",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2580",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3777766-robert-halfs-return-on-equity-increases-thanks-to-increase-in-profit-margins"
+            }
+        },
+        {
+            "id": "3499236",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-09-10T13:33:05-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "JOLTS Survey Making Placement Providers Interesting Again",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "89885",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2580",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3499236-jolts-survey-making-placement-providers-interesting-again"
+            }
+        },
+        {
+            "id": "3158226",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-05-08T00:26:57-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "ModernGraham Quarterly Valuation Of Robert Half International",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23471",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2580",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3158226-moderngraham-quarterly-valuation-of-robert-half-international"
+            }
+        }
+    ]
+}

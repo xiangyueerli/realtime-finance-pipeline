@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "179124",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-12-21T05:00:36-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Will Synopsys Rise from the Dead?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20504",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2069",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/179124-will-synopsys-rise-from-the-dead"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "3811666",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-01-14T18:28:20-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Invesco Is Crushing Barclays And WisdomTree In Currency ETF Space",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "99116",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8057",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3811666-invesco-is-crushing-barclays-and-wisdomtree-in-currency-etf-space"
+            }
+        }
+    ]
+}

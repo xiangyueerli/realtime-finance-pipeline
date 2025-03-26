@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4191098",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-07-27T08:31:09-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Owens-Illinois: Not A Great Quarter, But It Didn't Need To Be",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "83156",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3929",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4191098-owens-illinois-not-great-quarter-didnt-need-to-be"
+            }
+        }
+    ]
+}

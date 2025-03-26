@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "87652",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-07-29T09:44:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Can Iron Mountain Keep Investors Safe from a Recession?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22113",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2257",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/87652-can-iron-mountain-keep-investors-safe-from-a-recession"
+            }
+        },
+        {
+            "id": "69642",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-03-24T08:53:17-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Is Iron Mountain Just a Pile of Paper?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21620",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "217902",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2257",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/69642-is-iron-mountain-just-a-pile-of-paper"
+            }
+        }
+    ]
+}

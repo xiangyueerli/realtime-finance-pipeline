@@ -1,0 +1,156 @@
+{
+    "data": [
+        {
+            "id": "4279424",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-07-31T08:03:27-04:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "American Water Works Is Already Fully Valued",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24491",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "55198",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "11164",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4279424-american-water-works-is-already-fully-valued"
+            }
+        },
+        {
+            "id": "4270423",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-06-15T06:52:02-04:00",
+                "isLockedPro": false,
+                "commentCount": 27,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "American Water Works' Price Rise Likely To Slow",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "38191",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "45527",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "11164",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4270423-american-water-works-price-rise-likely-to-slow"
+            }
+        },
+        {
+            "id": "4239858",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-02-11T10:52:36-05:00",
+                "isLockedPro": false,
+                "commentCount": 82,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "American Water Works: Swimming Against The Current",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22201",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "7663",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "11164",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4239858-american-water-works-swimming-against-current"
+            }
+        }
+    ]
+}

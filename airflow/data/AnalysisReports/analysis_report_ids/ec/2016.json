@@ -1,0 +1,195 @@
+{
+    "data": [
+        {
+            "id": "4031064",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-12-16T17:38:15-05:00",
+                "isLockedPro": false,
+                "commentCount": 15,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ecopetrol - A High-Risk Investment",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "27291",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "181865",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2890",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4031064-ecopetrol-high-risk-investment"
+            }
+        },
+        {
+            "id": "3961163",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-03-27T08:54:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ecopetrol: The Refinery Business Hums Along Nicely, Despite The Reficar Cost Overruns",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "52202",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "171203",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2890",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3961163-ecopetrol-refinery-business-hums-along-nicely-despite-reficar-cost-overruns"
+            }
+        },
+        {
+            "id": "3960290",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-03-22T15:55:57-04:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ecopetrol Has Performed Well, Despite A Difficult 2015",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "52202",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "171048",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2890",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3960290-ecopetrol-performed-well-despite-difficult-2015"
+            }
+        },
+        {
+            "id": "3824336",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-01-21T10:23:41-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Fearless Analysts Tag Ecopetrol Top Global Dog For January",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24489",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2890",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3824336-fearless-analysts-tag-ecopetrol-top-global-dog-for-january"
+            }
+        }
+    ]
+}

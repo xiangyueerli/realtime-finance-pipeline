@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "18749",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-10-18T22:45:06-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "HIV and Flu Drive Growth at Gilead",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20109",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1089",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/18749-hiv-and-flu-drive-growth-at-gilead"
+            }
+        }
+    ]
+}

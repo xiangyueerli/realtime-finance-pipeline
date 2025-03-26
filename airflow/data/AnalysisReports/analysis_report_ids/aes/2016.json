@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "4021531",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-11-09T09:58:34-05:00",
+                "isLockedPro": false,
+                "commentCount": 10,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "AES Corporation: Turnaround Continues",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "76785",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "206",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4021531-aes-corporation-turnaround-continues"
+            }
+        },
+        {
+            "id": "3818076",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-01-19T10:18:33-05:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "A Big Sell Order Produces A 7% Yielder (AES-C)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "99066",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "206",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3818076-big-sell-order-produces-7-percent-yielder-aes-c"
+            }
+        }
+    ]
+}

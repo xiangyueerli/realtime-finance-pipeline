@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "3516856",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-09-18T09:28:08-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Marcus & Millichap: Make Good Of Increased Volatility",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "52382",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "162444",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "112212",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3516856-marcus-and-millichap-make-good-of-increased-volatility"
+            }
+        },
+        {
+            "id": "2912436",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-02-12T14:56:29-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Marcus & Millichap: Country's Leading Investment Real Estate Brokerage Firm Focused On The Private Client Segment",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "39591",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "150659",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "112212",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2912436-marcus-and-millichap-countrys-leading-investment-real-estate-brokerage-firm-focused-on-the-private-client-segment"
+            }
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4207495",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-09-20T23:58:53-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CDW Corp.'s Stellar Run Is Just Getting Started",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "76975",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "20012",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "99921",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4207495-cdw-corp-s-stellar-run-is-just-getting-started"
+            }
+        }
+    ]
+}

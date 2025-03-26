@@ -1,0 +1,376 @@
+{
+    "data": [
+        {
+            "id": "316152",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-12-27T15:14:56-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Why Bulls Are Sticking With NXP Semi",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23088",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "16316",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/316152-why-bulls-are-sticking-with-nxp-semi"
+            }
+        },
+        {
+            "id": "285430",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-08-07T09:24:11-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "NXP Sees Slowdown in the Adoption of NFC Technology",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22145",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "16316",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/285430-nxp-sees-slowdown-in-the-adoption-of-nfc-technology"
+            }
+        },
+        {
+            "id": "281410",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-07-25T05:46:35-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "When Will NXP and Others Benefit From Near Field Communications Capabilities?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20534",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "93468",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "16316",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/281410-when-will-nxp-and-others-benefit-from-near-field-communications-capabilities"
+            }
+        },
+        {
+            "id": "277356",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-06-30T05:21:12-04:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "NXP Semiconductors: Great Potential in Mobile Payment",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23774",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "93139",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "16316",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/277356-nxp-semiconductors-great-potential-in-mobile-payment"
+            }
+        },
+        {
+            "id": "275242",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-06-16T11:32:15-04:00",
+                "isLockedPro": false,
+                "commentCount": 11,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "NXP Semiconductor: Cashing In on Mobile Transactions",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24095",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "92959",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "16316",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/275242-nxp-semiconductor-cashing-in-on-mobile-transactions"
+            }
+        },
+        {
+            "id": "273504",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-06-06T11:27:18-04:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "What's Up With NXP Semiconductor?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20534",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "16316",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/273504-whats-up-with-nxp-semiconductor"
+            }
+        },
+        {
+            "id": "255229",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-02-27T06:03:43-05:00",
+                "isLockedPro": false,
+                "commentCount": 15,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "NXP Semiconductors Soars on Excitement Over NFC Technology",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22706",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "16316",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/255229-nxp-semiconductors-soars-on-excitement-over-nfc-technology"
+            }
+        },
+        {
+            "id": "252538",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-02-13T10:05:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "NXP Semi Sending Mixed Messages Before Earnings",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20534",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "16316",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/252538-nxp-semi-sending-mixed-messages-before-earnings"
+            }
+        }
+    ]
+}

@@ -1,0 +1,136 @@
+{
+    "data": [
+        {
+            "id": "42516",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-07-26T13:11:19-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "O'Reilly 2Q07 Follow Up Thoughts: Long-Term Sustainable Returns",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20359",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2178",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/42516-oreilly-2q07-follow-up-thoughts-long-term-sustainable-returns"
+            }
+        },
+        {
+            "id": "42312",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-07-25T11:57:45-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "A Look At O'Reilly Automotive's 2Q Productivity Metrics",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20359",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2178",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/42312-a-look-at-oreilly-automotives-2q-productivity-metrics"
+            }
+        },
+        {
+            "id": "33624",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-04-26T09:20:45-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "O'Reilly Auto Parts 1Q07 Earnings: Follow Up Thoughts",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20359",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2178",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/33624-oreilly-auto-parts-1q07-earnings-follow-up-thoughts"
+            }
+        }
+    ]
+}

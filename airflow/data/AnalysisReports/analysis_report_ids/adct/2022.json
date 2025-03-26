@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4561171",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-11-29T14:30:19-05:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1358868801/image_1358868801.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "ADC Therapeutics: Running Through A Stretch Of Bad Luck",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103050",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "422873",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "600175",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4561171-adc-therapeutics-running-through-bad-luck"
+            }
+        }
+    ]
+}

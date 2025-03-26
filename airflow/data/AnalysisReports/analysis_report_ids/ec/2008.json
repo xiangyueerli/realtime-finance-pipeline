@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "111714",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-12-21T13:18:20-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ecopetrol Announces a Boost in Spending, Shares Jump Almost 20%",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22469",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2890",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/111714-ecopetrol-announces-a-boost-in-spending-shares-jump-almost-20-percent"
+            }
+        }
+    ]
+}

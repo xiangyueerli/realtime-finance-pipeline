@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4133468",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-12-22T11:20:55-05:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Gaming REIT VICI Properties Files For U.S. IPO",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101421",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "577257",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4133468-gaming-reit-vici-properties-files-for-u-s-ipo"
+            }
+        }
+    ]
+}

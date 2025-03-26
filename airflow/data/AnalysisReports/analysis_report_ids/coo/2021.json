@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4470218",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-11-17T09:47:02-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1264340404/image_1264340404.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Cooper Companies: Looking Through A Lens",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "349534",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2720",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4470218-cooper-companies-looking-through-a-lens"
+            }
+        },
+        {
+            "id": "4439480",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-07-16T03:20:30-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1215783098/image_1215783098.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The Cooper Companies: Growth In End Markets Likely",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105793",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "333270",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2720",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4439480-the-cooper-companies-growth-in-end-markets-likely"
+            }
+        },
+        {
+            "id": "4416235",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-03-26T06:32:26-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/949394344/image_949394344.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The Cooper Companies: Powered By Secular Tailwinds",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "69825",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "317700",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2720",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4416235-cooper-companies-powered-secular-tailwinds"
+            }
+        }
+    ]
+}

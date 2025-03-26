@@ -1,0 +1,190 @@
+{
+    "data": [
+        {
+            "id": "4208619",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-09-27T11:40:07-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Featured Stock In September's Safest Dividend Yields Model Portfolio",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24157",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4095",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4208619-featured-stock-in-septembers-safest-dividend-yields-model-portfolio"
+            }
+        },
+        {
+            "id": "4184380",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-06-28T10:00:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Featured Stocks In June's Safest Dividend Yields Model Portfolio",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24157",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4095",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4184380-featured-stocks-in-junes-safest-dividend-yields-model-portfolio"
+            }
+        },
+        {
+            "id": "4179268",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-06-04T13:40:55-04:00",
+                "isLockedPro": false,
+                "commentCount": 19,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Principal Financial Group - Value And Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102837",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "15967",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4095",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4179268-principal-financial-group-value-and-growth"
+            }
+        },
+        {
+            "id": "4161454",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-04-06T12:02:48-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Buy The Dip On This Recently Upgraded Insurer And Asset Manager",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24157",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "13919",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4095",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4161454-buy-dip-on-this-recently-upgraded-insurer-and-asset-manager"
+            }
+        }
+    ]
+}

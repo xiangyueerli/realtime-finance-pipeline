@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4561164",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-11-29T14:09:09-05:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1367617035/image_1367617035.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Sanmina: Growth Company Trading At A Cheap Valuation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106656",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "422941",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2950",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4561164-sanmina-growth-company-trading-at-a-cheap-valuation"
+            }
+        },
+        {
+            "id": "4537501",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-08-28T04:01:53-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1320950393/image_1320950393.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Sanmina Corporation: An Undervalued And Undercovered Gem",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106304",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "406270",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2950",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4537501-sanmina-corporation-stock-an-undervalued-undercovered-gem"
+            }
+        }
+    ]
+}

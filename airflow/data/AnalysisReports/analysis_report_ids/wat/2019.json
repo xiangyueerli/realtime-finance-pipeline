@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4292221",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-09-18T08:52:45-04:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Waters Corp.: A Unique Healthcare Bet",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104086",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "67842",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4160",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4292221-waters-corp-unique-healthcare-bet"
+            }
+        },
+        {
+            "id": "4271675",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-06-23T15:06:18-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Waters: Q1 Sales Disappoint, So Put Buying Plans On Hold",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104958",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "46705",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4160",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4271675-waters-q1-sales-disappoint-put-buying-plans-on-hold"
+            }
+        }
+    ]
+}

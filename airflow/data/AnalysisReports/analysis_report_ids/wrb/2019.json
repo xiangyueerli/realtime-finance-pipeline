@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4313960",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-12-24T02:26:18-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "W.R. Berkley Corporation: A New 5.10% Baby Bond IPO",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "249828",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6026",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4313960-w-r-berkley-corporation-new-5_10-percent-baby-bond-ipo"
+            }
+        },
+        {
+            "id": "4276616",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-07-23T08:27:29-04:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "W.R. Berkley: 17% Annual Gains Since 1974 And Smart Allocations (Less Focus On The Dividend)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104543",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "53969",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6026",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4276616-w-r-berkley-17-percent-annual-gains-since-1974-and-smart-allocations-less-focus-on-dividend"
+            }
+        }
+    ]
+}

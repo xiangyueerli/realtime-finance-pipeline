@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "id": "3107076",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-04-27T17:27:20-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "At $20, Is Post-Merger International Game Technology A False Door Bargain?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "78485",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "154361",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2315",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/3107076-at-20-is-post-merger-international-game-technology-a-false-door-bargain"
+            }
+        }
+    ]
+}

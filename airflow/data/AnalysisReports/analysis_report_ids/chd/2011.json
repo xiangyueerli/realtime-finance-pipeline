@@ -1,0 +1,146 @@
+{
+    "data": [
+        {
+            "id": "295147",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-09-21T18:23:44-04:00",
+                "isLockedPro": false,
+                "commentCount": 13,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Church & Dwight Clobbers Procter & Gamble Among Consumer Staples",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24634",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "94568",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6630",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/295147-church-and-dwight-clobbers-procter-and-gamble-among-consumer-staples"
+            }
+        },
+        {
+            "id": "261072",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-03-31T05:18:56-04:00",
+                "isLockedPro": false,
+                "commentCount": 15,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Small but Growing: Church & Dwight Could Be the Next Procter & Gamble",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23916",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "92248",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6630",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/261072-small-but-growing-church-and-dwight-could-be-the-next-procter-and-gamble"
+            }
+        },
+        {
+            "id": "255760",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-03-01T15:55:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dwight & Church: A Company to Put on Your Watch List",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22326",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6630",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/255760-dwight-and-church-a-company-to-put-on-your-watch-list"
+            }
+        }
+    ]
+}

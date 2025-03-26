@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4146687",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-02-14T14:47:38-05:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Akamai Technologies: Avoid",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104099",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1401",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4146687-akamai-technologies-avoid"
+            }
+        }
+    ]
+}

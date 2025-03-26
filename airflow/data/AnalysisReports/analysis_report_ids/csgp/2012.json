@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "919081",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-10-11T14:25:05-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "A Strong Pick In The Real Estate Sector? Look At CoStar Group",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24513",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "107026",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3405",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/919081-a-strong-pick-in-the-real-estate-sector-look-at-costar-group"
+            }
+        }
+    ]
+}

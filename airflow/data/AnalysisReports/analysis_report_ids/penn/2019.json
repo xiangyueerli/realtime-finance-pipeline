@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4283234",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-08-08T12:05:18-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Penn National Gaming: A Catalyst-Rich Gaming Stock Trading At Depressed Valuations",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105354",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "58395",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2590",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4283234-penn-national-gaming-catalyst-rich-gaming-stock-trading-depressed-valuations"
+            }
+        },
+        {
+            "id": "4282545",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-08-07T09:02:34-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Penn National Gaming: Don't Let Sports Betting Opportunity Go Unnoticed",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21820",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "57841",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2590",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4282545-penn-national-gaming-dont-let-sports-betting-opportunity-go-unnoticed"
+            }
+        }
+    ]
+}

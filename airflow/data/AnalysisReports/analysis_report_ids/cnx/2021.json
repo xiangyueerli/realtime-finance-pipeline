@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4464238",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-11-04T08:15:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 34,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1269960044/image_1269960044.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CNX Resources: The Red-Headed Step-Child Of The Marcellus",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103610",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "347281",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2835",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4464238-cnx-resources-the-red-headed-step-child-of-the-marcellus"
+            }
+        },
+        {
+            "id": "4432119",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-05-30T10:42:55-04:00",
+                "isLockedPro": false,
+                "commentCount": 15,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/485201006/image_485201006.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CNX Resources: Giving Them A Pass At Current Prices",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103610",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "327362",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2835",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4432119-cnx-resources-giving-them-a-pass-at-current-prices"
+            }
+        },
+        {
+            "id": "4415331",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-03-22T08:14:47-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/869016178/image_869016178.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CNX Riding The FCF Wave: Well Productivity And Dwindling Inventory Are Concerns",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "30561",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "318122",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2835",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4415331-cnx-riding-fcf-wave-well-productivity-dwindling-inventory-concerns"
+            }
+        }
+    ]
+}

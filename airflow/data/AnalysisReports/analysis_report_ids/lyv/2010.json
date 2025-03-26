@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "197153",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-04-05T17:13:57-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Lone Pine Starts New Position in Live Nation Entertainment",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21943",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4179",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/197153-lone-pine-starts-new-position-in-live-nation-entertainment"
+            }
+        }
+    ]
+}

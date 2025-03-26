@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "id": "3986967",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-07-07T14:19:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Fidelity National Information Services: Can An Investment Case Be Made For A Company With 4.2% Organic Growth?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "98236",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "175636",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3577",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/3986967-fidelity-national-information-services-can-investment-case-be-made-for-company-4_2-percent"
+            }
+        }
+    ]
+}

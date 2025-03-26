@@ -1,0 +1,159 @@
+{
+    "data": [
+        {
+            "id": "4396325",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-12-27T13:16:31-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Atmos Is Finally A Buy After Consolidating",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "39011",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "306528",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "212",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4396325-atmos-is-finally-buy-after-consolidating"
+            }
+        },
+        {
+            "id": "4379346",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-10-16T02:54:13-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Atmos Energy: Review Of Potential Returns",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "41431",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "296717",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "212",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4379346-atmos-energy-review-of-potential-returns"
+            }
+        },
+        {
+            "id": "4374585",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-09-16T02:44:53-04:00",
+                "isLockedPro": false,
+                "commentCount": 38,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Best Of The Best Utilities, Part 4: Atmos Energy Over WEC Energy And Xcel Energy",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "35111",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "292519",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "292520",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "292521",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "212",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4374585-best-of-best-utilities-part-4-atmos-energy-over-wec-energy-and-xcel-energy"
+            }
+        }
+    ]
+}

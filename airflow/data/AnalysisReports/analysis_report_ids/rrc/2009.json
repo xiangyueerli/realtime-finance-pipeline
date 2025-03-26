@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "149221",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-07-16T10:20:03-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Range Resources Provides Strong 2Q Pre Release Operations Update",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20500",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "285",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/149221-range-resources-provides-strong-2q-pre-release-operations-update"
+            }
+        }
+    ]
+}

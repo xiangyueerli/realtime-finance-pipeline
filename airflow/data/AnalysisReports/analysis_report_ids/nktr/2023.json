@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4625352",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-08-08T12:10:35-04:00",
+                "isLockedPro": false,
+                "commentCount": 18,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1395593869/image_1395593869.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Data Errors Could Give Nektar Therapeutics A New Lease On Life",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "476668",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1952",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4625352-data-errors-could-give-nektar-therapeutics-new-lease-on-life"
+            }
+        },
+        {
+            "id": "4581825",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-02-24T15:11:13-05:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/182929264/image_182929264.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Nektar Therapeutics: Another Clinical Failure Nearly Wipes Out The R&D Value",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "440133",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1952",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4581825-nektar-therapeutics-another-clinical-failure-nearly-wipes-out-value"
+            }
+        },
+        {
+            "id": "4579201",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-02-16T16:10:53-05:00",
+                "isLockedPro": false,
+                "commentCount": 10,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1418835107/image_1418835107.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Nektar Therapeutics Looking To Rebuild Faith In Its Now Early-Stage Pipeline",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "438372",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1952",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4579201-nektar-therapeutics-looking-rebuild-faith-early-stage-pipeline"
+            }
+        }
+    ]
+}

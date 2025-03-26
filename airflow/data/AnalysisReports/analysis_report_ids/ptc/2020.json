@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4386273",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-11-07T04:31:55-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PTC Inc.: A Near-Term Capital Gain Prospect High In The MM Forecast Ranks",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23468",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "299097",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3246",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4386273-ptc-inc-near-term-capital-gain-prospect-high-in-mm-forecast-ranks"
+            }
+        },
+        {
+            "id": "4341967",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-05-01T11:45:38-04:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PTC: Long-Term IoT And AR Stock For The 2020s",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21798",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "273128",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3246",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4341967-ptc-long-term-iot-and-ar-stock-for-2020s"
+            }
+        },
+        {
+            "id": "4318848",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-01-24T08:05:57-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PTC Hitting Its Marks As It Transitions To An Industrial Digitalization/Automation Growth Story",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "257117",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3246",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4318848-ptc-hitting-marks-transitions-to-industrial-digitalization-automation-growth-story"
+            }
+        }
+    ]
+}

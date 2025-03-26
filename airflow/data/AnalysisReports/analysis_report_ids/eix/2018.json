@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4148130",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-02-19T13:08:37-05:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Edison International: A Cheap And Attractive Utility",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24206",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "238869",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "172",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4148130-edison-international-cheap-and-attractive-utility"
+            }
+        }
+    ]
+}

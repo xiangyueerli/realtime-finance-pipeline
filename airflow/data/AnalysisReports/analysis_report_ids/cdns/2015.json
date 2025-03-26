@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "2891796",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-02-06T00:24:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 10,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Cadence Design Systems Has 2 Major Competitors",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "76425",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1948",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2891796-cadence-design-systems-has-2-major-competitors"
+            }
+        }
+    ]
+}

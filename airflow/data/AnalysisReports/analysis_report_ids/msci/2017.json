@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4070544",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-05-08T08:34:32-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "MSCI: Top-Tier Company, But What About The Valuation?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "76785",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "17356",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4070544-msci-top-tier-company-what-valuation"
+            }
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "33594",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-04-26T06:32:16-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Lincoln Financial Explores Selling Its Media Unit for About $1.5 Billion -- WSJ",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20278",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4905",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "4445",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/33594-lincoln-financial-explores-selling-its-media-unit-for-about-1_5-billion-wsj"
+            }
+        }
+    ]
+}

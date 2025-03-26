@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "17067",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-09-18T05:09:14-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pulte Homes: Rally in a Bear Market or Something More?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20254",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1248",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/17067-pulte-homes-rally-in-a-bear-market-or-something-more"
+            }
+        }
+    ]
+}

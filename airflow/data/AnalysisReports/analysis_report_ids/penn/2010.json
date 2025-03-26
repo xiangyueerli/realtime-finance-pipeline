@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "234987",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-11-05T04:22:17-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Penn National: The Attraction of Regional Gaming",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21369",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2590",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/234987-penn-national-the-attraction-of-regional-gaming"
+            }
+        }
+    ]
+}

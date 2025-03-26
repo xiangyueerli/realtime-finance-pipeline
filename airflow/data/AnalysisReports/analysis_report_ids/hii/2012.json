@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "1018481",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-11-19T13:53:33-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Huntington Ingalls Monopoly Offers 25% Upside",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21849",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "18167",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1018481-huntington-ingalls-monopoly-offers-25-percent-upside"
+            }
+        }
+    ]
+}

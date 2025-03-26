@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "1928491",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-01-06T12:37:41-05:00",
+                "isLockedPro": false,
+                "commentCount": 11,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Does The Sad Story Of Synovus Have A Happier Ending Coming?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "52262",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2183",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/1928491-does-the-sad-story-of-synovus-have-a-happier-ending-coming"
+            }
+        },
+        {
+            "id": "1929631",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-01-06T08:50:39-05:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Why Synovus Financial Corporation Is One Of My Top Picks For 2014",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "59321",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "127215",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2183",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1929631-why-synovus-financial-corporation-is-one-of-my-top-picks-for-2014"
+            }
+        }
+    ]
+}

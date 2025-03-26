@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "37565",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-06-07T02:42:44-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "SAIC Posts 25% Drop in Q1 Net",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20293",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "112052",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/37565-saic-posts-25-percent-drop-in-q1-net"
+            }
+        }
+    ]
+}

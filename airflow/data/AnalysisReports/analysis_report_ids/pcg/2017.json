@@ -1,0 +1,234 @@
+{
+    "data": [
+        {
+            "id": "4133485",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-12-22T12:00:59-05:00",
+                "isLockedPro": false,
+                "commentCount": 37,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PG&E: Dividend Suspension Makes Sense, Issues Remain Large",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4133485-pg-and-e-dividend-suspension-makes-sense-issues-remain-large"
+            }
+        },
+        {
+            "id": "4133385",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-12-21T22:48:17-05:00",
+                "isLockedPro": false,
+                "commentCount": 151,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PG&E From The Perspective Of A Preferred Investor",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101276",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4133385-pg-and-e-from-perspective-of-preferred-investor"
+            }
+        },
+        {
+            "id": "4113681",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-10-16T09:54:32-04:00",
+                "isLockedPro": false,
+                "commentCount": 45,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PG&E - Not Buying The Dip, Even If It Is An Overreaction",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4113681-pg-and-e-not-buying-dip-even-is-overreaction"
+            }
+        },
+        {
+            "id": "4107752",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-09-18T16:04:49-04:00",
+                "isLockedPro": false,
+                "commentCount": 20,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "For PG&E, The Utility Of The Future Is Already Here",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103473",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4107752-for-pg-and-e-utility-of-future-is-already"
+            }
+        },
+        {
+            "id": "4052400",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-03-06T14:29:40-05:00",
+                "isLockedPro": false,
+                "commentCount": 13,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pacific Gas & Electric Reinvents The Utility Business Model",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102273",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "184953",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4052400-pacific-gas-and-electric-reinvents-utility-business-model"
+            }
+        }
+    ]
+}

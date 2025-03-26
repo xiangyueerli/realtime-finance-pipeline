@@ -1,0 +1,200 @@
+{
+    "data": [
+        {
+            "id": "4451898",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-08-26T02:48:02-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1029244382/image_1029244382.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "International Flavors & Fragrances: What A Difference Half A Year Makes",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "338946",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6382",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4451898-international-flavors-fragrances-what-difference-half-a-year-makes"
+            }
+        },
+        {
+            "id": "4429433",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-05-17T16:52:58-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/494478424/image_494478424.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "International Flavors & Fragrances: More Than A Whiff Of Overvaluation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "100856",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "325645",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6382",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4429433-international-flavors-and-fragrances-stock-iff-more-than-a-whiff-of-overvaluation"
+            }
+        },
+        {
+            "id": "4416882",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-03-30T18:35:30-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "For Now, The Market Seems Skeptical That International Flavors And Fragrances' Big Deal Will Pay Off",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "319375",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6382",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4416882-for-now-market-seems-skeptical-international-flavors-and-fragrances-s-big-deal-will-pay-off"
+            }
+        },
+        {
+            "id": "4399466",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-01-18T05:31:27-05:00",
+                "isLockedPro": false,
+                "commentCount": 10,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "International Flavors & Fragrances: Stagnation Continues",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "309275",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6382",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4399466-international-flavors-and-fragrances-stagnation-continues"
+            }
+        }
+    ]
+}

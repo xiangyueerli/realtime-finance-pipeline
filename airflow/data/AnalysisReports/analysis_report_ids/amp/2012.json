@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "541741",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-04-30T07:06:33-04:00",
+                "isLockedPro": false,
+                "commentCount": 14,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Markets Are Missing Remarkable Yields At Ameriprise Financial",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22148",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3309",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/541741-markets-are-missing-remarkable-yields-at-ameriprise-financial"
+            }
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4047552",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-02-21T05:30:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 53,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Chemours: Lessons Learned As Company Settles Major Litigation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "67985",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "184420",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "522735",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4047552-chemours-lessons-learned-company-settles-major-litigation"
+            }
+        },
+        {
+            "id": "4035060",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-01-09T05:30:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 13,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Chemours: The Long And Winding Litigation Road Favors The Company",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "67985",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "182672",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "522735",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4035060-chemours-long-and-winding-litigation-road-favors-company"
+            }
+        }
+    ]
+}

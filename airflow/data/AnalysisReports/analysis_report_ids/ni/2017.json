@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4037937",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-01-19T11:33:07-05:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "NiSource: 4-6% Annual Growth Backed By $30bn Capex Over 20-30 Years",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "40231",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "183",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4037937-nisource-4minus-6-percent-annual-growth-backed-30bn-capex-over-20minus-30-years"
+            }
+        }
+    ]
+}

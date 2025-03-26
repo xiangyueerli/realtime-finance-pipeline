@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "3802446",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-01-11T11:45:42-05:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Healthcare Intelligence: Molina's Turn In The Spotlight",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "96386",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "168091",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2521",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3802446-healthcare-intelligence-molinas-turn-in-spotlight"
+            }
+        }
+    ]
+}

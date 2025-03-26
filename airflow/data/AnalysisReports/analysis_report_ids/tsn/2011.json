@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "284550",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-08-04T09:22:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "What to Expect From Tyson Foods Earnings Report Monday",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22561",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2377",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/284550-what-to-expect-from-tyson-foods-earnings-report-monday"
+            }
+        }
+    ]
+}

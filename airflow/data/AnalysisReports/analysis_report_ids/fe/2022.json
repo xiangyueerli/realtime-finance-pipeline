@@ -1,0 +1,200 @@
+{
+    "data": [
+        {
+            "id": "4545979",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-10-11T16:49:08-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1358927461/image_1358927461.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The 4.3% Dividend Of FirstEnergy Is Less Attractive Than It Seems",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "38631",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "413755",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "175",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4545979-dividend-of-firstenergy-is-less-attractive-than-it-seems"
+            }
+        },
+        {
+            "id": "4545935",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-10-11T13:46:29-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1167751510/image_1167751510.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "FirstEnergy: Shares Are Fairly Valued With A Near-Term Bullish Chart",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106553",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "413796",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "175",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4545935-firstenergy-shares-fairly-valued-with-near-term-bullish-chart"
+            }
+        },
+        {
+            "id": "4526783",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-07-28T06:45:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1332858442/image_1332858442.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "FirstEnergy Q2 Earnings: The Future Looks Bright",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "69675",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "384900",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "175",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4526783-firstenergy-q2-earnings-bright-future"
+            }
+        },
+        {
+            "id": "4486758",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-02-14T07:19:48-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1339937762/image_1339937762.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "FirstEnergy: Some Positive Developments In The Earnings Results",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24257",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "361449",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "175",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4486758-firstenergy-q4-earnings-some-positive-developments"
+            }
+        }
+    ]
+}

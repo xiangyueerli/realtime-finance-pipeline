@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "4006850",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-09-18T01:38:06-04:00",
+                "isLockedPro": false,
+                "commentCount": 17,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ameren Corporation: Sturdy, Stable, And Somewhat Overvalued",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "100856",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "157",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4006850-ameren-corporation-sturdy-stable-and-somewhat-overvalued"
+            }
+        },
+        {
+            "id": "3964332",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-04-12T07:50:54-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ameren: Acquisition Rumors Make This Solid Utility Look Less Attractive",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24961",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "157",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/3964332-ameren-acquisition-rumors-make-this-solid-utility-look-less-attractive"
+            }
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4314750",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-12-31T17:23:30-05:00",
+                "isLockedPro": false,
+                "commentCount": 39,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Chile's Leading Brewer Still A Buy Despite Political Jitters",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22201",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "251351",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "138621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4314750-chiles-leading-brewer-still-buy-despite-political-jitters"
+            }
+        },
+        {
+            "id": "4285096",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-08-13T10:15:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 42,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Argentina Plunges: An Opportunity In Chile's Leading Brewer",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22201",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "59696",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "138621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4285096-argentina-plunges-opportunity-in-chiles-leading-brewer"
+            }
+        },
+        {
+            "id": "4233277",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-01-14T14:00:33-05:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Compania Cervecerias Unidas: A Dividend Stock You Have Never Heard Of (Part II)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103448",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "138621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4233277-compania-cervecerias-unidas-dividend-stock-you-never-heard-of-part-ii"
+            }
+        }
+    ]
+}

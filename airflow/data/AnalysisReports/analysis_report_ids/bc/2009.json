@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "154334",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-08-06T12:09:17-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "How Will Inventory Rebuild Affect GDP?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22511",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1876",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/154334-how-will-inventory-rebuild-affect-gdp"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "2686655",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-11-17T07:15:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "REITWorld 2014 Recap: Regency Centers Corporation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24223",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "9844",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2686655-reitworld-2014-recap-regency-centers-corporation"
+            }
+        }
+    ]
+}

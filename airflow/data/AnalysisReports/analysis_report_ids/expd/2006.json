@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "16643",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-09-11T04:39:25-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Expeditors International Bulls Are Becoming Needlessly Restless",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20181",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1821",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/16643-expeditors-international-bulls-are-becoming-needlessly-restless"
+            }
+        }
+    ]
+}

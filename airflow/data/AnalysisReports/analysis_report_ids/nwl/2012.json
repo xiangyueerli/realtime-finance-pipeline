@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "1001951",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-11-13T02:46:50-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Newell Rubbermaid Shares To Hit New 52 Week Highs On New Dividend And Restructuring",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21820",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2809",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1001951-newell-rubbermaid-shares-to-hit-new-52-week-highs-on-new-dividend-and-restructuring"
+            }
+        },
+        {
+            "id": "336151",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-02-02T13:14:58-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Newell Rubbermaid: Time For New Accounting Standards?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2809",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/336151-newell-rubbermaid-time-for-new-accounting-standards"
+            }
+        }
+    ]
+}

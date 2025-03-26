@@ -1,0 +1,185 @@
+{
+    "data": [
+        {
+            "id": "4033409",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-12-30T07:42:51-05:00",
+                "isLockedPro": false,
+                "commentCount": 48,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Here Are Barclays' 5 Predictions, And 15 Top Picks, For 2017",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24103",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4044",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4033409-are-barclays-5-predictions-and-15-top-picks-for-2017"
+            }
+        },
+        {
+            "id": "4030141",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-12-13T08:52:20-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Tenet Healthcare's Just Starting To Recover - Credit Metrics Will Rehab First",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "89985",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4044",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4030141-tenet-healthcares-just-starting-to-recover-credit-metrics-will-rehab-first"
+            }
+        },
+        {
+            "id": "3975829",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-05-17T17:24:08-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Tenet Healthcare: Low Valuation Reflects Uncertainty",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "83156",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4044",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3975829-tenet-healthcare-low-valuation-reflects-uncertainty"
+            }
+        },
+        {
+            "id": "3966184",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-04-20T08:40:52-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Tenet Healthcare: Hardly A Hospital Pure Play, Which Is A Compliment",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "52382",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "172199",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4044",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3966184-tenet-healthcare-hardly-hospital-pure-play-which-is-compliment"
+            }
+        }
+    ]
+}

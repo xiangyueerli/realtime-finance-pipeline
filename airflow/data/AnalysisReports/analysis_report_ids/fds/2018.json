@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "4209978",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-10-05T00:24:04-04:00",
+                "isLockedPro": false,
+                "commentCount": 38,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "FactSet Means Both Growth And Value",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104439",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "20519",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2092",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4209978-factset-means-growth-and-value"
+            }
+        },
+        {
+            "id": "4147078",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-02-15T10:25:50-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "'Mini-Crat Cage Match' - Take FactSet Over Dun And Bradstreet",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24206",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2092",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4147078-mini-crat-cage-match-take-factset-over-dun-and-bradstreet"
+            }
+        }
+    ]
+}

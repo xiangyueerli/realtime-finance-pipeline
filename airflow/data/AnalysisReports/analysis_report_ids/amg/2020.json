@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4393986",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-12-10T03:43:28-05:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Affiliated Managers Group: Challenging Times Notwithstanding, Unique Business Model",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "39591",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "303384",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2450",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4393986-affiliated-managers-group-challenging-times-notwithstanding-unique-business-model"
+            }
+        },
+        {
+            "id": "4322309",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-02-07T02:02:09-05:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Affiliated Managers Group: An FCF Machine And A Bet On Active Management",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104893",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "260330",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2450",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4322309-affiliated-managers-group-fcf-machine-and-bet-on-active-management"
+            }
+        }
+    ]
+}

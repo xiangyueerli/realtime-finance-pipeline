@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "677891",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-06-22T10:33:15-04:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Why Investors Bancorp's New Deal Is A Bad Template For Future Bank M&A",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "30721",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "152803",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/677891-why-investors-bancorps-new-deal-is-a-bad-template-for-future-bank-m-and-a"
+            }
+        }
+    ]
+}

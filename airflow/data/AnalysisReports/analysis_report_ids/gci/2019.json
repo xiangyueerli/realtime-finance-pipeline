@@ -1,0 +1,115 @@
+{
+    "data": [
+        {
+            "id": "4296223",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-10-12T10:06:05-04:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The Gannett-GateHouse Merger Is Really Happening, And Expect To See More Than 10% Of Jobs Cut Off The Top",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21262",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "73884",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "73885",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1229",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4296223-gannett-gatehouse-merger-is-really-happening-and-expect-to-see-10-percent-of-jobs-cut-off-top"
+            }
+        },
+        {
+            "id": "4283221",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-08-08T11:49:25-04:00",
+                "isLockedPro": false,
+                "commentCount": 19,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "New Media Might Be Just Too Cheap After Puzzling Post-Acquisition Sell-Off",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24594",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "58553",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "58551",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1229",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4283221-new-media-might-be-just-too-cheap-after-puzzling-post-acquisition-sell-off"
+            }
+        }
+    ]
+}

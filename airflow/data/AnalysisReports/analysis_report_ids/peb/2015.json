@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "3722316",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-12-01T00:10:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pebblebrook Hotel Trust: An Oversold Dividend Growth Machine",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "39141",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "15133",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3722316-pebblebrook-hotel-trust-oversold-dividend-growth-machine"
+            }
+        },
+        {
+            "id": "3275475",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-06-23T15:29:24-04:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pebblebrook Hotel Trust Raises Dividend 34%. Now What?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "39141",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "15133",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3275475-pebblebrook-hotel-trust-raises-dividend-34-percent-now-what"
+            }
+        }
+    ]
+}

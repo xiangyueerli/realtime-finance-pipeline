@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4556350",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-11-11T05:02:19-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1345098965/image_1345098965.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Bio-Techne: Recent Weakness, Charts Suggest It's Now A Buy (Technical Analysis)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105793",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "419646",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "12709",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4556350-bio-techne-recent-weakness-charts-suggest-its-now-a-buy"
+            }
+        },
+        {
+            "id": "4527385",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-07-29T09:22:57-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1150397417/image_1150397417.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Bio-Techne: Resiliency Comes At A Large Premium",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105793",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "385120",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "12709",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4527385-bio-techne-resiliency-comes-at-a-large-premium"
+            }
+        },
+        {
+            "id": "4497214",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-03-23T05:22:44-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/157610299/image_157610299.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Bio-Techne - Exceptional Leverage To Biopharma Growth, And Priced Accordingly",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "366664",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "12709",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4497214-bio-techne-stock-exceptional-leverage-biopharma-growth-priced-accordingly"
+            }
+        }
+    ]
+}

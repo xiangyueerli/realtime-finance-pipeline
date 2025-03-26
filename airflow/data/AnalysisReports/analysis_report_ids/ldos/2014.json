@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "2572715",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-10-18T17:36:29-04:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Leidos Holdings: Not Cheap Enough",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "54092",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "112052",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2572715-leidos-holdings-not-cheap-enough"
+            }
+        },
+        {
+            "id": "2117843",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-03-31T09:27:26-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Leidos Holdings: Is This Stock A Better Value After Its Recent Pull Back?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "52412",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "131713",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "112052",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2117843-leidos-holdings-is-this-stock-a-better-value-after-its-recent-pull-back"
+            }
+        }
+    ]
+}

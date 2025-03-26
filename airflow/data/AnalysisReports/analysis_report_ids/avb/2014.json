@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "2191773",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-05-05T16:20:43-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "AvalonBay Communities: 4 Different Insiders Have Sold Shares During The Last 30 Days",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25289",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3711",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2191773-avalonbay-communities-4-different-insiders-have-sold-shares-during-the-last-30-days"
+            }
+        }
+    ]
+}

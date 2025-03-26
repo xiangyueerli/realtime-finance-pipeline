@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4309819",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-11-30T04:11:46-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Northern Trust Corporation: A New Preferred Stock IPO In The New Normal 'Below-5%' Environment",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "244226",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3914",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4309819-northern-trust-corporation-new-preferred-stock-ipo-in-new-normal-belowminus-5-percent"
+            }
+        },
+        {
+            "id": "4289544",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-09-04T10:50:44-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Northern Trust: Net Interest Margin Compression Will Be A Concern In The Near Term",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103321",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "64558",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3914",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4289544-northern-trust-net-interest-margin-compression-will-be-concern-in-near-term"
+            }
+        }
+    ]
+}

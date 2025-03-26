@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "13075",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-07-06T05:29:40-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Southwest Air Raises Fares Again On High Fuel Costs (LUV)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20108",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1416",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/13075-southwest-air-raises-fares-again-on-high-fuel-costs-luv"
+            }
+        }
+    ]
+}

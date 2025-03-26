@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4467846",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-11-10T09:32:13-05:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1314625684/image_1314625684.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Office Depot Is A Sum-Of-The-Parts Gem",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105594",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "348480",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1567",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4467846-office-depot-is-a-sum-of-the-parts-gem"
+            }
+        },
+        {
+            "id": "4451677",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-08-25T06:55:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1217551672/image_1217551672.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The ODP Corporation Has The Cash And Earnings To Navigate Troubled Times",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "49651",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "338755",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1567",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4451677-the-odp-corporation-has-cash-and-earnings-to-navigate-troubled-times"
+            }
+        },
+        {
+            "id": "4433302",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-06-06T07:16:40-04:00",
+                "isLockedPro": false,
+                "commentCount": 13,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/961855878/image_961855878.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "ODP Could Enjoy A Material Re-Rating Once Retail Assets Are Sold",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24324",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "328166",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1567",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4433302-odp-material-re-rating-once-retail-assets-sold"
+            }
+        }
+    ]
+}

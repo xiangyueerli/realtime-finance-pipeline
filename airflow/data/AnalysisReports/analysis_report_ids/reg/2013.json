@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "1462171",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-05-27T00:34:18-04:00",
+                "isLockedPro": false,
+                "commentCount": 41,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Why Not Hedge Whole Foods By Investing In A Whole Foods' Landlord?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24223",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "9844",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/1462171-why-not-hedge-whole-foods-by-investing-in-a-whole-foods-landlord"
+            }
+        }
+    ]
+}

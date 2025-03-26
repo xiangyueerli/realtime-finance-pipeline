@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "127017",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-03-20T09:00:15-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Letting Go of Packaging Corp. of America Following Dividend Slash",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22198",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3878",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/127017-letting-go-of-packaging-corp-of-america-following-dividend-slash"
+            }
+        }
+    ]
+}

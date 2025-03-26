@@ -1,0 +1,146 @@
+{
+    "data": [
+        {
+            "id": "4123405",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-11-10T13:06:38-05:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "'Keys To Success' American Water Works' Rise To The Top",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103812",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "194528",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "11164",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4123405-keys-to-success-american-water-works-rise-to-top"
+            }
+        },
+        {
+            "id": "4038729",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-01-23T13:26:01-05:00",
+                "isLockedPro": false,
+                "commentCount": 25,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "American Water Works: Water Under The Bridge (For Now)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102627",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "183299",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "11164",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4038729-american-water-works-water-under-bridge-for-now"
+            }
+        },
+        {
+            "id": "4033744",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-01-02T05:24:31-05:00",
+                "isLockedPro": false,
+                "commentCount": 85,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "5 Reasons Aqua America Is A Far Better Investment Than American Water Works",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101900",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "11164",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4033744-5-reasons-aqua-america-is-far-better-investment-american-water-works"
+            }
+        }
+    ]
+}

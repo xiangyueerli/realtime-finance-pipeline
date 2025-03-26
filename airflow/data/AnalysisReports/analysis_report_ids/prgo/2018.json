@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "4180726",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-06-11T09:57:29-04:00",
+                "isLockedPro": false,
+                "commentCount": 148,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The 'Joe Papa' Effect Is Arriving At Valeant",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102572",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4523",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4180726-joe-papa-effect-is-arriving-valeant"
+            }
+        },
+        {
+            "id": "4138504",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-01-18T16:11:27-05:00",
+                "isLockedPro": false,
+                "commentCount": 21,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Perrigo: Don't Miss This Turnaround",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "69905",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4523",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4138504-perrigo-dont-miss-this-turnaround"
+            }
+        }
+    ]
+}

@@ -1,0 +1,200 @@
+{
+    "data": [
+        {
+            "id": "4562908",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-12-07T06:49:54-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1180543262/image_1180543262.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Vontier: A Long Road Ahead",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "47521",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "424421",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "601188",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4562908-vontier-long-road-ahead"
+            }
+        },
+        {
+            "id": "4542998",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-09-25T16:49:56-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1166624542/image_1166624542.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Vontier: A Bargain Waiting For A Catalyst",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106751",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "410617",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "601188",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4542998-vontier-a-bargain-waiting-for-a-catalyst"
+            }
+        },
+        {
+            "id": "4523081",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-07-13T10:49:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1331301186/image_1331301186.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Vontier Has Beaten Expectations Repeatedly, Could Be Forming Double-Bottom",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106540",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "382351",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "601188",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4523081-vontier-has-beaten-expectations-repeatedly-a-double-bottom-could-be-in-the-making"
+            }
+        },
+        {
+            "id": "4497596",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-03-24T14:07:48-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1310978724/image_1310978724.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Vontier - Faster EMV Erosion Is A Near-Term Challenge, And The Street Needs To See A Better Path For Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "366940",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "601188",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4497596-vontier-faster-emv-erosion-is-a-near-term-challenge-and-the-street-needs-to-see-a-better-path-for-growth"
+            }
+        }
+    ]
+}

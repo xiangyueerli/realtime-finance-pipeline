@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "3578166",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-10-17T12:33:40-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Alliant Energy: Management Strategy Looks Solid",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "76785",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "181",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3578166-alliant-energy-management-strategy-looks-solid"
+            }
+        },
+        {
+            "id": "3307595",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-07-08T08:10:12-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Alliant Energy: Earnings Growth Looks Good, But Cheaper Valuations Could Be In Its Future",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24961",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "181",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3307595-alliant-energy-earnings-growth-looks-good-but-cheaper-valuations-could-be-in-its-future"
+            }
+        }
+    ]
+}

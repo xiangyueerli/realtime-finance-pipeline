@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4547413",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-10-19T06:22:12-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1364371014/image_1364371014.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Arthur J. Gallagher & Co.: Exercising Caution As We Await Q3 Earnings Numbers",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "67113",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "415227",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5477",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4547413-arthur-j-gallagher-exercising-caution-q3-earnings"
+            }
+        },
+        {
+            "id": "4514488",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-05-25T15:52:30-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1346182684/image_1346182684.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Arthur J. Gallagher Reassures Safety And Stability",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105897",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "375622",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5477",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4514488-arthur-j-gallagher-reassures-safety-and-stability"
+            }
+        },
+        {
+            "id": "4487041",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-02-15T08:50:23-05:00",
+                "isLockedPro": false,
+                "commentCount": 11,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1320919703/image_1320919703.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Arthur J. Gallagher: Growth Momentum Creates Compelling Setup Heading Into 2022",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105526",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "361574",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5477",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4487041-arthur-j-gallagher-stock-growth-momentum-compelling-setup-2022"
+            }
+        }
+    ]
+}

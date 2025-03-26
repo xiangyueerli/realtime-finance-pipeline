@@ -1,0 +1,190 @@
+{
+    "data": [
+        {
+            "id": "4229699",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-12-21T14:39:03-05:00",
+                "isLockedPro": false,
+                "commentCount": 35,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "It Ain't Cheap, But I Like WEC Energy Group",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "98446",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "2242",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "202",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4229699-aint-cheap-i-like-wec-energy-group"
+            }
+        },
+        {
+            "id": "4205717",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-09-12T06:52:47-04:00",
+                "isLockedPro": false,
+                "commentCount": 83,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "WEC Energy Group Inc. And NextEra Energy Inc.: My 2 Favorite Utility Companies, But I Hate Their Stocks",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23179",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "202",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4205717-wec-energy-group-inc-and-nextera-energy-inc-2-favorite-utility-companies-i-hate-stocks"
+            }
+        },
+        {
+            "id": "4149225",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-02-21T22:59:48-05:00",
+                "isLockedPro": false,
+                "commentCount": 11,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "After A 13% Drop It's Time To Look Again At WEC Energy Group",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "80836",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "202",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4149225-after-13-percent-drop-time-to-look-again-wec-energy-group"
+            }
+        },
+        {
+            "id": "4145526",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-02-12T02:25:59-05:00",
+                "isLockedPro": false,
+                "commentCount": 77,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Portfolio Reset: 2 Utilities Added",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "40591",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "238895",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "202",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4145526-portfolio-reset-2-utilities-added"
+            }
+        }
+    ]
+}

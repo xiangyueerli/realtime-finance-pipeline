@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "2850726",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-01-27T14:41:57-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Idexx: The Growth Is There, The Moat Is There, But The Value Probably Isn't",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "63893",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "149566",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3595",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2850726-idexx-the-growth-is-there-the-moat-is-there-but-the-value-probably-isnt"
+            }
+        }
+    ]
+}

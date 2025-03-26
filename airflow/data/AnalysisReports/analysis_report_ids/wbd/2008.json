@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "105254",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-11-11T03:19:11-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Discovery Communications: Resilience Speaks to the Strength of Cable",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21562",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5332",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/105254-discovery-communications-resilience-speaks-to-the-strength-of-cable"
+            }
+        }
+    ]
+}

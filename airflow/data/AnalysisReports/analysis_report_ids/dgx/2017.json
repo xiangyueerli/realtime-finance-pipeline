@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4116462",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-10-25T16:42:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Quest Diagnostics Agrees To Acquire Cleveland HeartLab",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101421",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3302",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4116462-quest-diagnostics-agrees-to-acquire-cleveland-heartlab"
+            }
+        }
+    ]
+}

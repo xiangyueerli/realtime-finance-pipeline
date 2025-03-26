@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "58013",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-12-20T13:49:10-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Carnival Beats Estimates on Lower Net Income",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21287",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2906",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/58013-carnival-beats-estimates-on-lower-net-income"
+            }
+        }
+    ]
+}

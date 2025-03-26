@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "44183",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-08-10T15:32:42-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ashland: Sell-off Comes Out of Nowhere",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20073",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3112",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/44183-ashland-sell-off-comes-out-of-nowhere"
+            }
+        }
+    ]
+}

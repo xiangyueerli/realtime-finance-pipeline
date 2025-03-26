@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "3984853",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-06-29T08:44:31-04:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Live Nation: The Best Way To Invest In Live Entertainment, But At What Cost?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "51362",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4179",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/3984853-live-nation-best-way-to-invest-in-live-entertainment-what-cost"
+            }
+        }
+    ]
+}

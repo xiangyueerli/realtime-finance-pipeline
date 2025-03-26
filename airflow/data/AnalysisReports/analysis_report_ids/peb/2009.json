@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "177392",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-12-09T13:21:57-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pebblebrook Hotel Trust: The Kind of Hotel Stock I Like",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21481",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "15133",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/177392-pebblebrook-hotel-trust-the-kind-of-hotel-stock-i-like"
+            }
+        },
+        {
+            "id": "176371",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-12-07T06:25:57-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pebblebrook Hotel Trust IPO Plans to Invest in Luxury Hotel Properties",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20168",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "15133",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/176371-pebblebrook-hotel-trust-ipo-plans-to-invest-in-luxury-hotel-properties"
+            }
+        }
+    ]
+}

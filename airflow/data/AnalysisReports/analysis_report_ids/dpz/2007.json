@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "27919",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-02-23T09:30:37-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Analysts Missed the Boat With Domino's Pizza",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20099",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2557",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/27919-analysts-missed-the-boat-with-dominos-pizza"
+            }
+        }
+    ]
+}

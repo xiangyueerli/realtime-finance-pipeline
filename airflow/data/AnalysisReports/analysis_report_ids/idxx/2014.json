@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "2492925",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-09-14T03:31:53-04:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Animal Spirits Alive At IDEXX Labs",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "27671",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3595",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2492925-animal-spirits-alive-at-idexx-labs"
+            }
+        }
+    ]
+}

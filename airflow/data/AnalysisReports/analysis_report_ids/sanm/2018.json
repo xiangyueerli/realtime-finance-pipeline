@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4158544",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-03-23T15:03:49-04:00",
+                "isLockedPro": false,
+                "commentCount": 81,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Value Stocks In Short Supply - The Only 2 I Would Take",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23944",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2950",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4158544-value-stocks-in-short-supply-only-2-i-take"
+            }
+        }
+    ]
+}

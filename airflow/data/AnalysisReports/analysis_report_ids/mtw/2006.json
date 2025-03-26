@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "13124",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-07-06T09:52:09-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Catalysts that Make Manitowoc Worth a Good, Hard Look (MTW)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20142",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2796",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/13124-catalysts-that-make-manitowoc-worth-a-good-hard-look-mtw"
+            }
+        }
+    ]
+}

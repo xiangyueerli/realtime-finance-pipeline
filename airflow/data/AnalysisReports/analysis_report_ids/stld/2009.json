@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "161067",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-09-11T09:58:18-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Steel Dynamics Increases Guidance but Still Waiting for Non-Residential Building and Stimulus",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21950",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2888",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/161067-steel-dynamics-increases-guidance-but-still-waiting-for-non-residential-building-and-stimulus"
+            }
+        }
+    ]
+}

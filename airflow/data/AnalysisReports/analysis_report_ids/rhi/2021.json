@@ -1,0 +1,200 @@
+{
+    "data": [
+        {
+            "id": "4456753",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-09-23T12:03:37-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1267593738/image_1267593738.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Robert Half: Much To Admire, But The Risk-Reward Isn't Compelling",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105843",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "342550",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2580",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4456753-robert-half-much-to-admire-but-the-risk-reward-isnt-compelling"
+            }
+        },
+        {
+            "id": "4437899",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-07-05T13:06:05-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1262682182/image_1262682182.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Robert Half International: An Overlooked Dividend Growth Gem",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106076",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "332016",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2580",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4437899-robert-half-international-an-overlooked-dividend-growth-gem-rhi"
+            }
+        },
+        {
+            "id": "4421626",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-04-27T13:26:43-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1227412970/image_1227412970.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Robert Half: Solid Execution And A Promising Outlook, But Value-Conscious Investors Should Start Tightening Their Seat Belts",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105843",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "322969",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2580",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4421626-robert-half-solid-execution-value-conscious-investors-should-start-trimming"
+            }
+        },
+        {
+            "id": "4404397",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-02-08T15:49:45-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Robert Half International: A Reliable Proxy To Capitalize On The U.S. Employment Market Recovery",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105843",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "312330",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2580",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4404397-robert-half-international-reliable-proxy-to-capitalize-on-u-s-employment-market-recovery"
+            }
+        }
+    ]
+}

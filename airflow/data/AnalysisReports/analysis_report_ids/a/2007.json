@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "44500",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-08-15T03:34:09-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Agilent Posts Q3 Miss; Shares Sink After Hours",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20293",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2087",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/44500-agilent-posts-q3-miss-shares-sink-after-hours"
+            }
+        }
+    ]
+}

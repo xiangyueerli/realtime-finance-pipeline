@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "2909696",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-02-12T02:59:05-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "ModernGraham Quarterly Valuation Of TE Connectivity Limited",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23471",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8012",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2909696-moderngraham-quarterly-valuation-of-te-connectivity-limited"
+            }
+        }
+    ]
+}

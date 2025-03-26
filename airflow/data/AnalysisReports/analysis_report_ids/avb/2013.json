@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "1136291",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-01-28T02:43:43-05:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Apartment Owner/Developer AvalonBay Communities Is A Secular Grower In Today's Economy",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21305",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3711",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/1136291-apartment-owner-developer-avalonbay-communities-is-a-secular-grower-in-todays-economy"
+            }
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4471715",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-11-24T06:49:21-05:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/680418586/image_680418586.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Fossil's Plan To Become A Digital-First Organization Could Make Stock Spike By 50%",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106168",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "350452",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1303",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4471715-fossil-digital-first-organization-stock-spike-50-percent"
+            }
+        },
+        {
+            "id": "4442962",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-07-30T05:10:24-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1249041775/image_1249041775.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Fossil Group: Still Watching, Not Carrying",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "335202",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1303",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4442962-fossil-group-still-watching-not-carrying"
+            }
+        },
+        {
+            "id": "4415072",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-03-19T13:06:02-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Despite Its Recent Correction, Fossil Remains Unattractive",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "38631",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "317858",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1303",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4415072-despite-recent-correction-fossil-remains-unattractive"
+            }
+        }
+    ]
+}

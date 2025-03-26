@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "20905",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-11-20T05:13:03-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Autodesk Stock Jumps On What Its CEO Omitted",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20307",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2273",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/20905-autodesk-stock-jumps-on-what-its-ceo-omitted"
+            }
+        },
+        {
+            "id": "15770",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-08-21T08:13:46-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Autodesk CEO Comments on Voluntary Review of Stock Options Granting Practices",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20168",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2273",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/15770-autodesk-ceo-comments-on-voluntary-review-of-stock-options-granting-practices"
+            }
+        }
+    ]
+}

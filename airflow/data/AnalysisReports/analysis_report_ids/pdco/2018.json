@@ -1,0 +1,195 @@
+{
+    "data": [
+        {
+            "id": "4200704",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-08-20T18:21:15-04:00",
+                "isLockedPro": false,
+                "commentCount": 39,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Patterson Companies Is A Value Trap",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103739",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "239364",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2173",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4200704-patterson-companies-is-value-trap"
+            }
+        },
+        {
+            "id": "4189259",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-07-23T15:45:28-04:00",
+                "isLockedPro": false,
+                "commentCount": 23,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Patterson Companies Is Worth A Look",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103296",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "238560",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2173",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4189259-patterson-companies-is-worth-look"
+            }
+        },
+        {
+            "id": "4184436",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-06-28T06:39:16-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Patterson Companies: Should You Buy This Medical Supplier's 4.2% Yield?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103519",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2173",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4184436-patterson-companies-should-you-buy-this-medical-suppliers-4_2-percent-yield"
+            }
+        },
+        {
+            "id": "4162835",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-04-13T09:01:11-04:00",
+                "isLockedPro": false,
+                "commentCount": 17,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Patterson Companies: A Severely Punished Stock On Its Way To Undervaluation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102404",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "14145",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2173",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4162835-patterson-companies-severely-punished-stock-on-way-to-undervaluation"
+            }
+        }
+    ]
+}

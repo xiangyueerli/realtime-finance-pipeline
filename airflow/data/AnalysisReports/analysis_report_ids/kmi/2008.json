@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "110215",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-12-11T04:07:09-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "El Paso Debt Deal Shows High Yield Market Is Not Dead, Just Expensive",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20149",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "86849",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "220",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/110215-el-paso-debt-deal-shows-high-yield-market-is-not-dead-just-expensive"
+            }
+        }
+    ]
+}

@@ -1,0 +1,200 @@
+{
+    "data": [
+        {
+            "id": "4476011",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-12-20T05:30:56-05:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/546439338/image_546439338.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Lincoln National's 36% CAGR Should Be On Your Christmas List",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105093",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "353001",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4905",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4476011-lincoln-national-should-be-on-your-christmas-list"
+            }
+        },
+        {
+            "id": "4455047",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-09-14T02:49:35-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/541146474/image_541146474.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Lincoln National - An Opportunity With 30% 3-Year CAGR",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105093",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "341245",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4905",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4455047-lincoln-national-stock-opportunity-with-30-percent-3-year-cagr"
+            }
+        },
+        {
+            "id": "4412727",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-03-10T05:22:49-05:00",
+                "isLockedPro": false,
+                "commentCount": 18,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Lincoln National: Despite Appreciation, A Great Company",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105093",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "315946",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4905",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4412727-lincoln-national-despite-appreciation-great-company"
+            }
+        },
+        {
+            "id": "4398062",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-01-10T07:24:10-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Why Lincoln National Corp. Is Poised To Thrive",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105703",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "308200",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4905",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4398062-why-lincoln-national-corp-is-poised-to-thrive"
+            }
+        }
+    ]
+}

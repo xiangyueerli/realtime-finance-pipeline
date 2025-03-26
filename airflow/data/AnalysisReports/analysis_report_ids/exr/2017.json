@@ -1,0 +1,146 @@
+{
+    "data": [
+        {
+            "id": "4101138",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-08-23T07:00:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 48,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The Extra Space Moat: Technology Advantage",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24223",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4259",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4101138-extra-space-moat-technology-advantage"
+            }
+        },
+        {
+            "id": "4053997",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-03-10T01:00:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 34,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Extra Space Storage: What Should Shareholders Expect Going Forward?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "70355",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4259",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4053997-extra-space-storage-what-should-shareholders-expect-going-forward"
+            }
+        },
+        {
+            "id": "4041841",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-02-02T03:47:38-05:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Extra Space Storage: A Self-Storage REIT Offering High Yield And Fast Dividend Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "89805",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4259",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4041841-extra-space-storage-self-storage-reit-offering-high-yield-and-fast-dividend-growth"
+            }
+        }
+    ]
+}

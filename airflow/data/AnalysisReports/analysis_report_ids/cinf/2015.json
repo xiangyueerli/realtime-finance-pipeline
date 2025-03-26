@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "3656706",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-11-06T09:54:11-05:00",
+                "isLockedPro": false,
+                "commentCount": 10,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dividend Aristocrats Part 20 Of 52: Cincinnati Financial",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "63883",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "7527",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3656706-dividend-aristocrats-part-20-of-52-cincinnati-financial"
+            }
+        },
+        {
+            "id": "3112846",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-04-28T17:41:50-04:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "My Favorite Financial Stock Offers 55 Consecutive Years Of Increasing Dividends",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "69695",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "7527",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3112846-my-favorite-financial-stock-offers-55-consecutive-years-of-increasing-dividends"
+            }
+        }
+    ]
+}

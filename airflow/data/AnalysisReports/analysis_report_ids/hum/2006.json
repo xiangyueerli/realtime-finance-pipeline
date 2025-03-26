@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "19532",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-10-31T04:12:36-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Medicare Enrollment Triples Humana's Q3 Profit",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20293",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4169",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/19532-medicare-enrollment-triples-humanas-q3-profit"
+            }
+        }
+    ]
+}

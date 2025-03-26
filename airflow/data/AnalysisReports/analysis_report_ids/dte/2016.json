@@ -1,0 +1,136 @@
+{
+    "data": [
+        {
+            "id": "4029435",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-12-09T09:40:49-05:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Arbitrage Opportunity In A 6% Yielding IPO",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "168",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4029435-arbitrage-opportunity-in-6-percent-yielding-ipo"
+            }
+        },
+        {
+            "id": "3986297",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-07-06T10:04:41-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "DTE Energy Moves Forward Under The Clean Power Plan Despite The U.S. Supreme Court's Hold",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24961",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "168",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3986297-dte-energy-moves-forward-under-clean-power-plan-despite-u-s-supreme-courts-hold"
+            }
+        },
+        {
+            "id": "3940416",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-03-01T12:23:11-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Warm Winter Weather Continues To Hurt DTE Energy's Short-Term Outlook",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24961",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "168",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3940416-warm-winter-weather-continues-to-hurt-dte-energys-short-term-outlook"
+            }
+        }
+    ]
+}

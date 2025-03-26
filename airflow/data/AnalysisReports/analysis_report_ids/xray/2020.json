@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4391678",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-11-26T08:11:56-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dentsply Sirona: Risk-Adjusted Valuation Is Warranted To Correct The Premium",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105793",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "302248",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2764",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4391678-dentsply-sirona-risk-adjusted-valuation-is-warranted-to-correct-premium"
+            }
+        }
+    ]
+}

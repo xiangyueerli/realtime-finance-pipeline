@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "2079313",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-03-11T18:41:39-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Cadence Design: System EDA And Asia-Pacific Should Lead To 25%+ Upside This Year",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23469",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "130592",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1948",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2079313-cadence-design-system-eda-and-asia-pacific-should-lead-to-25-percent-upside-this-year"
+            }
+        }
+    ]
+}

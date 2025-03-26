@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "17472",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-09-25T15:15:22-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Apache Corp.: Efficient Company, but Not a Wide Moat Stock",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20132",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "814",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/17472-apache-corp-efficient-company-but-not-a-wide-moat-stock"
+            }
+        }
+    ]
+}

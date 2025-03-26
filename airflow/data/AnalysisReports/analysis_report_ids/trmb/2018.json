@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "4212012",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-10-16T18:03:28-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Trimble Acquires Veltec For Onboard Fleet Telematics In Brazil",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101421",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2970",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4212012-trimble-acquires-veltec-for-onboard-fleet-telematics-in-brazil"
+            }
+        },
+        {
+            "id": "4165413",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-04-24T18:02:20-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Trimble To Acquire Viewpoint For Construction Software Buildout",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101421",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2970",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4165413-trimble-to-acquire-viewpoint-for-construction-software-buildout"
+            }
+        }
+    ]
+}

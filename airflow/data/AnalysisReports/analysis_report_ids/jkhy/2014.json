@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "2682025",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-11-15T08:20:15-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Jack Henry & Associates Offers High Growth And Trades At A Discount To Fair Value",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "68315",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "144926",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3078",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2682025-jack-henry-and-associates-offers-high-growth-and-trades-at-a-discount-to-fair-value"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "52209",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-10-31T09:37:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Transocean Tops Estimates on Increased Rig Rental Rates",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20181",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1447",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/52209-transocean-tops-estimates-on-increased-rig-rental-rates"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "194849",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-03-22T07:12:02-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Active ETFs: Next Evolutionary Step for ETFs \u2013 Ed McRedmond, SVP Invesco PowerShares",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23434",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8057",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/194849-active-etfs-next-evolutionary-step-for-etfs-ed-mcredmond-svp-invesco-powershares"
+            }
+        }
+    ]
+}

@@ -1,0 +1,200 @@
+{
+    "data": [
+        {
+            "id": "4464379",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-11-02T10:22:54-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1314086348/image_1314086348.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Invesco: Further Gains On The Cards",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "67113",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "347427",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8057",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4464379-invesco-further-gains-on-the-cards"
+            }
+        },
+        {
+            "id": "4449068",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-08-13T05:43:14-04:00",
+                "isLockedPro": false,
+                "commentCount": 17,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1240332759/image_1240332759.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Invesco: You Could 'Buy' This Business",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105093",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "337295",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8057",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4449068-invesco-you-could-buy-this-stock"
+            }
+        },
+        {
+            "id": "4427763",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-05-12T09:17:42-04:00",
+                "isLockedPro": false,
+                "commentCount": 22,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1314086348/image_1314086348.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Invesco: The QQQ Investment Manager Is An M&A Integration Story",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21702",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "324949",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8057",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4427763-invesco-stock-ivz-qqq-investment-manager-m-and-a-integration-story"
+            }
+        },
+        {
+            "id": "4402717",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-02-02T12:10:42-05:00",
+                "isLockedPro": false,
+                "commentCount": 24,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Invesco: Balanced Risk/Reward Despite A Strong Q4 2020",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105510",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "311598",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8057",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4402717-invesco-balanced-risk-reward-despite-strong-q4-2020"
+            }
+        }
+    ]
+}

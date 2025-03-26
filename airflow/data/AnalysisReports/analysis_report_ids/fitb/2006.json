@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "11300",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-05-30T11:55:34-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Attractive Valuation for Fifth Third Bancorp (FITB)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20124",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1620",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/11300-attractive-valuation-for-fifth-third-bancorp-fitb"
+            }
+        }
+    ]
+}

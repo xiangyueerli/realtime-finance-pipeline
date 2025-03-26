@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "157016",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-08-19T07:54:44-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "UDR / Kuwait Finance House Joint Venture to Target Key U.S. Markets",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4073",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/157016-udr-kuwait-finance-house-joint-venture-to-target-key-u-s-markets"
+            }
+        }
+    ]
+}

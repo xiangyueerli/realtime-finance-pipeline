@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "1399251",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-05-03T12:15:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 19,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Chesapeake Sells Another Marcellus Package At Low Valuation: Transaction Analysis",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "32971",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "217",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/1399251-chesapeake-sells-another-marcellus-package-at-low-valuation-transaction-analysis"
+            }
+        },
+        {
+            "id": "1137011",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-01-28T09:24:30-05:00",
+                "isLockedPro": false,
+                "commentCount": 18,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "EQT Corp. Operating Analysis: Marcellus Shale Production Growth To Continue Unabated In 2013",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "32971",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "217",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/1137011-eqt-corp-operating-analysis-marcellus-shale-production-growth-to-continue-unabated-in-2013"
+            }
+        }
+    ]
+}

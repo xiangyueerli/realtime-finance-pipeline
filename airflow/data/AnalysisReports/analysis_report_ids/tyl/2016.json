@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4030159",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-12-14T10:12:19-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Tyler Technologies: Odyssey, 2016 Legal Settlement, And Organic Growth Suggest 2017 Revenue Miss",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "95546",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "233441",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "10071",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4030159-tyler-technologies-odyssey-2016-legal-settlement-and-organic-growth-suggest-2017-revenue-miss"
+            }
+        },
+        {
+            "id": "3915206",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-02-23T07:00:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Down 30%, Tyler Technologies Still Has A Texas-Sized Valuation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "56112",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "10071",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3915206-down-30-percent-tyler-technologies-still-texas-sized-valuation"
+            }
+        }
+    ]
+}

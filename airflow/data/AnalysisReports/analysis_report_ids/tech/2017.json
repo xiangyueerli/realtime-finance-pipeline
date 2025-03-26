@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4104869",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-09-07T13:28:40-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Bio-Techne Acquires Trevigen In All Cash Deal",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101421",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "12709",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4104869-bio-techne-acquires-trevigen-in-all-cash-deal"
+            }
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "4018321",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-11-02T14:52:08-04:00",
+                "isLockedPro": false,
+                "commentCount": 52,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "A 5% Yield That Doesn't Get Much Safer Than This",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "173",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4018321-5-percent-yield-doesnt-get-much-safer-this"
+            }
+        },
+        {
+            "id": "3970966",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-05-03T23:09:49-04:00",
+                "isLockedPro": false,
+                "commentCount": 17,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "4.70% Is All You Get From Entergy Mortgage Bonds As You Hide From The Storm",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "173",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3970966-4_70-percent-is-all-you-get-from-entergy-mortgage-bonds-you-hide-from-storm"
+            }
+        }
+    ]
+}

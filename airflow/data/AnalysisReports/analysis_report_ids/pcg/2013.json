@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "1879901",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-12-05T10:47:35-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PG&E: A Risky 4.5% Yielder",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "43211",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1879901-pg-and-e-a-risky-4_5-percent-yielder"
+            }
+        },
+        {
+            "id": "1651082",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-08-22T10:45:27-04:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PG&E And California Utilities: Time To Move On Due To Negative Regulatory Environment",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "35111",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1651082-pg-and-e-and-california-utilities-time-to-move-on-due-to-negative-regulatory-environment"
+            }
+        }
+    ]
+}

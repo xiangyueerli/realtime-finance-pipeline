@@ -1,0 +1,190 @@
+{
+    "data": [
+        {
+            "id": "4204572",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-09-06T13:52:13-04:00",
+                "isLockedPro": false,
+                "commentCount": 29,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pitney Bowes: A Slow Return Of Some Mojo",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "87516",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "19454",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1949",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4204572-pitney-bowes-slow-return-of-mojo"
+            }
+        },
+        {
+            "id": "4185643",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-07-05T19:45:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 25,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pitney Bowes: Has The Falling Knife Hit The Floor?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "52212",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1949",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4185643-pitney-bowes-falling-knife-hit-floor"
+            }
+        },
+        {
+            "id": "4178490",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-05-31T12:58:58-04:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Small Cap Dividend Spotlight: Pitney Bowes",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102830",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1949",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4178490-small-cap-dividend-spotlight-pitney-bowes"
+            }
+        },
+        {
+            "id": "4169802",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-05-04T10:35:43-04:00",
+                "isLockedPro": false,
+                "commentCount": 24,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pitney Bowes: Deep Value And High Yield",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24849",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "14839",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1949",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4169802-pitney-bowes-deep-value-and-high-yield"
+            }
+        }
+    ]
+}

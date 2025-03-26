@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "1386311",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-04-30T16:41:31-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CME And ICE Earnings Previews: Exchanges Await Volume And Product Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "32001",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3228",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1386311-cme-and-ice-earnings-previews-exchanges-await-volume-and-product-growth"
+            }
+        }
+    ]
+}

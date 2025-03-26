@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "3178186",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-05-14T07:39:30-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Arch Capital Keeps Going While The Going Gets Tougher",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6264",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3178186-arch-capital-keeps-going-while-the-going-gets-tougher"
+            }
+        }
+    ]
+}

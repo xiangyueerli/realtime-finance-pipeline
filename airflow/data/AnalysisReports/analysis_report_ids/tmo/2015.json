@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "3351275",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-07-24T14:46:41-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Thermo Fisher Scientific Inc.: Portfolio Selection Using Reduced Form Default Probabilities",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "51072",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5074",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3351275-thermo-fisher-scientific-inc-portfolio-selection-using-reduced-form-default-probabilities"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "200935",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-04-26T18:06:51-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pool Corp. Narrows Losses, But Housing Downturn Continues to Drag Down Sales",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4496",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/200935-pool-corp-narrows-losses-but-housing-downturn-continues-to-drag-down-sales"
+            }
+        }
+    ]
+}

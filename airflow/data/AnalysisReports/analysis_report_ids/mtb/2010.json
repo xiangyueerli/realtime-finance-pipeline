@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "199558",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-04-19T17:54:11-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Improving Margins Prove Profitable for M&T Bank",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3310",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/199558-improving-margins-prove-profitable-for-m-and-t-bank"
+            }
+        }
+    ]
+}

@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4533732",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-08-12T17:33:29-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1347345879/image_1347345879.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Brighthouse Financial: We Do Not See Upside At This Time",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "65113",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "387415",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "576348",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4533732-brighthouse-financial-do-not-see-upside-at-this-time"
+            }
+        },
+        {
+            "id": "4507955",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-05-06T13:11:23-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1327128846/image_1327128846.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Brighthouse Financial: Cash Flow Growth A Key Consideration Going Forward",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "65113",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "372773",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "576348",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4507955-brighthouse-financial-cash-flow-growth-a-key-consideration-going-forward"
+            }
+        },
+        {
+            "id": "4490851",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-02-26T03:17:48-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1329543527/image_1329543527.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Brighthouse Financial: Further Growth Could Still Lie Ahead",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "65113",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "363243",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "576348",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4490851-brighthouse-financial-q4-2021-earnings-further-growth-could-still-lie-ahead"
+            }
+        }
+    ]
+}

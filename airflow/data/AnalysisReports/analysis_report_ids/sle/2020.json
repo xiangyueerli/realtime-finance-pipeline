@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4336421",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-04-07T11:00:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 21,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Surge At Super League As Stay At Home Orders Go Coast To Coast",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20809",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "269072",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "586785",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4336421-surge-super-league-stay-home-orders-go-coast-to-coast"
+            }
+        }
+    ]
+}

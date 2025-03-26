@@ -1,0 +1,62 @@
+{
+    "data": [
+        {
+            "id": "2677875",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-11-14T09:30:59-05:00",
+                "isLockedPro": false,
+                "commentCount": 14,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Here's Why Ametek Inc. Is An S&P 500 Company With Accounting Concerns And 30-50% Downside",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23552",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "227932",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6520",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        },
+                        {
+                            "id": "49641",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/2677875-heres-why-ametek-inc-is-an-s-and-p-500-company-with-accounting-concerns-and-30minus-50-percent-downside"
+            }
+        }
+    ]
+}

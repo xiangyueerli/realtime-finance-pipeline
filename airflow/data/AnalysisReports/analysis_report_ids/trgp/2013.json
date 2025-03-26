@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "1509642",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-06-19T06:22:23-04:00",
+                "isLockedPro": false,
+                "commentCount": 15,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Targa Resources For Supercharged MLP Dividend Growth And No Tax Headaches",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20998",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "17085",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1509642-targa-resources-for-supercharged-mlp-dividend-growth-and-no-tax-headaches"
+            }
+        }
+    ]
+}

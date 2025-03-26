@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4029566",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-12-09T14:53:09-05:00",
+                "isLockedPro": false,
+                "commentCount": 19,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Real Estate Review: REITs And Homebuilders Surge 4% As Trump Euphoria Continues",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "98286",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3338",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4029566-real-estate-review-reits-and-homebuilders-surge-4-percent-trump-euphoria-continues"
+            }
+        }
+    ]
+}

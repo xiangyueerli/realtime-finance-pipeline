@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "3488596",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-09-03T14:33:20-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Leidos Holdings Gets No Love Despite Large Wins And Bigger Backlog",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21820",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "161782",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "112052",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3488596-leidos-holdings-gets-no-love-despite-large-wins-and-bigger-backlog"
+            }
+        }
+    ]
+}

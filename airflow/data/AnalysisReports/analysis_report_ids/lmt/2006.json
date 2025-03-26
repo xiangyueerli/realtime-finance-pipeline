@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "17659",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-09-28T07:37:10-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Growing Competition to Be First Company to Offer Affordable, Private, Space Tourism",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20181",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1835",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/17659-growing-competition-to-be-first-company-to-offer-affordable-private-space-tourism"
+            }
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4249595",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-03-18T18:03:41-04:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Uncertainty For NiSource Due To Merrimack Recovery",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "38191",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "24165",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "183",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4249595-uncertainty-for-nisource-due-to-merrimack-recovery"
+            }
+        },
+        {
+            "id": "4234834",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-01-22T17:23:11-05:00",
+                "isLockedPro": false,
+                "commentCount": 35,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "NiSource Preferred Stock IPO: Take A Look At This 6.5% Yielder",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "4864",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "183",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4234834-nisource-preferred-stock-ipo-take-look-this-6_5-percent-yielder"
+            }
+        }
+    ]
+}

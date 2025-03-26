@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "3980193",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-06-06T13:40:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Billion-Dollar Unicorns: Moderna Therapeutics A Promising, Unproven Bet",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20521",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "586083",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3980193-billion-dollar-unicorns-moderna-therapeutics-promising-unproven-bet"
+            }
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "276888",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-06-28T04:15:20-04:00",
+                "isLockedPro": false,
+                "commentCount": 23,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Extra Space Storage: Weather Economic Storms With a Strong Anchor REIT",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24223",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4259",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/276888-extra-space-storage-weather-economic-storms-with-a-strong-anchor-reit"
+            }
+        },
+        {
+            "id": "249541",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-01-30T07:24:03-05:00",
+                "isLockedPro": false,
+                "commentCount": 18,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Extra Storage Space: Diversify Your Portfolio With a Self-Storage Leader",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24223",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "91719",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4259",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/249541-extra-storage-space-diversify-your-portfolio-with-a-self-storage-leader"
+            }
+        }
+    ]
+}

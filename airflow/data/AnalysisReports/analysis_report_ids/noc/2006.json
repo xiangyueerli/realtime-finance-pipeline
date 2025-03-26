@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "12756",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-06-29T12:22:30-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "A Quick Technical Look at Northrop Grumman (NOC)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20142",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1838",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/12756-a-quick-technical-look-at-northrop-grumman-noc"
+            }
+        }
+    ]
+}

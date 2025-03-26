@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "52188",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-10-31T07:53:51-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Clorox to Buy Burt's Bees for $925M; Tops Earnings Estimates",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20181",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3271",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/52188-clorox-to-buy-burts-bees-for-925m-tops-earnings-estimates"
+            }
+        }
+    ]
+}

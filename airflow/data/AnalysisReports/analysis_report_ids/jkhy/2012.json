@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "1029141",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-11-26T17:36:43-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Jack Henry: A Dividend Achiever Flying Below The Radar Screen",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "27331",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3078",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1029141-jack-henry-a-dividend-achiever-flying-below-the-radar-screen"
+            }
+        }
+    ]
+}

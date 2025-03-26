@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "55267",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-11-26T06:11:42-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Williams Companies: Long Term Buy in a Weak Market?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21199",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1357",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/55267-williams-companies-long-term-buy-in-a-weak-market"
+            }
+        }
+    ]
+}

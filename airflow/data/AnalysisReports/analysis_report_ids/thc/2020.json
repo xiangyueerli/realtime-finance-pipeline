@@ -1,0 +1,110 @@
+{
+    "data": [
+        {
+            "id": "4374807",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-09-16T21:03:27-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Tenet Healthcare: A Great Play In The Healthcare Space",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20599",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "292719",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4044",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4374807-tenet-healthcare-great-play-in-healthcare-space"
+            }
+        },
+        {
+            "id": "4336398",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-04-07T09:01:46-04:00",
+                "isLockedPro": false,
+                "commentCount": 121,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Strategy For Buying Stocks At A 15-20% Discount",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20173",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "269127",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "269128",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "269129",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4044",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4336398-strategy-for-buying-stocks-15minus-20-percent-discount"
+            }
+        }
+    ]
+}

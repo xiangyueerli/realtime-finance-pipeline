@@ -1,0 +1,212 @@
+{
+    "data": [
+        {
+            "id": "4393045",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-12-04T12:48:06-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "News Corp.: Advertising Business Continues To Disappoint",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102875",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "303585",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "303586",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "110",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4393045-news-corp-advertising-business-continues-to-disappoint"
+            }
+        },
+        {
+            "id": "4370804",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-08-26T06:46:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "News Corporation: Forget About A Recovery In The Near Term",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102875",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "289834",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "289835",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "110",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4370804-news-corporation-forget-recovery-in-near-term"
+            }
+        },
+        {
+            "id": "4370096",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-08-21T08:00:43-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "News Corp. Has Offered Value For Years, Now Several Catalysts Could Unlock It",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24324",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "289000",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "289001",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "110",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4370096-news-corp-offered-value-for-years-now-several-catalysts-unlock"
+            }
+        },
+        {
+            "id": "4361889",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-07-29T14:41:24-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "News Corporation Is An Australian Growth Story And Needs To Also Focus On Legacy Strengths",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "50361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "286040",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "110",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4361889-news-corporation-is-australian-growth-story-and-needs-to-also-focus-on-legacy-strengths"
+            }
+        }
+    ]
+}

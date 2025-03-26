@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "4209606",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-10-03T10:18:47-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CMS Energy Corporation: This 5.875% Baby Bond Has Begun Trading On The NYSE",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "162",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4209606-cms-energy-corporation-this-5_875-percent-baby-bond-begun-trading-on-nyse"
+            }
+        },
+        {
+            "id": "4156227",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-03-14T08:56:13-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CMS Energy Corporation: This 5.625% Baby Bond Started Trading On The NYSE",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "162",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4156227-cms-energy-corporation-this-5_625-percent-baby-bond-started-trading-on-nyse"
+            }
+        }
+    ]
+}

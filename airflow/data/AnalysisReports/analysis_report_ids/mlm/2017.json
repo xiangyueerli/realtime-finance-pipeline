@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4073670",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-05-17T09:05:18-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Martin Marietta Materials Already Pricing In A Lot Of Things Going Right",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24361",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4112",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4073670-martin-marietta-materials-already-pricing-in-lot-of-things-going-right"
+            }
+        }
+    ]
+}

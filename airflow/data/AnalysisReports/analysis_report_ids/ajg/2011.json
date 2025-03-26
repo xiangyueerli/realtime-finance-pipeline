@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "292865",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-09-11T03:49:30-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Profit From Arthur J. Gallagher & Co. With Options And Dividends",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22561",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5477",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/292865-profit-from-arthur-j-gallagher-and-co-with-options-and-dividends"
+            }
+        }
+    ]
+}

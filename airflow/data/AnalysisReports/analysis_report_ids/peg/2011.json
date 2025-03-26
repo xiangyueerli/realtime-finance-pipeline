@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "284612",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-08-04T11:58:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "PSEG Beats Estimates, Positioned as Clean Energy Supplier",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "187",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/284612-pseg-beats-estimates-positioned-as-clean-energy-supplier"
+            }
+        }
+    ]
+}

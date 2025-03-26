@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "4134538",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-12-30T13:28:18-05:00",
+                "isLockedPro": false,
+                "commentCount": 18,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "How Safe Is The Dividend Of Sunoco LP?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "38631",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1950",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4134538-how-safe-is-dividend-of-sunoco-lp"
+            }
+        },
+        {
+            "id": "4053744",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-03-09T12:39:26-05:00",
+                "isLockedPro": false,
+                "commentCount": 90,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Thursday - Oil Failure Drags Down The Markets",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20173",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1950",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4053744-thursday-oil-failure-drags-down-markets"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4072574",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-05-12T08:07:49-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "How To Use Market Maker Hedging-Derived Price Forecasts",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23468",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "99921",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4072574-how-to-use-market-maker-hedging-derived-price-forecasts"
+            }
+        }
+    ]
+}

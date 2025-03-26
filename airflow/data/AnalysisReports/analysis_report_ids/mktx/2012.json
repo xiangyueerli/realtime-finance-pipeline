@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "1084521",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-12-27T14:34:50-05:00",
+                "isLockedPro": false,
+                "commentCount": 62,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Get Rich From Retiring Baby Boomers With This Little-Known Stock",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23899",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "9263",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1084521-get-rich-from-retiring-baby-boomers-with-this-little-known-stock"
+            }
+        },
+        {
+            "id": "611971",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-05-23T11:42:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "What Stock Is The Next Priceline.com?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "26241",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "9263",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/611971-what-stock-is-the-next-priceline-com"
+            }
+        }
+    ]
+}

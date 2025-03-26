@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "799141",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-08-10T16:40:59-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Teradyne: An Undervalued Market Leader With High Growth Potential, Margins, And FCF",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "34111",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2071",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/799141-teradyne-an-undervalued-market-leader-with-high-growth-potential-margins-and-fcf"
+            }
+        },
+        {
+            "id": "703891",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-07-05T14:40:41-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "A Cheap, Cash Rich Tech Stock With Increasing Earnings Estimates Is A Bargain",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23762",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "103438",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2071",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/703891-a-cheap-cash-rich-tech-stock-with-increasing-earnings-estimates-is-a-bargain"
+            }
+        }
+    ]
+}

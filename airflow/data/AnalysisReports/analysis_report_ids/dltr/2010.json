@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "238094",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-11-22T10:33:14-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dollar Tree Beats on Solid Q3 Sales",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2168",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/238094-dollar-tree-beats-on-solid-q3-sales"
+            }
+        }
+    ]
+}

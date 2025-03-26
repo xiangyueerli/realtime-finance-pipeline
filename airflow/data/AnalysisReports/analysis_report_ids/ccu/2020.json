@@ -1,0 +1,106 @@
+{
+    "data": [
+        {
+            "id": "4361680",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-07-29T04:56:34-04:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ambev And CCU Valued On Recent Transaction Multiples",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105290",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "285991",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "285992",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "138621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4361680-ambev-and-ccu-valued-on-recent-transaction-multiples"
+            }
+        },
+        {
+            "id": "4356856",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-07-02T23:02:22-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Compania Cervecerias Unidas S.A.: A Fairly Valued Beverage Company",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105290",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "282456",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "138621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4356856-compania-cervecerias-unidas-s-fairly-valued-beverage-company"
+            }
+        }
+    ]
+}

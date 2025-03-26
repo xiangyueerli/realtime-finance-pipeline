@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4280053",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-08-01T09:00:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "FTC Goes 1 For 2: Equifax Board That Did Not Find Insider Trading Should Not Be Relied On To Review Tougher Issues",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104477",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "55485",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4022",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4280053-ftc-goes-1-for-2-equifax-board-not-find-insider-trading-should-not-be-relied-on-to-review"
+            }
+        },
+        {
+            "id": "4257507",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-04-28T14:06:55-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Equifax Acquires PayNet For Credit Underwriting Database",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101421",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "33949",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4022",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4257507-equifax-acquires-paynet-for-credit-underwriting-database"
+            }
+        }
+    ]
+}

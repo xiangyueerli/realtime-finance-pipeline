@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "3716776",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-11-27T11:58:43-05:00",
+                "isLockedPro": false,
+                "commentCount": 22,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Looking For Value In The Oil And Gas Industry: Ecopetrol",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "96886",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2890",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3716776-looking-for-value-in-oil-and-gas-industry-ecopetrol"
+            }
+        },
+        {
+            "id": "2958806",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-02-27T11:07:45-05:00",
+                "isLockedPro": false,
+                "commentCount": 39,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ecopetrol Could Be The Hidden Bull Of Big Oil",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "82896",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "151344",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2890",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2958806-ecopetrol-could-be-the-hidden-bull-of-big-oil"
+            }
+        }
+    ]
+}

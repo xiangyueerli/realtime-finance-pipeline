@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "116079",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-01-23T02:31:46-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ecopetrol's Partnership with Glencore in Cartagena Complicated by Global Crisis",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22469",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2890",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/116079-ecopetrols-partnership-with-glencore-in-cartagena-complicated-by-global-crisis"
+            }
+        }
+    ]
+}

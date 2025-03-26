@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4563433",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-12-09T01:58:29-05:00",
+                "isLockedPro": false,
+                "commentCount": 18,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1397787204/image_1397787204.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "SLM Corporation: Sallie Mae Can Likely Wait And Withstand Economic Volatility",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105897",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "424852",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3153",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4563433-slm-corporation-stock-sallie-mae-hold"
+            }
+        }
+    ]
+}

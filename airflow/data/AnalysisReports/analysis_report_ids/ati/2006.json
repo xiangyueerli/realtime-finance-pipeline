@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "8978",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-04-12T02:36:46-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "An ATI Downgrade Worth Noting: Overbought Stock, Prescient Analyst (ATI)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20096",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "217366",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2607",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/8978-an-ati-downgrade-worth-noting-overbought-stock-prescient-analyst-ati"
+            }
+        }
+    ]
+}

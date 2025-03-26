@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "3536926",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-09-28T09:24:17-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Public Utility Commission Decisions Will Determine The Future Of Investor Owned Utilities",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "63973",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3536926-public-utility-commission-decisions-will-determine-future-of-investor-owned-utilities"
+            }
+        },
+        {
+            "id": "3267765",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-06-18T11:51:15-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Despite Legal Troubles, PG&E In Best-Case Business Environment Long Term",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "27131",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "209",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3267765-despite-legal-troubles-pg-and-e-in-best-case-business-environment-long-term"
+            }
+        }
+    ]
+}

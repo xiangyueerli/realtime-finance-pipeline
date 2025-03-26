@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "313393",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-12-12T18:21:09-05:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "SL Green: A REIT Worth Buying Before The Herd",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24971",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2803",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/313393-sl-green-a-reit-worth-buying-before-the-herd"
+            }
+        }
+    ]
+}

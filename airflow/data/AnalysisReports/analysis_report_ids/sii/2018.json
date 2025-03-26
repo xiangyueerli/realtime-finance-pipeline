@@ -1,0 +1,163 @@
+{
+    "data": [
+        {
+            "id": "4228669",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-12-17T07:46:44-05:00",
+                "isLockedPro": false,
+                "commentCount": 17,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Sprott: Unjustified Sell-Off",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104504",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "400258",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "1819",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "604031",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4228669-sprott-unjustified-sell-off"
+            }
+        },
+        {
+            "id": "4200645",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-08-20T15:32:13-04:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Sprott: A Better Way To Play A Turnaround In The Precious Metals Market",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104504",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "400260",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "18794",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "604031",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4200645-sprott-better-way-to-play-turnaround-in-precious-metals-market"
+            }
+        },
+        {
+            "id": "4182559",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-06-19T09:51:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Sprott: A Portfolio Hedge That Yields 3.75%",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104504",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "400259",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "16529",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "604031",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4182559-sprott-portfolio-hedge-yields-3_75-percent"
+            }
+        }
+    ]
+}

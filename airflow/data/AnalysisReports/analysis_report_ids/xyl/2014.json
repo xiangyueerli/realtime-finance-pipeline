@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "2010091",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-02-11T04:03:11-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Xylem: 4 Different Insiders Have Sold Shares This Year",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25289",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "35407",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2010091-xylem-4-different-insiders-have-sold-shares-this-year"
+            }
+        }
+    ]
+}

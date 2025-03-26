@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "310652",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-11-29T03:09:09-05:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Marathon Petroleum Going Cheap After Pipeline Sale Sparks Sell-Off",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24710",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "95897",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "34887",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/310652-marathon-petroleum-going-cheap-after-pipeline-sale-sparks-sell-off"
+            }
+        }
+    ]
+}

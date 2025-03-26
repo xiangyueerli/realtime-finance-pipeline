@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "15518",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-08-15T04:52:51-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "SunTrust Warns: Sign of the Times for U.S. Banks",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20071",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3311",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/15518-suntrust-warns-sign-of-the-times-for-u-s-banks"
+            }
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+{
+    "data": [
+        {
+            "id": "4305424",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-11-11T11:42:30-05:00",
+                "isLockedPro": false,
+                "commentCount": 28,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Assessing Brighthouse Financial At 0.3x Book Value",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22201",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "80192",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "576348",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4305424-assessing-brighthouse-financial-0_3x-book-value"
+            }
+        },
+        {
+            "id": "4282049",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-08-06T11:24:29-04:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "A Good In-Line Quarter From Brighthouse",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21968",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "57991",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "576348",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4282049-good-in-line-quarter-from-brighthouse"
+            }
+        },
+        {
+            "id": "4267589",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-05-31T13:30:34-04:00",
+                "isLockedPro": false,
+                "commentCount": 30,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Brighthouse Financial: Low Risk, High Uncertainty",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105268",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "40819",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "40820",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "40821",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "576348",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4267589-brighthouse-financial-low-risk-high-uncertainty"
+            }
+        },
+        {
+            "id": "4242947",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-02-21T13:28:32-05:00",
+                "isLockedPro": false,
+                "commentCount": 35,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "A Little Brighthouse At The End Of This Tunnel",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21968",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "8625",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "576348",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4242947-little-brighthouse-end-of-this-tunnel"
+            }
+        }
+    ]
+}

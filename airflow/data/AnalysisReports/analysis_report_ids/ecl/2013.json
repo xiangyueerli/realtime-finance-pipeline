@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "1858201",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-11-22T13:51:01-05:00",
+                "isLockedPro": false,
+                "commentCount": 30,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Apache: Fracking Without Fresh Water To Cut Costs",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21702",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3673",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1858201-apache-fracking-without-fresh-water-to-cut-costs"
+            }
+        },
+        {
+            "id": "1749482",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-10-16T17:43:02-04:00",
+                "isLockedPro": false,
+                "commentCount": 13,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Ecolab: Why Bill Gates Owns 10% Of The Company",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21702",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "123356",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3673",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1749482-ecolab-why-bill-gates-owns-10-percent-of-the-company"
+            }
+        }
+    ]
+}

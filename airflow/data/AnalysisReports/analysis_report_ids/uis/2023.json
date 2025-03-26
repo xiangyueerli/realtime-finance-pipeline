@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4636075",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-09-19T13:51:48-04:00",
+                "isLockedPro": false,
+                "commentCount": 42,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1413884806/image_1413884806.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Unisys Aims For Next-Gen Solutions Growth And Employee Productivity Gains",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101421",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "486977",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2719",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4636075-unisys-aims-for-next-gen-solutions-growth-and-employee-productivity-gains"
+            }
+        },
+        {
+            "id": "4618057",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-07-19T08:42:26-04:00",
+                "isLockedPro": false,
+                "commentCount": 25,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1287493052/image_1287493052.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Unisys: Revenue Constrained, Stable Margins, With AI Prospects",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105503",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "471527",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2719",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4618057-unisys-revenue-constrained-stable-margins-with-ai-prospects"
+            }
+        },
+        {
+            "id": "4588794",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-03-20T14:25:59-04:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1401460590/image_1401460590.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Unisys Sees Tepid 2023 While It Pursues Next-Gen Solutions Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101421",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "445167",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2719",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4588794-unisys-sees-tepid-2023-while-it-pursues-next-gen-solutions-growth"
+            }
+        }
+    ]
+}

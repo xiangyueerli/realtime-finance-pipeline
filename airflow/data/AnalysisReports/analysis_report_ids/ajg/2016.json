@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "3876176",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-02-08T18:07:59-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Arthur J Gallagher Provides Safety Of Principle And A Fat Dividend",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "92086",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5477",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3876176-arthur-j-gallagher-provides-safety-of-principle-and-fat-dividend"
+            }
+        }
+    ]
+}

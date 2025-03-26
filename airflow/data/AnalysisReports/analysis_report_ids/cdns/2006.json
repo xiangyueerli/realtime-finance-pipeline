@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "19355",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-10-26T19:28:16-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Cadence Design Systems: Immune To the Semiconductor Inventory Glut",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20171",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1948",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/19355-cadence-design-systems-immune-to-the-semiconductor-inventory-glut"
+            }
+        }
+    ]
+}

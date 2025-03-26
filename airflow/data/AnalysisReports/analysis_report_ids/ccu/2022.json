@@ -1,0 +1,107 @@
+{
+    "data": [
+        {
+            "id": "4561822",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-12-01T16:31:29-05:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/504754220/image_504754220.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Compania Cervecerias Unidas: Holding Up Well After Weak Earnings",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "47521",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "423500",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "138621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4561822-compania-cervecerias-unidas-holding-up-well-after-weak-earnings"
+            }
+        },
+        {
+            "id": "4522225",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-07-07T12:44:52-04:00",
+                "isLockedPro": false,
+                "commentCount": 91,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/171237050/image_171237050.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Overblown Political Worries Have Driven Compania Cervecerias Unidas To An Absurdly Low Valuation",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22201",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "381690",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "138621",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "49641",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4522225-overblown-political-worries-have-driven-ccu-to-an-absurdly-low-valuation"
+            }
+        }
+    ]
+}

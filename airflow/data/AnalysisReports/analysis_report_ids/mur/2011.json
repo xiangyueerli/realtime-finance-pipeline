@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "306746",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2011-11-09T16:39:43-05:00",
+                "isLockedPro": false,
+                "commentCount": 4,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Murphy Oil: Rapidly Growing Production Means It's Significantly Undervalued",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23762",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "95572",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2896",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/306746-murphy-oil-rapidly-growing-production-means-its-significantly-undervalued"
+            }
+        }
+    ]
+}

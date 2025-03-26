@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "242566",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-12-19T04:48:21-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pentair to Buy Brazilian Water Filter Business; Earnings, Sales Expected to Grow in 2011",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23408",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8617",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/242566-pentair-to-buy-brazilian-water-filter-business-earnings-sales-expected-to-grow-in-2011"
+            }
+        },
+        {
+            "id": "182153",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-01-12T12:37:22-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pentair: Prime Candidate for a Dividend Hike in 2010",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22207",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "8617",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/182153-pentair-prime-candidate-for-a-dividend-hike-in-2010"
+            }
+        }
+    ]
+}

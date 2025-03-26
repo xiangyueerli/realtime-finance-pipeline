@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "62947",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-02-04T09:27:44-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Moore's Law's and Tech Stocks Like Computer Sciences",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21310",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3242",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/62947-moores-laws-and-tech-stocks-like-computer-sciences"
+            }
+        }
+    ]
+}

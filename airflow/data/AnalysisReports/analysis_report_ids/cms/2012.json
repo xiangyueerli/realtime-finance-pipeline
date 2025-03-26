@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "714221",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-07-11T07:58:50-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Consumers Energy Could Have Banner Year With Heat Wave Summer In Michigan",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21820",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "103636",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "162",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/714221-consumers-energy-could-have-banner-year-with-heat-wave-summer-in-michigan"
+            }
+        }
+    ]
+}

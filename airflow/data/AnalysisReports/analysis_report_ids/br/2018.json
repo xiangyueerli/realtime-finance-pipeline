@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4161451",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-04-06T12:23:38-04:00",
+                "isLockedPro": false,
+                "commentCount": 13,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Broadridge Finance: Have You Ever Heard Of Boring Growth?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21151",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1371",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4161451-broadridge-finance-you-ever-heard-of-boring-growth"
+            }
+        }
+    ]
+}

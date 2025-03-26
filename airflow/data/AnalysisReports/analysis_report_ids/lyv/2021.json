@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4440486",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-07-21T19:23:25-04:00",
+                "isLockedPro": false,
+                "commentCount": 35,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/84749102/image_84749102.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Live Nation Entertainment: The Company Will Bleed Money If We See Future Lockdowns",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106258",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "333947",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4179",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4440486-live-nation-entertainment-will-bleed-money-if-future-lockdowns-occur"
+            }
+        },
+        {
+            "id": "4412209",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-03-08T09:43:40-05:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Live Nation: A Risky Investment In Reopening Economies",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "21950",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "316386",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4179",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4412209-live-nation-risky-investment-reopening-economies"
+            }
+        }
+    ]
+}

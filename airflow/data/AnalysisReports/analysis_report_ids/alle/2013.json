@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "1892271",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-12-11T13:03:44-05:00",
+                "isLockedPro": false,
+                "commentCount": 11,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The Newly Spunoff Allegion Operates In A Stable And Large Industry",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "41741",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "126059",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "134901",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1892271-the-newly-spunoff-allegion-operates-in-a-stable-and-large-industry"
+            }
+        }
+    ]
+}

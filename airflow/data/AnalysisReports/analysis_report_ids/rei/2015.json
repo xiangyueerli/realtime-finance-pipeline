@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "3011606",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-03-19T16:44:23-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Key Takeaways From Ring Energy's Conference Call",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "69825",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "30687",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3011606-key-takeaways-from-ring-energys-conference-call"
+            }
+        }
+    ]
+}

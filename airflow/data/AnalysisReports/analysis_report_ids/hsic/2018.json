@@ -1,0 +1,107 @@
+{
+    "data": [
+        {
+            "id": "4208341",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-09-26T10:30:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 32,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Why We Believe Henry Schein's Upcoming Animal Health Spin-Off Will Unlock 30% To 50% Upside",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "23552",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "20226",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2611",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4208341-why-believe-henry-scheins-upcoming-animal-health-spin-off-will-unlock-30-percent-to-50"
+            }
+        },
+        {
+            "id": "4165689",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-04-25T13:00:08-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Henry Schein - What Buffett Would Call A Wonderful Company At A Fair Price",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "102404",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "14546",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2611",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4165689-henry-schein-what-buffett-call-wonderful-company-fair-price"
+            }
+        }
+    ]
+}

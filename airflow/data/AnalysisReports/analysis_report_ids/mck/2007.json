@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "35721",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-05-16T09:35:33-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "McKesson Corporation: Positive Earnings Surprise, Strong Balance Sheet",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20215",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "83804",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3385",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/35721-mckesson-corporation-positive-earnings-surprise-strong-balance-sheet"
+            }
+        }
+    ]
+}

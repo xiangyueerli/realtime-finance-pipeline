@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "3986865",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-07-08T08:34:35-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Atmos Energy Has A Great Outlook, But It Is Time To Take Profit In This Natural Gas Utility",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24961",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "212",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3986865-atmos-energy-great-outlook-is-time-to-take-profit-in-this-natural-gas-utility"
+            }
+        },
+        {
+            "id": "3915576",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-02-23T08:30:19-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Atmos Energy Outlook Gains Strength As Natural Gas Prices Remain Low",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24961",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "212",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3915576-atmos-energy-outlook-gains-strength-natural-gas-prices-remain-low"
+            }
+        }
+    ]
+}

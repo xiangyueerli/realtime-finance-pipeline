@@ -1,0 +1,102 @@
+{
+    "data": [
+        {
+            "id": "4222993",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-11-16T23:14:49-05:00",
+                "isLockedPro": false,
+                "commentCount": 70,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Cell Tower REITs: Carriers Push Ahead On 5G",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "98286",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1919",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4222993-cell-tower-reits-carriers-push-ahead-on-5g"
+            }
+        },
+        {
+            "id": "4134159",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-01-03T10:06:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 109,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Bill Stoller Positions For 2018: Ready For The Data Center REIT Rebound",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "70355",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "237866",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1919",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4134159-bill-stoller-positions-for-2018-ready-for-data-center-reit-rebound"
+            }
+        }
+    ]
+}

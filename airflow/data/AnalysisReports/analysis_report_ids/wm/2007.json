@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "51592",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-10-26T08:43:45-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Waste Management's Q3 Net Down, Misses; Lowers FY Outlook",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20069",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2148",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/51592-waste-managements-q3-net-down-misses-lowers-fy-outlook"
+            }
+        }
+    ]
+}

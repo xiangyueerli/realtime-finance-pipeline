@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "3272205",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-06-21T01:51:49-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Allegion: Underlying Strength Of Organic Growth, FCF To Drive Stock To $75",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "88106",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "157417",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "134901",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3272205-allegion-underlying-strength-of-organic-growth-fcf-to-drive-stock-to-75"
+            }
+        },
+        {
+            "id": "3258285",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2015-06-16T07:56:34-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Allegion PLC: Much More Than Currency Fluctuations Behind The Revenue Decline",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "83826",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "134901",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3258285-allegion-plc-much-more-than-currency-fluctuations-behind-the-revenue-decline"
+            }
+        }
+    ]
+}

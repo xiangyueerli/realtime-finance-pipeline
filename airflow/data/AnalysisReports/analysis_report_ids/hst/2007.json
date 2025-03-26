@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "49460",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-10-10T08:42:35-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Host Hotels & Resorts Gains On Strong Forecast",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20181",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3338",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/49460-host-hotels-and-resorts-gains-on-strong-forecast"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "177375",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-12-09T11:52:13-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Constellation Energy Selected to Build Solar Project in Maryland",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20568",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "160",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/177375-constellation-energy-selected-to-build-solar-project-in-maryland"
+            }
+        }
+    ]
+}

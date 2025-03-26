@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4159242",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-03-27T15:09:57-04:00",
+                "isLockedPro": false,
+                "commentCount": 40,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "On New Information, I've Doubled My Share Price Target On P10 Holdings",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "65953",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "13591",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "612973",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4159242-on-new-information-doubled-share-price-target-on-p10-holdings"
+            }
+        }
+    ]
+}

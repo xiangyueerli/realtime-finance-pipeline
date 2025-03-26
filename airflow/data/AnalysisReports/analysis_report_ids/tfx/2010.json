@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "239961",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-12-03T15:37:06-05:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Just One Stock: A Healthcare-Focused Firm With 2.7% Yield, Good Cash Flow",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24198",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "91254",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4200",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/239961-just-one-stock-a-healthcare-focused-firm-with-2_7-percent-yield-good-cash-flow"
+            }
+        }
+    ]
+}

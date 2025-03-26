@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "2772775",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-12-23T11:04:39-05:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Keysight: Spin-Off Of HP's And Agilent's Former Electronic Measurement Business Enables Investment For Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "39591",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "147443",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "463145",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2772775-keysight-spin-off-of-hps-and-agilents-former-electronic-measurement-business-enables-investment-for-growth"
+            }
+        }
+    ]
+}

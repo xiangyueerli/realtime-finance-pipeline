@@ -1,0 +1,204 @@
+{
+    "data": [
+        {
+            "id": "4471150",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-11-22T07:00:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 83,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/517008320/image_517008320.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The Next GameStop: Stocks With The Potential For A Sizable Short Squeeze",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105600",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "350229",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "350230",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1644",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4471150-the-next-gamestop-stocks-potential-sizable-short-squeeze"
+            }
+        },
+        {
+            "id": "4460599",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-10-19T12:51:11-04:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/167106714/image_167106714.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dillard's Style: Leaner, Stronger, And Popular With Consumers",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106278",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "345576",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1644",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4460599-dillards-style-leaner-stronger-and-popular"
+            }
+        },
+        {
+            "id": "4444287",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-08-03T10:10:07-04:00",
+                "isLockedPro": false,
+                "commentCount": 17,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/962885818/image_962885818.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dillard's: A Fashionable Investment That Is Still In Style",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106278",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "335748",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1644",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4444287-dillards-investment-is-still-in-style"
+            }
+        },
+        {
+            "id": "4412078",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-03-07T14:06:58-05:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dillard's Valuation Is Comparatively High",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104171",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "316134",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1644",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4412078-dillards-stock-valuation-is-comparatively-high"
+            }
+        }
+    ]
+}

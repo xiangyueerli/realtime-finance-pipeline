@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "2759415",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-12-17T11:35:19-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Henry Schein: Big Player In A Fragmented Market",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "72165",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2611",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2759415-henry-schein-big-player-in-a-fragmented-market"
+            }
+        }
+    ]
+}

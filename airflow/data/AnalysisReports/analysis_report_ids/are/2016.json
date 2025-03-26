@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "4028262",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-12-05T11:43:49-05:00",
+                "isLockedPro": false,
+                "commentCount": 33,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Something Else For The Conservative Preferred Investor Offering A Nice Yield: Alexandria Real Estate Equities",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "101276",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4778",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4028262-something-else-for-conservative-preferred-investor-offering-nice-yield-alexandria-real-estate"
+            }
+        },
+        {
+            "id": "4006407",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-09-15T09:54:22-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Alexandria Real Estate: The Cream Rises To The Top",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "76785",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4778",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4006407-alexandria-real-estate-cream-rises-to-top"
+            }
+        }
+    ]
+}

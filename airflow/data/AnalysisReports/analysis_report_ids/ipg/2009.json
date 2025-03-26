@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "120142",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2009-02-12T04:55:26-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Interpublic's Internal Changes Should Offset Ad Marketplace Challenges - JPM",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22521",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1045",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/120142-interpublics-internal-changes-should-offset-ad-marketplace-challenges-jpm"
+            }
+        }
+    ]
+}

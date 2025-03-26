@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "3796546",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-01-07T13:24:00-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Pinnacle West: Moderately Overvalued, But An Extremely Safe Pick In The Utility Sector",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "76785",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "190",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/3796546-pinnacle-west-moderately-overvalued-extremely-safe-pick-in-utility-sector"
+            }
+        }
+    ]
+}

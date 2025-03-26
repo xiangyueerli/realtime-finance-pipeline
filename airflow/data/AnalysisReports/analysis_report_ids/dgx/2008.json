@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "80361",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-06-06T04:47:28-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Quest Diagnostics: As Recession-Proof as General Mills or Coke",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20501",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3302",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/80361-quest-diagnostics-as-recession-proof-as-general-mills-or-coke"
+            }
+        }
+    ]
+}

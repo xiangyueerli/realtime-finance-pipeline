@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "2629415",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-11-04T02:28:12-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Update: Allegion Q3 Earnings Solid, But Now We Have Valuation Issues",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "41741",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "134901",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2629415-update-allegion-q3-earnings-solid-but-now-we-have-valuation-issues"
+            }
+        }
+    ]
+}

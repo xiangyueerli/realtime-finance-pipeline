@@ -1,0 +1,163 @@
+{
+    "data": [
+        {
+            "id": "4562501",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-12-05T21:06:23-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/458985737/image_458985737.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Fox: Yes, Remains A 'Buy' Here",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105093",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "424123",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "425127",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "106862",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4562501-fox-stock-remains-buy"
+            }
+        },
+        {
+            "id": "4541110",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-09-15T02:06:01-04:00",
+                "isLockedPro": false,
+                "commentCount": 24,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/52004734/image_52004734.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Can You Actually 'Buy' Fox Corporation? Yes, You Can",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105093",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "409202",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "409203",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "106862",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4541110-fox-corporation-stock-buy"
+            }
+        },
+        {
+            "id": "4496724",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-03-21T04:48:54-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1131719162/image_1131719162.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Fox Corporation: Fundamentally Appealing",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "69675",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "366165",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "366166",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "106862",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4496724-fox-corporation-fundamentally-appealing"
+            }
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4391603",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2020-11-25T17:05:09-05:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Arthur J. Gallagher: Maintaining Its Sound Financials To Achieving Real Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105897",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "302219",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "5477",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4391603-arthur-j-gallagher-maintaining-sound-financials-to-achieving-real-growth"
+            }
+        }
+    ]
+}

@@ -1,0 +1,159 @@
+{
+    "data": [
+        {
+            "id": "4305735",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-11-12T11:58:49-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Invitation Homes Offers Solid Return",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103050",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "80776",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "572123",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4305735-invitation-homes-offers-solid-return"
+            }
+        },
+        {
+            "id": "4289209",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-09-02T15:23:04-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Comparison Of 3 Single-Family Rental REITs: American Homes 4 Rent, Invitation Homes, And Front Yard Residential",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104514",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "64370",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "64371",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "64372",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "572123",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4289209-comparison-of-3-single-family-rental-reits-american-homes-4-rent-invitation-homes-and-front"
+            }
+        },
+        {
+            "id": "4273045",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-07-01T19:58:42-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Invitation Homes: Strong Growth Outlook, But Wait For A Pullback",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103321",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "49148",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "572123",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4273045-invitation-homes-strong-growth-outlook-wait-for-pullback"
+            }
+        }
+    ]
+}

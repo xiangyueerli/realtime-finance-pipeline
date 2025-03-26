@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "222758",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2010-08-29T03:13:37-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Bernanke Tweaks QE Strategy: How Investors Can Keep It Simple",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22915",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "192",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/222758-bernanke-tweaks-qe-strategy-how-investors-can-keep-it-simple"
+            }
+        }
+    ]
+}

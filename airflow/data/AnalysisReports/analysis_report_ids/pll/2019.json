@@ -1,0 +1,155 @@
+{
+    "data": [
+        {
+            "id": "4305546",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-11-11T16:37:22-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Superior Economic Return Potential Makes Piedmont Lithium A Prime Takeover Candidate",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105191",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "80347",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "582955",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4305546-superior-economic-return-potential-makes-piedmont-lithium-prime-takeover-candidate"
+            }
+        },
+        {
+            "id": "4273552",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-07-05T11:20:58-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Piedmont Lithium Making Progress In Albemarle's And Livent's Backyard",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104473",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "49848",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "49849",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "582955",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4273552-piedmont-lithium-making-progress-in-albemarles-and-livents-backyard"
+            }
+        },
+        {
+            "id": "4255208",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-04-18T11:00:05-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Piedmont Lithium Limited: Targeting A Vertically Integrated Lithium Project In The World's Second Largest Auto Market",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105191",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "30903",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "582955",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4255208-piedmont-lithium-limited-targeting-vertically-integrated-lithium-project-in-worlds-second"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "1047771",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-12-05T18:25:42-05:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Mid-America Apartment Communities: REIT Yielding 4.4% And Outpacing Some Well-Known Names",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "27151",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4072",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1047771-mid-america-apartment-communities-reit-yielding-4_4-percent-and-outpacing-some-well-known-names"
+            }
+        }
+    ]
+}

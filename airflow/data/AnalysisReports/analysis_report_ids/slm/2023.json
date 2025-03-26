@@ -1,0 +1,155 @@
+{
+    "data": [
+        {
+            "id": "4650347",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-11-10T10:26:33-05:00",
+                "isLockedPro": false,
+                "commentCount": 9,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1419580307/image_1419580307.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "SLM Corporation: Don't Let The Q3 Results Fool You",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106656",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "500871",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3153",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4650347-slm-dont-let-q3-results-fool-you"
+            }
+        },
+        {
+            "id": "4629165",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-08-17T03:48:11-04:00",
+                "isLockedPro": false,
+                "commentCount": 13,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/465727260/image_465727260.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "SLM Corporation: High Dividend Yield, But Significant Price Rise Unlikely",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106722",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "478816",
+                            "type": "sentiment"
+                        },
+                        {
+                            "id": "478817",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3153",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4629165-slm-corporation-high-dividend-yield-but-significant-price-rise-unlikely"
+            }
+        },
+        {
+            "id": "4629035",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2023-08-16T16:22:37-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/684216488/image_684216488.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "SLM Corporation: Discounted Price Gives Way For A Buy Case",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "107085",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "478643",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3153",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4629035-slm-corporation-discounted-price-gives-way-for-a-buy-case"
+            }
+        }
+    ]
+}

@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "id": "4112926",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-10-11T11:45:12-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Gene Sequencing, The Driver Of Personalized Medicine",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "103547",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2130",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4112926-gene-sequencing-driver-of-personalized-medicine"
+            }
+        },
+        {
+            "id": "4034786",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-01-06T11:24:27-05:00",
+                "isLockedPro": false,
+                "commentCount": 34,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Illumina - 40% Correction Has Not De-Risked The Investment Thesis Enough",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2130",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4034786-illumina-40-percent-correction-not-de-risked-investment-thesis-enough"
+            }
+        }
+    ]
+}

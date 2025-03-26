@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "4296381",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2019-10-14T09:15:16-04:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Sell West Pharmaceutical Before The Needle-Free Technology Brings The Company Down",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "105432",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "71850",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2928",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4296381-sell-west-pharmaceutical-needle-free-technology-brings-company-down"
+            }
+        }
+    ]
+}

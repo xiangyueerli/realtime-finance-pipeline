@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4035897",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2017-01-11T08:03:10-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Dun & Bradstreet - Buying More Growth With Avention, As The Growth Strategy Still Has To Prove Itself",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "6142",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4035897-dun-and-bradstreet-buying-growth-avention-growth-strategy-still-to-prove"
+            }
+        }
+    ]
+}

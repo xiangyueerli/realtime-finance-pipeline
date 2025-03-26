@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "2097463",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2014-03-20T09:01:20-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "EPAM Systems Represents An Attractive Buying Opportunity For Ukraine Crisis Optimists",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "62293",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "131095",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "36182",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/2097463-epam-systems-represents-an-attractive-buying-opportunity-for-ukraine-crisis-optimists"
+            }
+        }
+    ]
+}

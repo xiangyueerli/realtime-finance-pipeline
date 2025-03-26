@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "8516",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-04-03T03:58:58-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Mohawk Industries: Strong Growth, But Competes With Buffett (MHK)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20094",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2559",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/8516-mohawk-industries-strong-growth-but-competes-with-buffett-mhk"
+            }
+        }
+    ]
+}

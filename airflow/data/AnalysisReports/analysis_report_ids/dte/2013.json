@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "1398591",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2013-05-03T08:50:15-04:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Strong Earnings And Positive Dividend Behavior: 2 Reasons I've Considered DTE Energy",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "41381",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "168",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/1398591-strong-earnings-and-positive-dividend-behavior-2-reasons-ive-considered-dte-energy"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "6187",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-01-23T11:15:21-05:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Cruising Along: Royal Carribean Oversold? (RCL)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20444",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1877",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/6187-cruising-along-royal-carribean-oversold-rcl"
+            }
+        }
+    ]
+}

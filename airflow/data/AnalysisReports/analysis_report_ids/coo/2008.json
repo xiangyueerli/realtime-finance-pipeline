@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "94605",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2008-09-09T08:02:33-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Cooper Companies: In-line for '08, Positioned for Asian Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22211",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2720",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/94605-cooper-companies-in-line-for-08-positioned-for-asian-growth"
+            }
+        }
+    ]
+}

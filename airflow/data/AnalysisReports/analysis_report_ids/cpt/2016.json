@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "3793916",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2016-01-06T15:01:05-05:00",
+                "isLockedPro": false,
+                "commentCount": 44,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "The Rent Is Too Damn High! Blame Bad Policy And Buy REITs",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "98286",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3906",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/3793916-rent-is-too-damn-high-blame-bad-policy-and-buy-reits"
+            }
+        }
+    ]
+}

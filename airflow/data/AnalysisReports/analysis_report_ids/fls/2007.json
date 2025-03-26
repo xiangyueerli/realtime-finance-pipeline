@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "38204",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2007-06-13T07:36:47-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Flowserve Corporation Almost a Buy; Priced a Bit Too High",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20454",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "3783",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/38204-flowserve-corporation-almost-a-buy-priced-a-bit-too-high"
+            }
+        }
+    ]
+}

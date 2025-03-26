@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "13930",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-07-20T07:54:19-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Abbott Profits Fall on Guidant Acquisition Charges",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20181",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1200",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/13930-abbott-profits-fall-on-guidant-acquisition-charges"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "13830",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2006-07-19T06:38:05-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Current Heat Wave Shows U.S. Sorely in Need of Power Grid Reform",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20181",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "158",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/13830-current-heat-wave-shows-u-s-sorely-in-need-of-power-grid-reform"
+            }
+        }
+    ]
+}

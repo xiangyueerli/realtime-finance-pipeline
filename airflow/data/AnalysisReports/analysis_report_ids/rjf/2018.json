@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4159063",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-03-27T01:33:26-04:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "TriState Capital Holdings: This 6.75% Fixed-To-Floating Preferred Stock Started Trading On The Nasdaq",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "97936",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4130",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4159063-tristate-capital-holdings-this-6_75-percent-fixed-to-floating-preferred-stock-started-trading"
+            }
+        }
+    ]
+}

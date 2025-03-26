@@ -1,0 +1,97 @@
+{
+    "data": [
+        {
+            "id": "4458386",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-10-04T15:09:04-04:00",
+                "isLockedPro": false,
+                "commentCount": 7,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/943223884/image_943223884.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Insider Weekends: Terry Considine Adds To His Aimco Stake",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "20093",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "343811",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4075",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4458386-insider-weekends-terry-considine-adds-to-his-aimco-stake"
+            }
+        },
+        {
+            "id": "4405967",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-02-13T10:15:26-05:00",
+                "isLockedPro": false,
+                "commentCount": 67,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Stocks To Watch: Walmart's Big Day, Green Hydrogen Plays And Ford Reboot",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "68015",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "4075",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4405967-stocks-to-watch-walmarts-big-day-green-hydrogen-plays-and-ford-reboot"
+            }
+        }
+    ]
+}

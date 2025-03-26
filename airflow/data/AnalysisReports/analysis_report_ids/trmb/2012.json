@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "834601",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2012-08-29T03:34:34-04:00",
+                "isLockedPro": false,
+                "commentCount": 0,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Trimble Navigation - Acquisition Of TMW Systems Has Strong Strategic Strength",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2970",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/834601-trimble-navigation-acquisition-of-tmw-systems-has-strong-strategic-strength"
+            }
+        }
+    ]
+}

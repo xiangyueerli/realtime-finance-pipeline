@@ -1,0 +1,58 @@
+{
+    "data": [
+        {
+            "id": "4135326",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2018-01-04T11:56:25-05:00",
+                "isLockedPro": false,
+                "commentCount": 117,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "How To Replicate Elliot's Success In Argentina: Buy Assured Guaranty And MBIA As They Battle Puerto Rico",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104021",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "196277",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "1576",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": [
+                        {
+                            "id": "1302",
+                            "type": "tag"
+                        }
+                    ]
+                }
+            },
+            "links": {
+                "self": "/article/4135326-how-to-replicate-elliots-success-in-argentina-buy-assured-guaranty-and-mbia-battle-puerto"
+            }
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "4419780",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2021-04-19T09:00:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 2,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Real Estate Post Covid - Interview With Marcus & Millichap CEO Hessam Nadji (Video)",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106115",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "112212",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4419780-real-estate-post-covid-interview-with-marcus-and-millichap-ceo-hessam-nadji-video"
+            }
+        }
+    ]
+}

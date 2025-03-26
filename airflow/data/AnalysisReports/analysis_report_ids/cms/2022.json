@@ -1,0 +1,151 @@
+{
+    "data": [
+        {
+            "id": "4546442",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-10-13T15:15:31-04:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1369067392/image_1369067392.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CMS Energy: The Market Is Handing Us This Utility At A Great Price",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24257",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "414273",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "162",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4546442-cms-energy-the-market-is-handing-us-this-utility-at-a-great-price"
+            }
+        },
+        {
+            "id": "4513573",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-05-21T03:55:34-04:00",
+                "isLockedPro": false,
+                "commentCount": 35,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/470435243/image_470435243.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Why It's Time To Redeploy From CMS Energy",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "38191",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "374958",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "162",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4513573-why-its-time-to-redeploy-from-cms-energy"
+            }
+        },
+        {
+            "id": "4495876",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-03-16T10:33:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1318476890/image_1318476890.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "CMS Energy: This Renewables-Focused Utility Is Looking More Attractive",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "24257",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "365772",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "162",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4495876-cms-energy-stock-renewables-focused-utility-attractive"
+            }
+        }
+    ]
+}

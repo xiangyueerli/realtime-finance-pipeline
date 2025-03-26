@@ -1,0 +1,734 @@
+{
+    "data": [
+        {
+            "id": "4566784",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-12-28T16:10:20-05:00",
+                "isLockedPro": false,
+                "commentCount": 5,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/81285815/image_81285815.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel Foods - Not Too Delicious",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "25120",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "428328",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4566784-hormel-foods-not-too-delicious"
+            }
+        },
+        {
+            "id": "4562979",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-12-07T12:49:19-05:00",
+                "isLockedPro": false,
+                "commentCount": 1,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1387316501/image_1387316501.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "We Remain Bullish On Hormel Foods Despite The Selloff",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106592",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "424488",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4562979-we-remain-bullish-on-hormel-foods-despite-the-selloff"
+            }
+        },
+        {
+            "id": "4560986",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-11-28T23:40:05-05:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/81285811/image_81285811.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel: Don't Be A Pig, Caution Warranted Ahead Of Earnings Following A Strong Monthly Gain",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106553",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "422933",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4560986-hormel-caution-warranted-ahead-q4-earnings-following-strong-monthly-gain"
+            }
+        },
+        {
+            "id": "4544609",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-10-04T11:51:06-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1387316501/image_1387316501.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel Is Boring, Hormel Is Attractive",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106592",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "412352",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4544609-hormel-is-boring-hormel-is-attractive"
+            }
+        },
+        {
+            "id": "4540640",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-09-13T10:06:06-04:00",
+                "isLockedPro": false,
+                "commentCount": 17,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/158914474/image_158914474.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel Foods: When The Rating Comes From The Managers",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106590",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "408922",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4540640-hormel-foods-when-rating-comes-from-managers"
+            }
+        },
+        {
+            "id": "4527398",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-07-29T10:02:46-04:00",
+                "isLockedPro": false,
+                "commentCount": 8,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/81285811/image_81285811.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel Could Be A Safe Haven In Turbulent Markets",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106592",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "384999",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4527398-hormel-could-be-safe-haven-in-turbulent-markets"
+            }
+        },
+        {
+            "id": "4524692",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-07-21T09:00:47-04:00",
+                "isLockedPro": false,
+                "commentCount": 6,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/158914414/image_158914414.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel Foods: A Consistent Performer That Rewards Its Shareholders",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "60561",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "383730",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4524692-hormel-foods-consistent-rewards-shareholders"
+            }
+        },
+        {
+            "id": "4518720",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-06-16T09:30:00-04:00",
+                "isLockedPro": false,
+                "commentCount": 10,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1387316501/image_1387316501.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Is Hormel Foods Stock Undervalued? Yes, Shares Are Back In The Buy Zone",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "22201",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "378372",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4518720-is-hormel-foods-stock-undervalued"
+            }
+        },
+        {
+            "id": "4518609",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-06-15T15:03:46-04:00",
+                "isLockedPro": false,
+                "commentCount": 31,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/471531747/image_471531747.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Is Hormel Stock A Buy After Earnings?",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "59101",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "378346",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4518609-is-hormel-stock-buy-after-earnings"
+            }
+        },
+        {
+            "id": "4515507",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-05-31T13:34:12-04:00",
+                "isLockedPro": false,
+                "commentCount": 3,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1329491626/image_1329491626.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel Foods: Reassuring During Turbulent Times",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106048",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "376205",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4515507-hormel-foods-reassuring-during-turbulent-times"
+            }
+        },
+        {
+            "id": "4515411",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-05-31T07:28:27-04:00",
+                "isLockedPro": false,
+                "commentCount": 15,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/158914477/image_158914477.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel Foods: A Fantastic Sleep Well At Night Dividend Stock",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "92986",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "376245",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4515411-hormel-foods-stock-fantastic-sleep-well-at-night-dividend-stock"
+            }
+        },
+        {
+            "id": "4497549",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-03-24T11:19:23-04:00",
+                "isLockedPro": false,
+                "commentCount": 18,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/458239769/image_458239769.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Beat Inflation With Hormel Foods",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104751",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "366744",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4497549-hormel-foods-stock-beat-inflation"
+            }
+        },
+        {
+            "id": "4494540",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-03-10T15:17:23-05:00",
+                "isLockedPro": false,
+                "commentCount": 12,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/158914477/image_158914477.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel Foods Stock Remains Overpriced",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "104099",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "365023",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4494540-hormel-foods-remains-overpriced"
+            }
+        },
+        {
+            "id": "4480992",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-01-22T09:57:59-05:00",
+                "isLockedPro": false,
+                "commentCount": 13,
+                "gettyImageUrl": null,
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Stocks To Watch: FOMC Meeting, Earnings Rush And Testing Times In Crypto",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "68015",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": []
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4480992-stocks-to-watch-fomc-meeting-earnings-rush-and-testing-times-in-crypto"
+            }
+        },
+        {
+            "id": "4478433",
+            "type": "article",
+            "attributes": {
+                "publishOn": "2022-01-07T10:10:13-05:00",
+                "isLockedPro": false,
+                "commentCount": 16,
+                "gettyImageUrl": "https://static.seekingalpha.com/cdn/s3/uploads/getty_images/81285817/image_81285817.jpg",
+                "videoPreviewUrl": null,
+                "videoDuration": null,
+                "themes": {},
+                "title": "Hormel: Combining Pricing Power With Organic Growth",
+                "structuredInsights": null,
+                "isPaywalled": false
+            },
+            "relationships": {
+                "author": {
+                    "data": {
+                        "id": "106331",
+                        "type": "author"
+                    }
+                },
+                "sentiments": {
+                    "data": [
+                        {
+                            "id": "356092",
+                            "type": "sentiment"
+                        }
+                    ]
+                },
+                "primaryTickers": {
+                    "data": [
+                        {
+                            "id": "2236",
+                            "type": "tag"
+                        }
+                    ]
+                },
+                "secondaryTickers": {
+                    "data": []
+                },
+                "otherTags": {
+                    "data": []
+                }
+            },
+            "links": {
+                "self": "/article/4478433-hormel-combining-pricing-power-with-organic-growth"
+            }
+        }
+    ]
+}
