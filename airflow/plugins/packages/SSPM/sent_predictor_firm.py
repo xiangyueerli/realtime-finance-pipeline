@@ -82,17 +82,19 @@ class SentimentPredictor:
         self.save_results()
 
 
-# Example configuration
-config = {
-    "constituents_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/constituents/firms/nvidia_constituents_final.csv"),
-    "fig_loc": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/SP500/sec/outcome/figures"),
-    "input_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/SP500/sec/processed/dtm_0001045810.parquet"),
-    "start_date": "2006-01-01",
-    "end_date": "2024-12-31",
+
+
+if __name__ == "__main__":
+    
+    # Example configuration
+    config = {
+        "constituents_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/constituents/firms/nvidia_constituents_final.csv"),
+        "fig_loc": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/SP500/sec/outcome/figures"),
+        "input_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/SP500/sec/processed/dtm_0001045810.parquet"),
+        "start_date": "2006-01-01",
+        "end_date": "2024-12-31",
 
 
 }
-
-if __name__ == "__main__":
     predictor = SentimentPredictor(config)
     predictor.run()
