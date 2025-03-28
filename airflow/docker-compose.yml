@@ -6,15 +6,16 @@ services:
         environment:
           POSTGRES_USER: airflow
           POSTGRES_PASSWORD: airflow
-          POSTGRES_DB: airflowMetadata
+          POSTGRES_DB: airflow
         volumes:
           - postgres-db-volume:/var/lib/postgresql/data
-          - ./init_db_postgres.sh:/docker-entrypoint-initdb.d/init_db.sh:ro
         healthcheck:
           test: ["CMD", "pg_isready", "-U", "airflow"]
           interval: 5s
           retries: 5
         restart: always
+        ports:
+          - "5432:5432"  # Postgres port
         
     redis:
         image: redis:latest
@@ -29,13 +30,17 @@ services:
 
     airflow:       
         # # privileged: true
-        # user: "root"                           
+        # user: "root"      
+        # image: apache/airflow:2.8.1-python3.8
+        image: real-time-airflow-image                    
         build: './airflow_docker'                       
         container_name: airflow_container
+        entrypoint: /opt/airflow/entrypoint.sh  
         restart: always
         depends_on:
             - postgres
         environment:
+            AIRFLOW_HOME: /opt/airflow
             AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres_container:5432/airflow
             AIRFLOW__CORE__EXECUTOR: LocalExecutor
             AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'True'
@@ -61,6 +66,10 @@ services:
             - ./nltk_data:/opt/airflow/nltk_data
             - ./spark_logs:/opt/spark-3.2.1-bin-hadoop3.2/logs:rw
             - ./airflow_docker/airflow_env.sh:/opt/airflow/airflow_env.sh:ro
+            - ./airflow_docker/entrypoint.sh:/opt/airflow/entrypoint.sh:ro
+
+
+
 
 
         ports:
@@ -74,7 +83,25 @@ services:
           interval: 10s
           timeout: 10s
           retries: 5
+    pdcmmetastore:
+        image: postgres:13
+        container_name: pdcmmetastore_container
+        environment:
+          POSTGRES_USER: pdcm
+          POSTGRES_PASSWORD: pdcm
+          POSTGRES_DB: PDCMmetastore
+        volumes:
+          - pdcmmetastore-db-volume:/var/lib/postgresql/data
+        healthcheck:
+          test: ["CMD", "pg_isready", "-U", "pdcm"]
+          interval: 5s
+          retries: 5
+        restart: always
+        ports:
+          - "5433:5432"  # PDCMmetastore Postgres port
+      
 
 
 volumes:
   postgres-db-volume:
+  pdcmmetastore-db-volume:

@@ -58,7 +58,7 @@ class ConstructDTM:
         
         # --------------- Configure Database --------------- #
         # Adjust connection string for your environment
-        db_url = "postgresql://airflow:airflow@postgres_container:5432/airflowMetadata"
+        db_url = "postgresql://pdcm:pdcm@postgres_container:5432/PDCMmetastore"
         self.engine = create_engine(db_url, echo=False)
         self.SessionLocal = sessionmaker(bind=self.engine)
         Base = declarative_base()

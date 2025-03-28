@@ -1,18 +1,15 @@
 
-from bs4 import BeautifulSoup
-import re
-from collections import Counter
-
 import pendulum
 from airflow import DAG
 from airflow.decorators import task
-from airflow.operators.python import PythonOperator
-from airflow.operators.bash import BashOperator
+from plugins.common.time_log_decorator import time_log
 
+import time
 import os
 import pandas as pd
 import datetime
-import subprocess
+
+
 
 with DAG(
     dag_id="sec_sentiment",
@@ -64,7 +61,8 @@ with DAG(
         return cik
     
     @task(task_id='t2_download_executor')
-    def download_executor(firm_list_path, type, start_date, end_date):
+    @time_log
+    def download_executor(firm_list_path, type, start_date, end_date, **kwargs):
         from plugins.packages.FTRM.sec_crawler import download_fillings
         import os
         import pandas as pd
@@ -87,11 +85,12 @@ with DAG(
 
             if not os.path.exists(data_raw_folder):
                 os.makedirs(data_raw_folder)
-            download_fillings(cik_ticker, data_raw_folder,doc_type,headers, start_date, end_date)
+            download_fillings(cik_ticker, data_raw_folder, doc_type,headers, start_date, end_date)
         
     
     @task(task_id='t3_txt_convertor')
-    def txt_convertor(data_folder, save_folder):
+    @time_log
+    def txt_convertor(data_folder, save_folder, **kwargs):
         from plugins.packages.FTRM.sec_txt_extractor import process_fillings_for_cik
         import concurrent.futures
         import os
@@ -112,9 +111,14 @@ with DAG(
 
         
     @task(task_id='t4_dtm_constructor')
-    def dtm_constructor():
+    @time_log
+    def dtm_constructor(**kwargs):
+        import os
         from plugins.packages.PDCM.constructDTM import ConstructDTM
         from pyspark.sql import SparkSession
+        
+        os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-11-openjdk-amd64'
+        os.environ['SPARK_HOME'] = '/opt/spark-3.2.1-bin-hadoop3.2'
         # Initialize Spark session
         spark = (SparkSession.builder
             .appName("DataPipeline")
@@ -132,7 +136,8 @@ with DAG(
         pipeline.concatenate_parquet_files(final_save_path, csv_file_path, constituents_metadata_path)
         
     @task(task_id='t5_sent_predictor')
-    def sent_predictor():
+    @time_log
+    def sent_predictor(**kwargs):
         from plugins.packages.SSPM.sent_predictor_firm import SentimentPredictor
         config = {
             "constituents_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/constituents/firms/nvidia_constituents_final.csv"),
@@ -143,11 +148,12 @@ with DAG(
             }
         predictor = SentimentPredictor(config)
         predictor.run()
-        
+    
+
     
     #FTRM
     t2_download_executor = download_executor(csv_file_path, type = type, start_date=start_date, end_date=end_date)
-    t3_extraction_executor = txt_convertor(data_raw_folder, extracted_folder)
+    t3_txt_convertor = txt_convertor(data_raw_folder, extracted_folder)
     #PDCM
     t4_dtm_constructor = dtm_constructor()
 
@@ -155,7 +161,6 @@ with DAG(
     t5_sent_predictor = sent_predictor()
 
     
-    t2_download_executor >> t3_extraction_executor >> t4_dtm_constructor >> t5_sent_predictor
+    t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_sent_predictor
 
-    
-    
+        
