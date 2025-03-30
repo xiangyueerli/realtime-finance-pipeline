@@ -112,39 +112,47 @@ with DAG(
         
     @task(task_id='t4_dtm_constructor')
     @time_log
-    def dtm_constructor(**kwargs):
+    def dtm_constructor(data_folder, save_folder, csv_file_path, columns, start_date, end_date, **kwargs):
         import os
         from plugins.packages.PDCM.constructDTM import ConstructDTM
         from pyspark.sql import SparkSession
-        
-        os.environ['JAVA_HOME'] = '/usr/lib/jvm/java-11-openjdk-amd64'
-        os.environ['SPARK_HOME'] = '/opt/spark-3.2.1-bin-hadoop3.2'
+        import subprocess
+        # Optional: Check if Java is visible
+        subprocess.run(["java", "-version"], check=True)
+                
+                
+        os.environ['PYSPARK_SUBMIT_ARGS'] = "--master local[2] pyspark-shell"
+
         # Initialize Spark session
-        spark = (SparkSession.builder
+        spark = (
+            SparkSession.builder
             .appName("DataPipeline")
             .master("local[2]")
             # Memory allocations
             .config("spark.driver.memory", "2g")
             .config("spark.executor.memory", "2g")
             .config("spark.sql.shuffle.partitions", "4") 
+            # .config("spark.local.dir", "/opt/spark-logs/tmp")
+            # .config("spark.eventLog.enabled", "true")
+            # .config("spark.eventLog.dir", "/opt/spark-logs/events")
+            # .config("spark.history.fs.logDirectory", "/opt/spark-logs/events")
             .getOrCreate()
         )
-        pipeline = ConstructDTM(spark, extracted_folder, final_save_path, csv_file_path, columns, start_date, end_date)
+        pipeline = ConstructDTM(spark, data_folder, save_folder, csv_file_path, columns, start_date, end_date)
         pipeline.file_aggregator()
-        pipeline.process_filings_for_cik_spark(final_save_path, start_date, end_date, csv_file_path)
+        pipeline.process_filings_for_cik_spark(save_folder, start_date, end_date, csv_file_path)
         constituents_metadata_path = os.path.join(base_path, "data/constituents/sp500_constituents.csv") # This is for getting the CIKs for the SP500, but only for the year 2006 - 2023
-        pipeline.concatenate_parquet_files(final_save_path, csv_file_path, constituents_metadata_path)
+        pipeline.concatenate_parquet_files(final_save_path, csv_file_path, constituents_metadata_path, start_date, end_date)
         
     @task(task_id='t5_sent_predictor')
     @time_log
-    def sent_predictor(**kwargs):
+    def sent_predictor(window, **kwargs):
         from plugins.packages.SSPM.sent_predictor_firm import SentimentPredictor
         config = {
             "constituents_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/constituents/firms/nvidia_constituents_final.csv"),
             "fig_loc": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/SP500/sec/outcome/figures"),
             "input_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/SP500/sec/processed/dtm_0001045810.parquet"),
-            "start_date": "2006-01-01",
-            "end_date": "2024-12-31",
+            "window": window,
             }
         predictor = SentimentPredictor(config)
         predictor.run()
@@ -155,10 +163,10 @@ with DAG(
     t2_download_executor = download_executor(csv_file_path, type = type, start_date=start_date, end_date=end_date)
     t3_txt_convertor = txt_convertor(data_raw_folder, extracted_folder)
     #PDCM
-    t4_dtm_constructor = dtm_constructor()
+    t4_dtm_constructor = dtm_constructor(extracted_folder, final_save_path, csv_file_path, columns, start_date, end_date)
 
     #SSPM
-    t5_sent_predictor = sent_predictor()
+    t5_sent_predictor = sent_predictor(window=end_date)
 
     
     t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_sent_predictor

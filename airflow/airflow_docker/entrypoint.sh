@@ -5,11 +5,6 @@ echo "🚨 Checking airflow.cfg:"
 ls -l /opt/airflow/airflow.cfg && cat /opt/airflow/airflow.cfg | grep sql_alchemy_conn || echo " Not found"
 
 
-# 🔒 Freeze airflow.cfg to prevent auto-overwrites
-chmod 444 /opt/airflow/airflow.cfg
-echo "🔒 airflow.cfg is now read-only"
-
-
 echo "🚨 Environment variable:"
 echo "$AIRFLOW__DATABASE__SQL_ALCHEMY_CONN"
 
@@ -27,26 +22,13 @@ echo "DEBUG: AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=$AIRFLOW__DATABASE__SQL_ALCHEMY
 echo "DEBUG: AIRFLOW__CORE__EXECUTOR=$AIRFLOW__CORE__EXECUTOR"
 
 
-# Wait for PostgreSQL to be ready
-echo "⏳ Waiting for PostgreSQL to be available..."
-while ! pg_isready -h postgres_container -p 5432 -U airflow; do
-  sleep 2
-done
-echo "✅ PostgreSQL is ready!"
-
-# Test PostgreSQL connection explicitly
-echo "Testing PostgreSQL connection..."
-python -c "import psycopg2; conn = psycopg2.connect('dbname=airflow user=airflow password=airflow host=postgres_container port=5432'); conn.close(); print('Connection successful!')" || {
-  echo "ERROR: PostgreSQL connection failed!"
-  exit 1
-}
-
-if [ -f /opt/airflow/airflow.cfg ]; then
-    echo "Using pre-defined airflow.cfg – skipping db initialization"
-else
-    echo "airflow.cfg not found, generating new config..."
+# Initialize Airflow DB if needed
+if [ ! -f /opt/airflow/airflow.db ]; then
+    echo "📦 Initializing Airflow metadata DB "
     airflow db init
     airflow db upgrade
+else
+    echo "✅ SQLite database already exists: skipping db init"
 fi
 
 
@@ -63,6 +45,8 @@ if [ "$ADMIN_USER_EXISTS" == "0" ]; then
         --role Admin \
         --email admin@example.com
 fi
+
+
 
 # Start supervisord to run both webserver and scheduler
 exec supervisord -c /etc/supervisor/conf.d/supervisord.conf
