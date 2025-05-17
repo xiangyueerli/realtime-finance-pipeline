@@ -29,11 +29,11 @@ html/
 
 *.csv
 *.parquet
-*html
-*txt
-*png
-*zip
-*json
+*.html
+*.txt
+*.png
+*.zip
+*.json
 *.whl
 *.tar.gz
 *.egg
