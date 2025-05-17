@@ -66,8 +66,8 @@ with DAG(
     @time_log
     def download_executor(save_folder, api_key, start_date, end_date, **kwargs):
         import asyncio
-        start_date = datetime.strptime(start_date, '%Y-%m-%d').year
-        end_date = datetime.strptime(end_date, '%Y-%m-%d').year
+        start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
+        end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
         
         async def async_download_executor():
             from plugins.packages.FTRM.extract_scripts_ninja import fetch_reports

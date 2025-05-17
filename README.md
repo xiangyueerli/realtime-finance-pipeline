@@ -1,4 +1,38 @@
-# real-time-sent-airflow
+# README: real-time-sent-airflow
+ 
+## 1. Why did you start your project?
+
+This project was initiated in response to the increasing importance of real-time sentiment analysis in financial markets. As a retail investor with five years of experience and a 7.5% compound annual growth rate, I encountered firsthand how sensitive assets like Nvidia and Bitcoin are to sentiment shocks. Existing systems failed to capture the breadth and speed of multi-source financial sentiment. This gap motivated the development of an end-to-end, real-time sentiment scoring system capable of integrating multiple perspectives from financial text—such as regulatory filings, earnings call transcripts, and expert analysis reports—for better forecasting of stock returns and volatility.
+
+## 2. What issues did you find technically and in a domain context?
+
+### Domain Challenges:
+- Financial sentiment is fragmented across multiple textual sources and stakeholder viewpoints.
+- Existing sentiment systems often focus only on one source (e.g., news) and ignore broader market voices.
+
+### Technical Challenges:
+- **Scalability**: Handling 300,000+ documents (~1.5 billion tokens) across different formats and APIs.
+- **Orchestration**: Building a real-time system that automates data collection, preprocessing, and model inference.
+- **Supervision**: Labeling sentiment metrics for both return and volatility without human annotation.
+- **Efficiency**: Real-time preprocessing and data transformation under heavy computational constraints.
+
+## 3. What solutions did you consider?
+
+- **Lexicon-Based vs. Machine Learning Approaches**: Lexicon methods offer transparency but lack nuance. ML models, particularly supervised learning with financial labels, provide better predictive power.
+- **Sequential vs. Parallel Data Processing**: Given the volume of data, a parallel and distributed system using Apache Spark and Dockerized pipelines was explored.
+- **Single-Source vs. Multi-Source Input**: Initial implementations using only 10-K filings (Minf1) were expanded in Minf2 to include earnings calls and expert reports for better performance and robustness.
+- **Cloud-Hosted vs. Local Deployment**: Azure Cloud was chosen for scalability, supported by Docker and Apache Airflow for CI/CD and orchestration.
+
+## 4. What is your final decision among solutions?
+
+The final solution is a real-time, fully automated, and multi-source sentiment scoring system deployed on Microsoft Azure. It comprises:
+
+- **FTRM (Financial Text Retrieval Model)**: Fetches data from EDGAR, Seeking Alpha, and APIs.
+- **PDCM (Parallel Data Construction Model)**: Uses Apache Spark to transform and structure data efficiently.
+- **SSPM (Sentiment Score Prediction Model)**: Produces return- and volatility-predictive sentiment scores using a supervised model adapted from Zheng et al.’s lexicon learning method.
+
+This system not only supports real-time decision-making for traders and analysts but also provides a transparent, extensible, and scalable framework for future research and deployment.
+
 
 ## How to Run the System
 
@@ -128,6 +162,57 @@ for analysis and plotting.
 Check `filtered/` and `intermediate/` to verify preprocessing steps and troubleshoot issues.
 
 
+
+## Folder: `constituents/`
+Root path:  
+```
+/data/seanchoi/airflow/data/constituents/
+```
+
+### 1. Subfolder: `firms/`
+- **nvidia_constituents_final.csv**
+  - Final processed list of NVIDIA-related firms.
+  - **Columns**: CIK, Ticker, Company Name, Sector, Inclusion Date, Exclusion Date
+  - **Use Case**: Firm-level analysis of NVIDIA-related companies.
+
+- **nvidia_constituents.csv**
+  - Raw unfiltered list of NVIDIA-related firms.
+  - **Columns**: CIK, Ticker, Company Name, Sector
+  - **Use Case**: Starting point for preprocessing NVIDIA data.
+
+### 2. Subfolder: `market/`
+- **QQQ_constituents_test.csv**
+  - Test set of NASDAQ-100 constituents.
+  - **Columns**: CIK, Ticker, Company Name, Sector
+  - **Use Case**: Testing NASDAQ-100 workflows.
+
+- **sp500_constituents.csv**
+  - Current list of S&P 500 firms.
+  - **Columns**: CIK, Ticker, Company Name, Sector
+  - **Use Case**: Current firm-level S&P 500 analysis.
+
+- **sp500_total_constituents.csv**
+  - Historical list including past and present S&P 500 members.
+  - **Columns**: CIK, Ticker, Company Name, Sector, Inclusion Date, Exclusion Date
+  - **Use Case**: Historical S&P 500 analysis.
+
+- **sp500_union_constituents.csv**
+  - Unified dataset of all S&P 500 members.
+  - **Columns**: CIK, Ticker, Company Name, Sector
+  - **Use Case**: Comprehensive S&P 500 constituent analysis.
+
+- **top10_QQQ_constituents_test.csv**
+  - Test dataset for top 10 NASDAQ-100 firms.
+  - **Columns**: CIK, Ticker, Company Name, Sector
+  - **Use Case**: Workflow testing on top NASDAQ firms.
+
+- **top10_QQQ_constituents.csv**
+  - Top 10 NASDAQ-100 firms by market cap or other criteria.
+  - **Columns**: CIK, Ticker, Company Name, Sector
+  - **Use Case**: Targeted analysis of major NASDAQ constituents.
+
+
+
 ## Core Code at Plugins Directory Structure
 
 The plugins directory contains custom modules, scripts, and utilities that extend the functionality of the real-time system. It is organized into main subfolders:
@@ -179,4 +264,3 @@ Specialized modules organized by functionality
   - `sent_predictor_market_deprecated.py`: (Deprecated) Market-level sentiment. Check the local version which is used in the system (sec_sent_predictor_local.py at /data/seanchoi/SSPM_local)
     
   - **Use case**: Sentiment modeling and signal generation
-

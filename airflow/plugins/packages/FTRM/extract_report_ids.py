@@ -4,7 +4,12 @@ import json
 import asyncio
 import aiohttp
 
-
+# Global variables
+request_counter = 0
+total_requests = 0
+total_len = 0
+valid = 0
+last_request_time = None
 
 async def fetch_ids_for_ticker(ticker, session, rate_limiter, save_folder, year_until, year_since, year2unixTime, api_key, api_host, pages, INITIAL_BACKOFF, MAX_RETRIES):
     global total_len, valid, total_requests, request_counter, last_request_time

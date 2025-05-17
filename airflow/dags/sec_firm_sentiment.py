@@ -69,7 +69,7 @@ with DAG(
         # root_folder = '10k-html'
         for t in type:
             doc_type = t
-            headers = {'User-Agent': 'University of Edinburgh s2101367@ed.ac.uk'}
+            headers = {'User-Agent': 'University of Edinburgh s2101367@ed.ac.uk'} # User Emails
 
             if not os.path.exists(data_raw_folder):
                 os.makedirs(data_raw_folder)

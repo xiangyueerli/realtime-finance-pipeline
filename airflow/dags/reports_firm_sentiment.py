@@ -10,7 +10,6 @@ import pandas as pd
 import datetime
 
 
-
 with DAG(
     dag_id="reports_firm_sentiment",
     schedule="0 0 * * 0",  # Run every Sunday at midnight (weekly)
@@ -62,13 +61,13 @@ with DAG(
     @time_log
     def download_id_executor(save_folder, api_key, api_host, start_date, end_date, **kwargs):
         import asyncio
-        start_date = datetime.strptime(start_date, '%Y-%m-%d').year
-        end_date = datetime.strptime(end_date, '%Y-%m-%d').year
+        start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
+        end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
         pages = [i for i in range(1, 3)] # Assume the total number of annual reports per firm is less than 80
         
         year2unixTime = {}
         for year in range(end_date + 1, start_date - 1, -1): # eg) 2026, 2025, 2024
-            current_year_timestamp = int(datetime(year, 1, 1).timestamp())
+            current_year_timestamp = int(datetime.datetime(year, 1, 1).timestamp())
             year2unixTime[year] = current_year_timestamp
         
         async def async_download_executor():
@@ -94,8 +93,8 @@ with DAG(
     @time_log
     def download_executor(save_folder, api_key, api_host, start_date, end_date, **kwargs):
         import asyncio
-        start_date = datetime.strptime(start_date, '%Y-%m-%d').year
-        end_date = datetime.strptime(end_date, '%Y-%m-%d').year
+        start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
+        end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
         
         async def async_download_executor():
             from plugins.packages.FTRM.extract_reports import fetch_reports
