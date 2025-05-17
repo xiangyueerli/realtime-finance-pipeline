@@ -1,4 +1,4 @@
-# README: real-time-sent-airflow
+# README: realtime-financial-sentiment
  
 ## 1. Why did you start your project?
 
