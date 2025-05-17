@@ -25,13 +25,17 @@ This project was initiated in response to the increasing importance of real-time
 
 ## 4. What is your final decision among solutions?
 
-The final solution is a real-time, fully automated, and multi-source sentiment scoring system deployed on Microsoft Azure. It comprises:
+The final solution is a real-time, fully automated, and multi-source sentiment scoring system deployed on Microsoft Azure.
+![Architecture Diagram](image/real-time-architecture.png)
+
+It comprises:
 
 - **FTRM (Financial Text Retrieval Model)**: Fetches data from EDGAR, Seeking Alpha, and APIs.
 - **PDCM (Parallel Data Construction Model)**: Uses Apache Spark to transform and structure data efficiently.
 - **SSPM (Sentiment Score Prediction Model)**: Produces return- and volatility-predictive sentiment scores using a supervised model adapted from Zheng et al.’s lexicon learning method.
 
 This system not only supports real-time decision-making for traders and analysts but also provides a transparent, extensible, and scalable framework for future research and deployment.
+
 
 
 ## How to Run the System
