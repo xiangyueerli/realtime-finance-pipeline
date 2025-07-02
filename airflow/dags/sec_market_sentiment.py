@@ -29,7 +29,8 @@ with DAG(
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/sec/market")
-    csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
+    # csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
+    csv_file_path = os.path.join(base_path, "data/constituents/market/test.csv")
     columns = ["Name", "CIK", "Date", "Body" ]
     firms_df = pd.read_csv(csv_file_path)
     columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
@@ -151,26 +152,25 @@ with DAG(
     t4_dtm_constructor = dtm_constructor(extracted_folder, final_save_path, csv_file_path, columns, start_date, end_date)
 
     #SSPM
-    t5_run_sent_predictor_local = BashOperator(
-        task_id="t5_run_sent_predictor_local",
-        bash_command=(
-        "python3 /data/seanchoi/SSPM_local/sec_sent_predictor_local.py "
-        "{{ params.csv_file_path }} "
-        "{{ params.fig_loc }} "
-        "{{ params.input_path }} "
-        "{{ params.window }}"
-        ),
-        params={
-            "csv_file_path": "data/constituents/market/sp500_union_constituents.csv",
-            "fig_loc": "data/SP500/sec/market/outcome/figures",
-            "input_path": "data/SP500/sec/market/dtm/final/SEC_DTM_SP500_2.parquet",
-            "window": end_date,
-        },
-    )
+    # t5_run_sent_predictor_local = BashOperator(
+    #     task_id="t5_run_sent_predictor_local",
+    #     bash_command=(
+    #     "python3 /data/seanchoi/SSPM_local/sec_sent_predictor_local.py "
+    #     # "{{ params.csv_file_path }} "
+    #     "{{ params.fig_loc }} "
+    #     "{{ params.input_path }} "
+    #     "{{ params.window }}"
+    #     ),
+    #     params={
+    #         # "csv_file_path": "data/constituents/market/sp500_union_constituents.csv",
+    #         "fig_loc": "data/SP500/sec/market/outcome/figures",
+    #         "input_path": "data/SP500/sec/market/dtm/final/SEC_DTM_SP500_2.parquet",
+    #         "window": end_date,
+    #     },
+    # )
 
-
-    
-    t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_run_sent_predictor_local
+    t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor
+    # t5_run_sent_predictor_local
 
 
         
