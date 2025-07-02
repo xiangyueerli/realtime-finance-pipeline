@@ -27,7 +27,7 @@ with DAG(
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/sec/firm")
-    csv_file_path = os.path.join(base_path, "data/constituents/firms/nvidia_constituents_final.csv")
+    csv_file_path = os.path.join(base_path, "data/constituents/firms/test.csv")
     columns = ["Name", "CIK", "Date", "Body" ]
     firms_df = pd.read_csv(csv_file_path)
     columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
@@ -142,7 +142,7 @@ with DAG(
     def sent_predictor(window, **kwargs):
         from plugins.packages.SSPM.sent_predictor_firm import SentimentPredictor
         config = {
-            "constituents_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/constituents/firms/nvidia_constituents_final.csv"),
+            "constituents_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), f'{csv_file_path}'),
             "fig_loc": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/SP500/sec/firm/outcome/figures"),
             "input_path": os.path.join(os.getenv("AIRFLOW_HOME", "/opt/airflow"), "data/SP500/sec/firm/processed/dtm_0001045810.parquet"),
             "window": window,

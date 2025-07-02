@@ -41,7 +41,7 @@ with DAG(
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/reports/market")
-    csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
+    csv_file_path = os.path.join(base_path, "data/constituents/market/test.csv")
     columns = ["Name", "CIK", "Date", "Body" ]
     firms_df = pd.read_csv(csv_file_path)
     columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
@@ -61,13 +61,13 @@ with DAG(
     @time_log
     def download_id_executor(save_folder, api_key, api_host, start_date, end_date, **kwargs):
         import asyncio
-        start_date = datetime.strptime(start_date, '%Y-%m-%d').year
-        end_date = datetime.strptime(end_date, '%Y-%m-%d').year
+        start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
+        end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
         pages = [i for i in range(1, 3)] # Assume the total number of annual reports per firm is less than 80
         
         year2unixTime = {}
         for year in range(end_date + 1, start_date - 1, -1): # eg) 2026, 2025, 2024
-            current_year_timestamp = int(datetime(year, 1, 1).timestamp())
+            current_year_timestamp = int(datetime.datetime(year, 1, 1).timestamp())
             year2unixTime[year] = current_year_timestamp
         
         async def async_download_executor():
@@ -93,8 +93,8 @@ with DAG(
     @time_log
     def download_executor(save_folder, api_key, api_host, start_date, end_date, **kwargs):
         import asyncio
-        start_date = datetime.strptime(start_date, '%Y-%m-%d').year
-        end_date = datetime.strptime(end_date, '%Y-%m-%d').year
+        start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
+        end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
         
         async def async_download_executor():
             from plugins.packages.FTRM.extract_reports import fetch_reports
@@ -155,24 +155,25 @@ with DAG(
     t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
 
     #SSPM
-    t4_run_sent_predictor_local = BashOperator(
-        task_id="t4_run_sent_predictor_local",
-        bash_command=(
-        "python3 /data/seanchoi/SSPM_local/sec_sent_predictor_local.py "
-        "{{ params.csv_file_path }} "
-        "{{ params.fig_loc }} "
-        "{{ params.input_path }} "
-        "{{ params.window }}"
-        ),
-        params={
-            "csv_file_path": "data/constituents/market/sp500_union_constituents.csv",
-            "fig_loc": "data/SP500/reports/market/outcome/figures",
-            "input_path": "data/SP500/reports/market/dtm/final/analysis_report_summary.parquet",
-            "window": end_date,
-        },
-        )
+    # t4_run_sent_predictor_local = BashOperator(
+    #     task_id="t4_run_sent_predictor_local",
+    #     bash_command=(
+    #     "python3 /data/seanchoi/SSPM_local/sec_sent_predictor_local.py "
+    #     "{{ params.csv_file_path }} "
+    #     "{{ params.fig_loc }} "
+    #     "{{ params.input_path }} "
+    #     "{{ params.window }}"
+    #     ),
+    #     params={
+    #         "csv_file_path": f"{csv_file_path}",
+    #         "fig_loc": "data/SP500/reports/market/outcome/figures",
+    #         "input_path": "data/SP500/reports/market/dtm/final/analysis_report_summary.parquet",
+    #         "window": end_date,
+    #     },
+    #     )
 
 
     
-    t1_download_id_executor >> t2_download_executor >> t3_dtm_constructor >> t4_run_sent_predictor_local
+    t1_download_id_executor >> t2_download_executor >> t3_dtm_constructor 
+    # >> t4_run_sent_predictor_local
         
