@@ -1,5 +1,18 @@
 
 services: 
+  # Use the latest version of Docker Compose
+    mongodb:
+      image: mongo:latest
+      container_name: mongo_container
+      restart: always
+      environment:
+        MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+        MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      ports:
+        - "27017:27017" # Exposes MongoDB to localhost
+      volumes:
+        - /data/mongodb/data:/data/db # Persistent data storage
+        - /data/mongodb/config:/data/configdb # Optional for replicaset config
 
     postgres:
       image: postgres:13
@@ -60,6 +73,8 @@ services:
             - ./dags:/opt/airflow/dags:rw
             - ./data:/opt/airflow/data:rw
             - ./plugins:/opt/airflow/plugins:rw
+            - ./db_utils:/opt/airflow/db_utils:rw
+
             - ./nltk_data:/opt/airflow/nltk_data
             - ./airflow_docker/airflow_env.sh:/opt/airflow/airflow_env.sh:ro
             - ./airflow_docker/entrypoint.sh:/opt/airflow/entrypoint.sh:ro
@@ -71,7 +86,13 @@ services:
             - "8080:8080"   # Airflow Webserver
             - "3000:3000"   # Custom Webserver Port
             - "4040:4040"   # Spark UI
-        command: webserver
+
+        # 添加必要的目录访问权限 （生产环境请修改）
+        command: >
+          bash -c "
+            chown -R airflow:airflow /opt/airflow/{data,plugins,data/SP500/sec/market/html,data/SP500/sec/market/txt} &&
+            exec airflow webserver"
+            
         healthcheck:
           test: ["CMD", "curl", "--fail", "http://localhost:3000/health"]
           interval: 10s

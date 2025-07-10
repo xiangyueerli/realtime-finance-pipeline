@@ -50,16 +50,16 @@ USER airflow
 # Ensure .local/bin is in PATH for user-installed packages
 ENV PATH="/home/airflow/.local/bin:$PATH"
 
-# Install Python dependencies
+# Install Python dependencies (offline first, then fallback to online)
 WORKDIR /opt/airflow
 COPY requirements.txt .
-
 COPY deps /deps/
 
-RUN pip install --user psycopg2-binary
-RUN pip install --user --no-index --find-links=/deps httpx==0.25.2
-RUN pip install --user --no-index --find-links=/deps psycopg2-binary \
-&& if [ -f requirements.txt ]; then pip install --user --no-index --find-links=/deps -r requirements.txt; fi \
+RUN pip install --user psycopg2-binary \
+&& pip install --user --no-index --find-links=/deps httpx==0.25.2 || true \
+&& pip install --user --no-index --find-links=/deps psycopg2-binary || true \
+&& if [ -f requirements.txt ]; then pip install --user --no-index --find-links=/deps -r requirements.txt || true; fi \
+&& if [ -f requirements.txt ]; then pip install --user -r requirements.txt; fi \
 && rm -rf /home/airflow/.local/lib/python3.8/site-packages/airflow/example_dags \
 && rm -rf /home/airflow/.cache/pip
 
