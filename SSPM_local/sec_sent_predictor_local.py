@@ -13,10 +13,13 @@ import datetime
 class SentimentPredictor:
     def __init__(self, config):
         # Configuration
-        self.constituents_path = config.get("constituents_path")
+        # self.constituents_path = config.get("constituents_path")
         self.fig_loc = config.get("fig_loc")
         self.input_path = config.get("input_path")
         self.window = config.get("window")
+        print('self.fig_loc', self.fig_loc)
+        print('self.input_path', self.input_path)
+        print('self.window', self.window)
 
 
         # Create output directory if it doesn't exist
@@ -85,13 +88,14 @@ class SentimentPredictor:
 
     
 if __name__ == "__main__":
+    print("Starting script execution...@@@@@@@")
     # Read configuration from command-line arguments or environment variables
     base_path = "/data/seanchoi/airflow/"  # Correct base path
     config = {
-        "constituents_path": os.path.join(base_path, sys.argv[1]),
-        "fig_loc": os.path.join(base_path, sys.argv[2]),
-        "input_path": os.path.join(base_path, sys.argv[3]),
-        "window": sys.argv[4],
+        # "constituents_path": os.path.join(base_path, sys.argv[1]),
+        "fig_loc": os.path.join(base_path, sys.argv[1]),
+        "input_path": os.path.join(base_path, sys.argv[2]),
+        "window": sys.argv[3],
     }
 
     predictor = SentimentPredictor(config)

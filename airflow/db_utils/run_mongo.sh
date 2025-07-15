@@ -1,0 +1,23 @@
+################################################################################
+# Author: Chunyu Yan
+# Date: 2025-07-13
+# Title: Basic MongoDB Shell Operations for Financial Data
+# Description:
+#     This shell script provides commonly used MongoDB commands to inspect and
+#     manage SEC filing data stored in a MongoDB instance.
+#     It connects using root credentials and performs typical read/write ops.
+################################################################################
+
+# run mongodb
+mongo --username root --password root-1234 --authenticationDatabase admin
+use financial_db
+
+# 
+show dbs
+show collections
+
+# 
+db.sec_reports.find().sort({_id: -1}).limit(10)
+db.sec_reports.drop()
+db.sec_reports.count()
+db.sec_reports.findOne() 
