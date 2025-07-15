@@ -13,6 +13,7 @@ RUN apt-get update \
         wget \
         curl \
         supervisor \
+        wkhtmltopdf \
         postgresql-client \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* 
