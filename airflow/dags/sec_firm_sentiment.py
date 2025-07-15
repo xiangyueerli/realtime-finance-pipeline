@@ -95,6 +95,9 @@ with DAG(
         with concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
             futures = []
             for cik in os.listdir(data_folder):
+                # Skip the file, only process directories
+                if not os.path.isdir(root_folder):
+                    continue 
                 future = executor.submit(process_fillings_for_cik, cik, data_folder, save_folder)
                 futures.append(future)
                 

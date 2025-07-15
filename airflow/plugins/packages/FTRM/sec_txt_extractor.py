@@ -208,6 +208,9 @@ def process_headings(match):
 def process_fillings_for_cik(cik, root_folder, root_folder_fillings):
         read_folder = os.path.join(root_folder, cik)
         save_folder = os.path.join(root_folder_fillings, cik)
+        # Skip the k10_list.json by Chunyu
+        if not os.path.isdir(read_folder):
+            return 
         if not os.path.exists(save_folder):
             os.makedirs(save_folder)
         if read_folder == f'{root_folder}/.DS_Store':
