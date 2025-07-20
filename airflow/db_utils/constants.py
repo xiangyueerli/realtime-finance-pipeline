@@ -1,6 +1,6 @@
 # MongoDB connection details
 MONGO_USERNAME = "root"  # Replace with your MongoDB username
-MONGO_PASSWORD = "root-1234"  # Replace with your MongoDB password
+MONGO_PASSWORD = "mongo_edinburgh_123"  # Replace with your MongoDB password
 
 MONGO_HOST = "mongo_container" # run in the docker
 # MONGO_HOST = "localhost"  # Uncomment this line if running locally
@@ -13,5 +13,6 @@ ANNUAL_REPORT_COLLECTION = "annual_reports"
 QUARTER_REPORT_COLLECTION = "quarter_reports"
 SEC_REPORT_COLLECTION = "sec_reports"
 TRANSCRIPTS_COLLECTION = "transcripts"
-NEWS_COLLECTION = "news_articles"
+NEWS_COLLECTION = "news_articles"   
 PRICE_COLLECTION = "price_data" 
+EARNING_CALL_COLLECTION = "transcripts"

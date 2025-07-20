@@ -9,7 +9,7 @@
 ################################################################################
 
 # run mongodb
-mongo --username root --password root-1234 --authenticationDatabase admin
+mongo --username root --password mongo_edinburgh_123 --authenticationDatabase admin
 use financial_db
 
 # 
@@ -21,3 +21,7 @@ db.sec_reports.find().sort({_id: -1}).limit(10)
 db.sec_reports.drop()
 db.sec_reports.count()
 db.sec_reports.findOne() 
+
+#
+db.transcripts.find().sort({_id: -1}).limit(1)
+db.transcripts.count()
