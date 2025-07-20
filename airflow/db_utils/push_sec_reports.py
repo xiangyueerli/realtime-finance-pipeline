@@ -143,7 +143,6 @@ def push_sec_reports():
                         "report_type": report_type,
                         "company": valid_row.iloc[0]["Security"],
                         "ticker_symbol": valid_row.iloc[0]["Symbol"],
-                        "CIK": cik_no,
                         "company_ticker_id": results[0]["_id"],
                         "html_content": html_content,
                         "txt_content": txt_content,
@@ -152,12 +151,12 @@ def push_sec_reports():
                         "pdf_path": pdf_path,
                         "metadata": {
                             "uploaded_date": datetime.now().strftime("%Y-%m-%d"),
-                            "version": 1,
                             "size_mb": get_file_size_in_mb(root + "/" + file),
+                            "CIK": cik_no
                         }
                     }
                     
-                    unique_keys = ["CIK", "year", "report_type"]
+                    unique_keys = ["company", "year", "ticker_symbol", "report_type"]
                     if report_type == "10-Q":
                         unique_keys.append("quarter")
 

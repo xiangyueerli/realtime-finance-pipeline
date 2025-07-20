@@ -1,18 +1,18 @@
 
 import pendulum
-from airflow import DAG
-from airflow.decorators import task
-from plugins.common.time_log_decorator import time_log
-from airflow.operators.bash import BashOperator
-import time
 import os
 import pandas as pd
 import datetime
+import logging
+logger = logging.getLogger(__name__)
 
-
+from db_utils import merge_transcripts
+from airflow import DAG
+from airflow.decorators import task
+from plugins.common.time_log_decorator import time_log
 
 with DAG(
-    dag_id="calls_market_sentiment",
+    dag_id="calls_pipeline",
     schedule="0 0 1 1,4,7,10 *",
     start_date=pendulum.datetime(2025, 1, 1, tz="UTC"),
     catchup=False,
@@ -51,18 +51,10 @@ with DAG(
     # Input File    
     extracted_folder = os.path.join(base_path, "data/SP500/calls/market/json")
 
-    
 
     ###############################################################################
-    @task(task_id='t1_test')
-    def test(PATH):
     
-        df = pd.read_csv(PATH, encoding = 'utf-8')
-        cik = df['CIK'].drop_duplicates().tolist() 
-        
-        return cik
-    
-    @task(task_id='t2_download_executor')
+    @task(task_id='t1_download_executor')
     @time_log
     def download_executor(save_folder, api_key, start_date, end_date, **kwargs):
         import asyncio
@@ -88,65 +80,20 @@ with DAG(
         # Run the async function
         asyncio.run(async_download_executor())
 
-
         
-    @task(task_id='t3_dtm_constructor')
-    @time_log
-    def dtm_constructor(data_folder, save_folder, csv_file_path, columns, start_date, end_date, **kwargs):
-        import os
-        from plugins.packages.PDCM.constructDTM import ConstructDTM
-        from pyspark.sql import SparkSession
-        import subprocess
-        # Optional: Check if Java is visible
-        subprocess.run(["java", "-version"], check=True)
-                
-        os.environ['PYSPARK_SUBMIT_ARGS'] = "--master local[2] pyspark-shell"
-
-        # Initialize Spark session
-        spark = (
-            SparkSession.builder
-            .appName("DataPipeline")
-            .master("local[2]")
-            # Memory allocations
-            .config("spark.driver.memory", "6g")
-            .config("spark.executor.memory", "6g")
-            .config("spark.sql.shuffle.partitions", "4") 
-
-            .getOrCreate()
-        )
-        pipeline = ConstructDTM(spark, data_folder, save_folder, csv_file_path, columns, start_date, end_date)
-        pipeline.file_aggregator()
-        pipeline.process_filings_for_cik_spark(save_folder, start_date, end_date, csv_file_path)
-        constituents_metadata_path = os.path.join(base_path, "data/constituents/market/sp500_constituents.csv") # This is for getting the CIKs for the SP500, but only for the year 2006 - 2023
-        pipeline.concatenate_parquet_files(final_save_path, csv_file_path, constituents_metadata_path, start_date, end_date)
-                
+    @task(task_id='t2_push_to_mongodb')
+    def push_to_mongodb():
+        try:
+            merge_transcripts()
+            logger.info("✅ Successfully pushed transcripts to MongoDB.")
+        except Exception as e:
+            raise RuntimeError(f"❌ Failed to push transcripts to MongoDB: {e}")
+         
     
     #FTRM -> You should use correct API key to run this part. The current API is expired
-    t2_download_executor = download_executor(save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date)
-    #PDCM
-    t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
-
-    # #SSPM
-    # t4_run_sent_predictor_local = BashOperator(
-    #     task_id="t4_run_sent_predictor_local",
-    #     bash_command=(
-    #     "python3 /data/seanchoi/SSPM_local/sec_sent_predictor_local.py "
-    #     "{{ params.csv_file_path }} "
-    #     "{{ params.fig_loc }} "
-    #     "{{ params.input_path }} "
-    #     "{{ params.window }}"
-    #     ),
-    #     params={
-    #         "csv_file_path": f"{csv_file_path}",
-    #         "fig_loc": "data/SP500/calls/market/outcome/figures",
-    #         "input_path": "data/SP500/calls/market/dtm/final/transcripts_DTM_SP500_2.parquet",
-    #         "window": end_date,
-    #     },
-    #     )
-
+    t1_download_executor = download_executor(save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date)
+    t2_push_to_mongodb = push_to_mongodb()
 
     
-    t2_download_executor >> t3_dtm_constructor 
-    # >> t4_run_sent_predictor_local
-
+    t1_download_executor >> t2_push_to_mongodb 
         
