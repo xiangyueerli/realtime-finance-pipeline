@@ -22,7 +22,7 @@ with DAG(
     
     ############################### Configurations ################################
 
-    start_date = '2024-01-01'
+    start_date = '2023-05-01'
     end_date = datetime.datetime.now().strftime('%Y-%m-%d')
     
     # Download Executor Configurations
