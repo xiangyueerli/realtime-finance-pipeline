@@ -10,7 +10,6 @@ from db_utils import merge_transcripts
 from airflow import DAG
 from airflow.decorators import task
 from plugins.common.time_log_decorator import time_log
-from airflow.operators.bash import BashOperator
 
 with DAG(
     dag_id="calls_pipeline",
@@ -22,7 +21,7 @@ with DAG(
     
     ############################### Configurations ################################
 
-    start_date = '2023-05-01'
+    start_date = '2024-01-01'
     end_date = datetime.datetime.now().strftime('%Y-%m-%d')
     
     # Download Executor Configurations
