@@ -13,7 +13,7 @@ import datetime
 
 with DAG(
     dag_id="calls_firm_sentiment",
-    schedule="0 0 1 1,4,7,10 *",
+    schedule=None,  # Triggered dynamically by the first DAG
     start_date=pendulum.datetime(2025, 1, 1, tz="UTC"),
     catchup=False,
 
@@ -61,6 +61,31 @@ with DAG(
         cik = df['CIK'].drop_duplicates().tolist() 
         
         return cik
+    
+    @task(task_id="t1_process_schedule_data")
+    def process_schedule_data(**kwargs):
+        # Retrieve the passed data from the execution context
+        conf = kwargs.get("dag_run").conf
+        time_slot = conf.get("time_slot", "unknown")
+        schedule_dict = conf.get("schedule_data", {})
+        
+        # Convert the dictionary back to a DataFrame
+        calls_df = pd.DataFrame(schedule_dict)
+        print(f"Schedule DataFrame for {time_slot}: {calls_df}")
+        
+        # Process the DataFrame dynamically based on the time slot
+        if time_slot == "pre_market":
+            print("Processing pre-market data...")
+            # Add logic for pre-market processing
+            # Return the schedule_dict corresponding to pre-market time slot
+            return calls_df[calls_df['time'] == 'time-pre-market']
+        elif time_slot == "after_hours":
+            print("Processing after-hours data...")
+            # Add logic for after-hours processing
+            # Return the schedule_dict corresponding to after-hours time slot
+            return calls_df[calls_df['time'] == 'time-after-hours']
+        else:
+            print("Unknown time slot. No data to process.")
     
     @task(task_id='t2_download_executor')
     @time_log

@@ -52,15 +52,24 @@ from plugins.common.nasdaqAPI_finance_calendars import get_earnings_today
 def fetch_calls_calendars():
     calls = get_earnings_today()
     # No earnings today such as weekends or holidays
-    if calls.empty: 
+    if calls.empty or calls is None: 
         # Stop the DAG from running
         # Temp
         print("No earnings today, stopping the DAG.")
         return None
     calls_df = calls[['time']]
-
+    # # Example output of calls_df will be
+    #     symbol    time                             
+    # AZZ      time-after-hours  
+    # MEI      time-after-hours  
+    # PCYO     time-after-hours  
+    # THTX      time-pre-market  
+    # BSET     time-after-hours  
+    # ARTW    time-not-supplied  
+    
+    return calls_df
     # Return the DataFrame as a dictionary (XComs can only store serializable data)
-    return calls_df.to_dict()
+    # return calls_df.to_dict()
     
     # earning_df.to_dict() will returns
     # {
@@ -68,14 +77,36 @@ def fetch_calls_calendars():
     #         'DAL': 'time-not-supplied',
     #         'CAG': 'time-not-supplied',
     #         'LEVI': 'time-not-supplied',
-    #         'VIST': 'time-not-supplied',
-    #         'PSMT': 'time-not-supplied',
-    #         'SMPL': 'time-not-supplied',
+    #         'VIST': 'pre_market',
+    #         'PSMT': 'after-hours',
+    #         'SMPL': 'pre_market',
     #         'WDFC': 'time-not-supplied',
-    #         'ETWO': 'time-not-supplied',
+    #         'ETWO': 'after_hours',
     #         'KALV': 'time-not-supplied'
     #     }
     # }
     
     # (In progress) Let's reorganise the data format later. First of all, input and output checking 
 
+# Example: Push Cron Expression in First DAG
+# @task(task_id="fetch_cron_expression")
+# def fetch_cron_expression():
+#     schedule_map = {
+#         "pre_market": "*/5 11-13 * * *",
+#         "after_hours": "*/5 20-22 * * *",
+#     }
+#     time_slot = "pre_market"  # Example: This could be dynamically determined
+#     cron_expression = schedule_map.get(time_slot, "*/5 11-13 * * *")
+#     print(f"Cron expression: {cron_expression}")
+#     return cron_expression
+
+# Example: Use Cron Expression in Second DAG
+# dynamic_cron_expression = XCom.get(task_ids="fetch_cron_expression", dag_id="fetch_calenders")
+
+# with DAG(
+#     dag_id="dynamic_scheduled_dag",
+#     schedule=dynamic_cron_expression,  # Use the dynamic cron expression
+#     start_date=pendulum.datetime(2025, 1, 1, tz="UTC"),
+#     catchup=False,
+# ) as dag:
+#     ...
