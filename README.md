@@ -83,8 +83,8 @@ Open in browser:
 http://20.77.80.201:3000/home
 ```
 Login credentials:
-- **Username**: `admin`
-- **Password**: `admin`
+- **Username**: Request to the author
+- **Password**: Request to the author
 
 ---
 
