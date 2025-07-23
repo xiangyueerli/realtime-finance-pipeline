@@ -1,5 +1,6 @@
 # README: realtime-financial-sentiment
- 
+Developed by: Sean Choi (https://github.com/007seann)
+
 ## 1. Why did you start your project?
 
 This project was initiated in response to the increasing importance of real-time sentiment analysis in financial markets. As a retail investor with five years of experience and a 7.5% compound annual growth rate, I encountered firsthand how sensitive assets like Nvidia and Bitcoin are to sentiment shocks. Existing systems failed to capture the breadth and speed of multi-source financial sentiment. This gap motivated the development of an end-to-end, real-time sentiment scoring system capable of integrating multiple perspectives from financial text—such as regulatory filings, earnings call transcripts, and expert analysis reports—for better forecasting of stock returns and volatility.
