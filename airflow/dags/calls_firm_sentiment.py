@@ -8,7 +8,7 @@ import time
 import os
 import pandas as pd
 import datetime
-
+from airflow.models import XCom
 
 
 with DAG(
@@ -38,7 +38,8 @@ with DAG(
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/calls/firm")
-    csv_file_path = os.path.join(base_path, "data/constituents/firms/nvidia_constituents_final.csv")
+    # csv_file_path = os.path.join(base_path, "data/constituents/firms/nvidia_constituents_final.csv")
+    csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
     columns = ["Name", "CIK", "Date", "Body" ]
     firms_df = pd.read_csv(csv_file_path)
     columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
@@ -78,18 +79,50 @@ with DAG(
             print("Processing pre-market data...")
             # Add logic for pre-market processing
             # Return the schedule_dict corresponding to pre-market time slot
-            return calls_df[calls_df['time'] == 'time-pre-market']
+            return {"calender": calls_df[(calls_df['time'] == 'time-pre-market') | (calls_df['time'] == 'time-not-supplied')], "time_slot": time_slot}
         elif time_slot == "after_hours":
             print("Processing after-hours data...")
             # Add logic for after-hours processing
             # Return the schedule_dict corresponding to after-hours time slot
-            return calls_df[calls_df['time'] == 'time-after-hours']
+            return {"calender": calls_df[(calls_df['time'] =='time-after-hours') | (calls_df['time'] == 'time-not-supplied')], "time_slot": time_slot}
+
         else:
             print("Unknown time slot. No data to process.")
+            
+    @task(task_id="execute_dynamic_logic")
+    def execute_dynamic_logic(time_slot, save_folder, api_key, start_date, end_date, calender, **kwargs):
+        import time
+        from datetime import datetime, timedelta
+
+        print(f"Time Slot: {time_slot}")
+
+        # Define the time range based on the time slot
+        if time_slot == "pre_market":
+            start_time = datetime.now().replace(hour=11, minute=0, second=0, microsecond=0)  # 11:00 AM UTC
+            end_time = datetime.now().replace(hour=13, minute=0, second=0, microsecond=0)    # 1:00 PM UTC
+        elif time_slot == "after_hours":
+            start_time = datetime.now().replace(hour=20, minute=0, second=0, microsecond=0)  # 8:00 PM UTC
+            end_time = datetime.now().replace(hour=22, minute=0, second=0, microsecond=0)    # 10:00 PM UTC
+        else:
+            print("Unknown time slot. No execution.")
+            return
+
+        print(f"Executing tasks between {start_time} and {end_time} every 5 minutes.")
+
+        # Simulate execution every 5 minutes within the time range
+        current_time = start_time
+        while current_time < end_time:
+            print(f"Executing task at {current_time.strftime('%Y-%m-%d %H:%M:%S')}")
+            # Add your task logic here (e.g., call APIs, process data, etc.)
+            download_executor(save_folder, api_key, start_date, end_date, calender, **kwargs)
+            time.sleep(5 * 60)  # Wait for 5 minutes
+            current_time += timedelta(minutes=5)
+
+        print("Finished executing tasks for the time slot.")
     
-    @task(task_id='t2_download_executor')
+    # @task(task_id='t2_download_executor')
     @time_log
-    def download_executor(save_folder, api_key, start_date, end_date, **kwargs):
+    def download_executor(save_folder, api_key, start_date, end_date, calender, **kwargs):
         import asyncio
         start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
         end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
@@ -101,7 +134,10 @@ with DAG(
             rate_limiter = asyncio.Semaphore(RATE_LIMIT)
             connector = aiohttp.TCPConnector(limit_per_host=CONCURRENCY_LIMIT)
             async with aiohttp.ClientSession(connector=connector) as session:
-                tickers = list(cik_to_ticker.values())
+                tickers = calender.index.tolist()
+                tickers = tickers[:3]
+                print(f"Tickers to process: {tickers}")
+                # tickers = list(cik_to_ticker.values())
 
                 # Process in batches
                 for i in range(0, len(tickers), BATCH_SIZE):
@@ -158,17 +194,26 @@ with DAG(
         predictor = SentimentPredictor(config)
         predictor.run()
     
+    # Real-time Layer
+    t1_process_schedule_data_task = process_schedule_data()
+    calender = t1_process_schedule_data_task["calender"]
+    time_slot = t1_process_schedule_data_task["time_slot"]
 
     
-    #FTRM -> You should use correct API key to run this part. The current API is expired
-    t2_download_executor = download_executor(save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date)
-    #PDCM
-    t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
+    # #FTRM -> You should use correct API key to run this part. The current API is expired
+    download_executor_ = execute_dynamic_logic(time_slot=time_slot, save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date, calender=calender)
+    # t2_download_executor = download_executor(save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date, calender=t1_process_schedule_data)
+    # #PDCM
+    # t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
 
-    #SSPM
-    t4_sent_predictor = sent_predictor(window=end_date)
+    # #SSPM
+    # t4_sent_predictor = sent_predictor(window=end_date)
 
     
-    t2_download_executor >> t3_dtm_constructor >> t4_sent_predictor
+    # t2_download_executor >> t3_dtm_constructor >> t4_sent_predictor
+    t1_process_schedule_data_task >> download_executor_
+    
+    
+    
 
         

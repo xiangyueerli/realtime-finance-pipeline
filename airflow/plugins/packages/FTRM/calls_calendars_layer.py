@@ -1,36 +1,36 @@
-import os
-import sys
-from datetime import datetime
-from airflow.models import Variable
-# Temporarily modify sys.path to include the plugins directory for local testing
-sys.path.append('/data/seanchoi/airflow/plugins')
-for path in sys.path:
-    print(path)
+# import os
+# import sys
+# from datetime import datetime
+# from airflow.models import Variable
+# # Temporarily modify sys.path to include the plugins directory for local testing
+# sys.path.append('/data/seanchoi/airflow/plugins')
+# for path in sys.path:
+#     print(path)
     
-# Debugging: Print the current working directory
-print("Current Working Directory:", os.getcwd())
+# # Debugging: Print the current working directory
+# print("Current Working Directory:", os.getcwd())
 
-# Debugging: Print the script's directory
-print("Script Directory:", os.path.dirname(os.path.abspath(__file__)))
+# # Debugging: Print the script's directory
+# print("Script Directory:", os.path.dirname(os.path.abspath(__file__)))
 
-# Import the required modules
-try:
-    from common.nasdaqAPI_finance_calendars import get_earnings_today, get_earnings_by_date
-    print("Import successful!")
-except ModuleNotFoundError as e:
-    print("ModuleNotFoundError:", e)
-
-
+# # Import the required modules
+# try:
+#     from common.nasdaqAPI_finance_calendars import get_earnings_today, get_earnings_by_date
+#     print("Import successful!")
+# except ModuleNotFoundError as e:
+#     print("ModuleNotFoundError:", e)
 
 
-# # earning = get_earnings_today()
-earnings = get_earnings_by_date(datetime(2025, 7, 10, 0, 0))
 
 
-print(earnings['time'].unique())
-print(earnings[earnings['time'] == 'time-not-supplied'])
-print(earnings[earnings['time'] == 'after-hours'])
-print(earnings[earnings['time'] == 'pre-market'])
+# # # earning = get_earnings_today()
+# earnings = get_earnings_by_date(datetime(2025, 7, 10, 0, 0))
+
+
+# print(earnings['time'].unique())
+# print(earnings[earnings['time'] == 'time-not-supplied'])
+# print(earnings[earnings['time'] == 'after-hours'])
+# print(earnings[earnings['time'] == 'pre-market'])
 
 # # Define time slots and their corresponding schedules
 # schedule_map = {
@@ -87,6 +87,17 @@ def fetch_calls_calendars():
     # }
     
     # (In progress) Let's reorganise the data format later. First of all, input and output checking 
+    #Example: Push Cron Expression in First DAG
+
+# def fetch_cron_expression(time_slot):
+#     schedule_map = {
+#         "pre_market": "*/5 11-13 * * *",
+#         "after_hours": "*/5 20-22 * * *",
+#     }
+#     # time_slot = "pre_market"  # Example: This could be dynamically determined
+#     cron_expression = schedule_map.get(time_slot, "*/5 11-13 * * *")
+#     print(f"Cron expression: {cron_expression}")
+#     return cron_expression
 
 # Example: Push Cron Expression in First DAG
 # @task(task_id="fetch_cron_expression")
