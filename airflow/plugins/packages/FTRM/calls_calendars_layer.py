@@ -48,7 +48,7 @@
 # # For the dockerised image
 from datetime import datetime
 from plugins.common.nasdaqAPI_finance_calendars import get_earnings_today
-
+import pandas as pd
 def fetch_calls_calendars():
     calls = get_earnings_today()
     # No earnings today such as weekends or holidays
@@ -67,7 +67,22 @@ def fetch_calls_calendars():
     # BSET     time-after-hours  
     # ARTW    time-not-supplied  
     
-    return calls_df
+    mock_data = pd.DataFrame({
+            "symbol": ["AZZ", "MEI", "PCYO", "THTX", "BSET", "ARTW"],
+            "time": [
+                "time-after-hours",
+                "time-after-hours",
+                "time-after-hours",
+                "time-pre-market",
+                "time-after-hours",
+                "time-not-supplied"
+            ]
+        }).set_index("symbol")
+    print('Mock data created for testing purposes.')
+    print('Mock data:', mock_data)
+    
+    return mock_data
+
     # Return the DataFrame as a dictionary (XComs can only store serializable data)
     # return calls_df.to_dict()
     

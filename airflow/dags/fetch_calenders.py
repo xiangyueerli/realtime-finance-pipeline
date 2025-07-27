@@ -2,6 +2,7 @@ from airflow import DAG
 from airflow.decorators import task
 from airflow.models import Variable
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
+from airflow.exceptions import AirflowSkipException
 import pendulum
 import pandas as pd
 
@@ -30,6 +31,9 @@ with DAG(
         # Fetch the schedule data frame
         calls_df = fetch_calls_calendars()
         print(f"Fetched Calls DataFrame: {calls_df}")
+        if calls_df is None or calls_df.empty:
+            raise AirflowSkipException("No calls data available for today, stopping the DAG.")
+        
         # Determine the time slot dynamically based on execution time
         hour = execution_date.hour
         
@@ -47,7 +51,6 @@ with DAG(
             filtered_df = calls_df[
                 (calls_df['time'] == 'time-after-hours') | (calls_df['time'] == 'time-not-supplied')
             ]
-
 
         # print(filtered_df.shape)
         # print(f"Filtered DataFrame for {time_slot}: {filtered_df}")
