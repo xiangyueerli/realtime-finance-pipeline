@@ -51,13 +51,16 @@ from plugins.common.nasdaqAPI_finance_calendars import get_earnings_today
 import pandas as pd
 def fetch_calls_calendars():
     calls = get_earnings_today()
+
     # No earnings today such as weekends or holidays
-    if calls.empty or calls is None: 
-        # Stop the DAG from running
-        # Temp
-        print("No earnings today, stopping the DAG.")
-        return None
-    calls_df = calls[['time']]
+    # if calls.empty or calls is None: 
+    #     # Stop the DAG from running
+    #     # Temp
+    #     print("No earnings today, stopping the DAG.")
+    #     return None
+    # calls_df = calls[['time']]
+
+
     # # Example output of calls_df will be
     #     symbol    time                             
     # AZZ      time-after-hours  

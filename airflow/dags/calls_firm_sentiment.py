@@ -73,28 +73,44 @@ with DAG(
         # Convert the dictionary back to a DataFrame
         calls_df = pd.DataFrame(schedule_dict)
         print(f"Schedule DataFrame for {time_slot}: {calls_df}")
-        
+
+        print('calls_df:', calls_df)
         # Process the DataFrame dynamically based on the time slot
         if time_slot == "pre_market":
             print("Processing pre-market data...")
             # Add logic for pre-market processing
             # Return the schedule_dict corresponding to pre-market time slot
-            return {"calender": calls_df[(calls_df['time'] == 'time-pre-market') | (calls_df['time'] == 'time-not-supplied')], "time_slot": time_slot}
-        elif time_slot == "after_hours":
+            filtered_df = calls_df[
+                (calls_df['time'] == 'time-pre-market') | (calls_df['time'] == 'time-not-supplied')
+                ]
+        if time_slot == "after_hours":
             print("Processing after-hours data...")
             # Add logic for after-hours processing
             # Return the schedule_dict corresponding to after-hours time slot
-            return {"calender": calls_df[(calls_df['time'] =='time-after-hours') | (calls_df['time'] == 'time-not-supplied')], "time_slot": time_slot}
-
+            filtered_df = calls_df[
+                (calls_df['time'] =='time-after-hours') | (calls_df['time'] == 'time-not-supplied')
+                ]
+            print('Filtered DataFrame:!!!', filtered_df)
         else:
             print("Unknown time slot. No data to process.")
+            filtered_df = pd.DataFrame()  # Return an empty DataFrame if the time slot is unknown
+            
+        # Convert the filtered DataFrame to a dictionary for XComs
+        schedule_data = filtered_df.to_dict()
+        
+        # Return the schedule data to XComs
+        return {"time_slot": time_slot, "schedule_data": schedule_data}
             
     @task(task_id="execute_dynamic_logic")
-    def execute_dynamic_logic(time_slot, save_folder, api_key, start_date, end_date, calender, **kwargs):
+    def execute_dynamic_logic(Xcom, save_folder, api_key, start_date, end_date, **kwargs):
         import time
         from datetime import datetime, timedelta
 
-        print(f"Time Slot: {time_slot}")
+        # print(f"Time Slot: {time_slot}")
+        time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
+        print('time_slot:', time_slot)
+        schedule_data = Xcom['schedule_data']  # Extract schedule_data from the dictionary
+        print('schedule_data:', schedule_data)
 
         # Define the time range based on the time slot
         if time_slot == "pre_market":
@@ -196,12 +212,21 @@ with DAG(
     
     # Real-time Layer
     t1_process_schedule_data_task = process_schedule_data()
-    calender = t1_process_schedule_data_task["calender"]
-    time_slot = t1_process_schedule_data_task["time_slot"]
+
+    # time_slot = t1_process_schedule_data_task["time_slot"]
 
     
     # #FTRM -> You should use correct API key to run this part. The current API is expired
-    download_executor_ = execute_dynamic_logic(time_slot=time_slot, save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date, calender=calender)
+        
+    download_executor_ = execute_dynamic_logic(
+        Xcom=t1_process_schedule_data_task,
+        save_folder=final_save_path,
+        api_key=api_key,
+        start_date=start_date,
+        end_date=end_date
+        # calender=t1_process_schedule_data_task
+    )
+    
     # t2_download_executor = download_executor(save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date, calender=t1_process_schedule_data)
     # #PDCM
     # t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
