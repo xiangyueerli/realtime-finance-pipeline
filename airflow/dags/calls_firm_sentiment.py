@@ -108,9 +108,9 @@ with DAG(
 
         # print(f"Time Slot: {time_slot}")
         time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
-        print('time_slot:', time_slot)
         schedule_data = Xcom['schedule_data']  # Extract schedule_data from the dictionary
-        print('schedule_data:', schedule_data)
+        # print('schedule_data:', list(schedule_data['time'].keys()))
+        today_firms = list(schedule_data['time'].keys())
 
         # Define the time range based on the time slot
         if time_slot == "pre_market":
@@ -130,7 +130,7 @@ with DAG(
         while current_time < end_time:
             print(f"Executing task at {current_time.strftime('%Y-%m-%d %H:%M:%S')}")
             # Add your task logic here (e.g., call APIs, process data, etc.)
-            # download_executor(save_folder, api_key, start_date, end_date, calender, **kwargs)
+            # download_executor(save_folder, api_key, start_date, end_date, today_firms, **kwargs)
             time.sleep(5 * 60)  # Wait for 5 minutes
             current_time += timedelta(minutes=5)
 
@@ -138,7 +138,7 @@ with DAG(
     
     # @task(task_id='t2_download_executor')
     @time_log
-    def download_executor(save_folder, api_key, start_date, end_date, calender, **kwargs):
+    def download_executor(save_folder, api_key, start_date, end_date, firms, **kwargs):
         import asyncio
         start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
         end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
@@ -150,7 +150,10 @@ with DAG(
             rate_limiter = asyncio.Semaphore(RATE_LIMIT)
             connector = aiohttp.TCPConnector(limit_per_host=CONCURRENCY_LIMIT)
             async with aiohttp.ClientSession(connector=connector) as session:
-                tickers = calender.index.tolist()
+                tickers = firms
+                
+                # For testing purposes, limit the number of tickers to process
+                # Uncomment the next line to process all tickers
                 tickers = tickers[:3]
                 print(f"Tickers to process: {tickers}")
                 # tickers = list(cik_to_ticker.values())
