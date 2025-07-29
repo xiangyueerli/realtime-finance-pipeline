@@ -70,8 +70,9 @@ with DAG(
         json_file = "k10_list.json"
         src_file = os.path.join(src_dir, json_file)
         if os.path.exists(src_file):
-            shutil.copy(src_file, target_dir)
-            print(f"Copied {src_file} → {target_dir}")
+            target_file = os.path.join(target_dir, json_file)
+            shutil.copyfile(src_file, target_file)  # 只复制内容，不复制权限
+            print(f"Copied {src_file} → {target_file}")
         else:
             print(f"Source file not found: {src_file}")
 
