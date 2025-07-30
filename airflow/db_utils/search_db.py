@@ -1,21 +1,24 @@
 """
-Query Function for SEC Filing Reports in MongoDB
+Real-time Financial Document Query Interface
 
 Author: Chunyu Yan
 Date: 2025-07-13
 Project: Real-time Financial Document Pipeline for AI/LLM Integration
 
-TODO
+Description:
+This module provides interfaces for querying financial documents stored in MongoDB,
+including SEC filings (10-K, 10-Q), earnings call transcripts, and Seeking Alpha
+stock idea articles. It supports filtering by company, date range, and role.
+
 """
 
-from typing import List, Optional
+from typing import List, Literal, Optional
 from datetime import datetime
-from typing import List
 from bson import ObjectId
+from collections import Counter
 
 from .constants import *
 from .mongo_utils import get_db, filter_files
-
 
 # Connect to MongoDB with authentication
 _, db = get_db()
@@ -27,25 +30,14 @@ def find_annual_reports(
     end_date: datetime
 ) -> List[dict]:
     """
-    Find SEC 10-K annual reports for a specific company_ticker_id within a year range.
-
-    Args:
-        collection: MongoDB collection (e.g., sec_report_collection)
-        company_ticker_id: ObjectId of the company in the company_ticker collection
-        start_date: datetime object representing the start of the range
-        end_date: datetime object representing the end of the range
-
-    Returns:
-        List of matching annual (10-K) reports
+    Query all annual (10-K) SEC filings for a given company and year range.
     """
-
     query = {
         "company_ticker_id": company_ticker_id,
         "report_type": "10-K",
         "year": {"$gte": start_date.year, "$lte": end_date.year}
     }
     collection = db[SEC_REPORT_COLLECTION]
-
     results = list(collection.find(query))
     return results
 
@@ -56,33 +48,19 @@ def find_quarter_reports(
     end_date: datetime
 ) -> List[dict]:
     """
-    Find SEC 10-Q filings for a specific company_ticker_id within a date range.
-
-    Args:
-        collection: MongoDB collection (e.g., sec_report_collection)
-        company_ticker_id: ObjectId of the company in the company_ticker collection
-        start_date: datetime object representing the start of the range
-        end_date: datetime object representing the end of the range
-
-    Returns:
-        List of matching quarterly reports (10-Q)
+    Query all quarterly (10-Q) SEC filings for a given company and time range,
+    with finer filtering based on quarter-to-month mapping.
     """
-
-    # Define MongoDB query: select 10-Q reports in year range
-    # Filter quarter by full year which is rough
     query = {
         "company_ticker_id": company_ticker_id,
         "report_type": "10-Q",
         "year": {"$gte": start_date.year, "$lte": end_date.year},
         "quarter": {"$regex": "^q[1-4]$", "$options": "i"}
     }
-    
     collection = db[SEC_REPORT_COLLECTION]
-
     raw_results = list(collection.find(query))
     filtered = []
 
-    # Filter quarter finely
     quarter_month_map = {
         "q1": (1, 3),
         "q2": (4, 6),
@@ -95,7 +73,6 @@ def find_quarter_reports(
         quarter = report.get("quarter", "").lower()
         if quarter not in quarter_month_map:
             continue
-
         start_month, end_month = quarter_month_map[quarter]
         quarter_start = datetime(year, start_month, 1)
         quarter_end = datetime(year, end_month, 1).replace(day=28)
@@ -107,6 +84,43 @@ def find_quarter_reports(
     return filtered
 
 
+def find_stock_idea_articles(
+    company_name: str,
+    start_year: int,
+    end_year: int,
+    ticker_role: Literal["primary", "secondary", "both"] = "both",
+    fuzzy: bool = False,
+    limit: Optional[int] = 100
+) -> List[dict]:
+    """
+    Query Seeking Alpha 'Stock Ideas' articles related to a company
+    within a given year range and ticker role (primary, secondary, or both).
+    """
+    _, db = get_db()
+    collection = db[STOCK_IDEA_COLLECTION]
+
+    query = {
+        "year": {"$gte": str(start_year), "$lte": str(end_year)}
+    }
+
+    match_expr = {"company": {"$regex": company_name, "$options": "i"}} if fuzzy else {"company": company_name}
+
+    if ticker_role == "primary":
+        query["primary_tickers"] = {"$elemMatch": match_expr}
+    elif ticker_role == "secondary":
+        query["secondary_tickers"] = {"$elemMatch": match_expr}
+    else:
+        query["$or"] = [
+            {"primary_tickers": {"$elemMatch": match_expr}},
+            {"secondary_tickers": {"$elemMatch": match_expr}}
+        ]
+
+    cursor = collection.find(query).sort("publish_date", -1)
+    if limit:
+        cursor = cursor.limit(limit)
+
+    return list(cursor)
+
 
 def find_transcripts(
     company_ticker_id: ObjectId,
@@ -114,18 +128,8 @@ def find_transcripts(
     end_date: datetime
 ) -> List[dict]:
     """
-    Find earnings call transcripts for a company within a time range.
-
-    Args:
-        collection: MongoDB collection storing transcripts
-        company_ticker_id: ObjectId referencing the company in the ticker table
-        start_date: datetime object for start of range
-        end_date: datetime object for end of range
-
-    Returns:
-        List of matching transcript documents
+    Query earnings call transcripts for a company within a date range.
     """
-    
     query = {
         "company_ticker_id": company_ticker_id,
         "call_date": {
@@ -134,83 +138,103 @@ def find_transcripts(
         }
     }
     collection = db[EARNING_CALL_COLLECTION]
-
     results = list(collection.find(query))
     return results
 
 
-
-# Function to query across all collections
 def query_across_collections(company_name, start_date, end_date):
-    ## can integrate fuzzy matching in this
+    """
+    Query across multiple collections (10-K, 10-Q, Transcripts, Stock Ideas)
+    using company name and date range. Support both ticker and permid matching.
+    """
     results_ticker = list(filter_files(COMPANY_TICKER_DATA, {"Company Name": company_name}))
     results_permid = list(filter_files(COMPANY_PERMID_DB, {"companyName": company_name}))
     start_date = datetime.strptime(start_date, "%Y-%m-%d")
     end_date = datetime.strptime(end_date, "%Y-%m-%d")
     ticker_id, perm_id = None, None
-    if len(results_ticker)>0:
+
+    if len(results_ticker) > 0:
         ticker_id = results_ticker[0]["_id"]
         print("ticker_id: ", ticker_id)
-    if len(results_permid)>0:
+    if len(results_permid) > 0:
         perm_id = results_permid[0]["_id"]
         print("perm_id: ", perm_id)
-    
+
     final_response = {}
-    
+
     if ticker_id:
         final_response["annual_reports"] = find_annual_reports(ticker_id, start_date, end_date)
         final_response["quarter_reports"] = find_quarter_reports(ticker_id, start_date, end_date)
         final_response["transcripts"] = find_transcripts(ticker_id, start_date, end_date)
-        # final_response["price_data"] = find_price_data(start_date, end_date, ticker_id)
 
-    # if perm_id:
-        # final_response["news_data"] = find_news_data(start_date, end_date, perm_id)
-        ## you can also use search_articles function to retrieve relevant news by searching within headlines
+    try:
+        stock_ideas = find_stock_idea_articles(
+            company_name=company_name,
+            start_year=start_date.year,
+            end_year=end_date.year,
+            ticker_role="both",
+            fuzzy=False,
+            limit=100
+        )
+        final_response["stock_ideas"] = stock_ideas
+    except Exception as e:
+        print(f"[Warning] Failed to fetch stock_ideas: {e}")
 
     return final_response
 
 
+def analyze_final_response(final_response):
+    """
+    Print summary statistics for the query result,
+    including counts and year/quarter/author distributions across categories.
+    """
+    print("========== Annual Reports (10-K) ==========")
+    annual_reports = final_response.get("annual_reports", [])
+    print(f"Total: {len(annual_reports)}")
+    annual_years = [r.get("year") for r in annual_reports if "year" in r]
+    year_counter = Counter(annual_years)
+    print("Year distribution (10-K):")
+    for year, count in sorted(year_counter.items()):
+        print(f"  {year}: {count} reports")
 
+    print("\n========== Quarterly Reports (10-Q) ==========")
+    quarter_reports = final_response.get("quarter_reports", [])
+    print(f"Total: {len(quarter_reports)}")
+    quarter_years = [r.get("year") for r in quarter_reports if "year" in r]
+    quarter_counter = Counter(quarter_years)
+    print("Year distribution (10-Q):")
+    for year, count in sorted(quarter_counter.items()):
+        print(f"  {year}: {count} reports")
+    quarters = [r.get("quarter", "missing") for r in quarter_reports]
+    quarter_freq = Counter(quarters)
+    print("Quarter distribution (10-Q):")
+    for q, count in quarter_freq.items():
+        print(f"  {q.upper()}: {count} reports")
 
+    print("\n========== Earnings Call Transcripts ==========")
+    transcripts = final_response.get("transcripts", [])
+    print(f"Total: {len(transcripts)}")
+    transcript_years = [r.get("year") for r in transcripts if "year" in r]
+    transcript_year_counter = Counter(transcript_years)
+    print("Year distribution (Transcripts):")
+    for year, count in sorted(transcript_year_counter.items()):
+        print(f"  {year}: {count} transcripts")
+    transcript_quarters = [r.get("quarter", "missing") for r in transcripts]
+    transcript_quarter_counter = Counter(transcript_quarters)
+    print("Quarter distribution (Transcripts):")
+    for q, count in transcript_quarter_counter.items():
+        print(f"  {q.upper()}: {count} transcripts")
 
-
-
-
-
-
-
-
-
-
-
-
-def query_sec_reports(
-    collection,
-    cik: int,
-    start_year: int,
-    end_year: int,
-    report_type: Optional[str] = None,
-    fields: Optional[List[str]] = None
-) -> List[dict]:
-
-    # Build query
-    query = {
-        "CIK": cik,
-        "year": {"$gte": start_year, "$lte": end_year}
-    }
-    if report_type:
-        query["report_type"] = report_type
-        
-    print("Query:", query)
-    print("Type:", type(query))
-
-    # Build projection, 需要返回的字段
-    projection = None
-    if fields is not None:
-        projection = {field: 1 for field in fields}
-        projection["_id"] = 0  # Exclude MongoDB internal ID
-
-    # Query database
-    results = list(collection.find(query))
-
-    return results
+    print("\n========== Stock Ideas Articles ==========")
+    articles = final_response.get("stock_ideas", [])
+    print(f"Total: {len(articles)}")
+    article_years = [r.get("year") for r in articles if "year" in r]
+    article_year_counter = Counter(article_years)
+    print("Year distribution (Stock Ideas):")
+    for year, count in sorted(article_year_counter.items()):
+        print(f"  {year}: {count} articles")
+    authors = [r.get("author", "missing") for r in articles]
+    author_counter = Counter(authors)
+    print("Top 5 authors (by article count):")
+    for author, count in author_counter.most_common(5):
+        print(f"  {author}: {count} articles")

@@ -74,7 +74,7 @@ def save_json(cursor, save_file):
     """
     data = [convert_objectid(doc) for doc in cursor]
     with open(save_file, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=4, ensure_ascii=False)
+        json.dump(data, f, indent=4, ensure_ascii=False, default=str)
 
     print("导出成功，共导出", len(data), "条记录。")
 

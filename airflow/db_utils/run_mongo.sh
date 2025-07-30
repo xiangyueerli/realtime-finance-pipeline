@@ -33,3 +33,12 @@ db.company_ticker.count()
 #
 db.company_permid.count()
 db.company_permid.find().sort({_id: -1}).limit(1)
+
+#
+db.stock_ideas.find().sort({_id: -1}).limit(1)
+db.stock_ideas.count()
+db.stock_ideas.drop()
+
+#
+db.news_articles.count()
+db.news_articles.find().sort({_id: -1}).limit(1)

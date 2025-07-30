@@ -16,3 +16,5 @@ TRANSCRIPTS_COLLECTION = "transcripts"
 NEWS_COLLECTION = "news_articles"   
 PRICE_COLLECTION = "price_data" 
 EARNING_CALL_COLLECTION = "transcripts"
+STOCK_IDEA_COLLECTION = "stock_ideas"
+TEST_NEWS_COLLECTION = "test_news"  # Collection for testing news data
