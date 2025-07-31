@@ -105,6 +105,7 @@ with DAG(
     def execute_dynamic_logic(Xcom, save_folder, api_key, start_date, end_date, **kwargs):
         import time
         from datetime import datetime, timedelta
+        from plugins.packages.FTRM.calls_calendars_layer import push_2_meta_data, check_if_data_downloaded, update_list_of_firms
 
         # print(f"Time Slot: {time_slot}")
         time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
@@ -124,6 +125,15 @@ with DAG(
             return
 
         print(f"Executing tasks between {start_time} and {end_time} every 5 minutes.")
+        
+        # Push the Xcom to the PostgreSQL meta data
+        push_2_meta_data(Xcom)
+        
+        # Check if a firm's data is alreadly donwloaded from a meta data
+        if check_if_data_downloaded(Xcom):
+        # If yes, remove it from the list of firms to process
+        # If not, keep it in the list
+            update_list_of_firms(Xcom)
 
         # Simulate execution every 5 minutes within the time range
         current_time = start_time
@@ -140,6 +150,8 @@ with DAG(
     @time_log
     def download_executor(save_folder, api_key, start_date, end_date, firms, **kwargs):
         import asyncio
+        from plugins.packages.FTRM.calls_calendars_layer import check_if_curr_data_downloaded, update_list_of_firms
+
         start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
         end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
         
@@ -152,7 +164,8 @@ with DAG(
             async with aiohttp.ClientSession(connector=connector) as session:
                 tickers = firms
                 
-                # For testing purposes, limit the number of tickers to process
+                
+                #### For testing purposes, limit the number of tickers to process
                 # Uncomment the next line to process all tickers
                 tickers = tickers[:3]
                 print(f"Tickers to process: {tickers}")
@@ -164,6 +177,12 @@ with DAG(
                     print(f"Processing batch {i // BATCH_SIZE + 1}: {batch}")
                     tasks = [fetch_reports(ticker, session, rate_limiter, save_folder, api_key, INITIAL_BACKOFF, MAX_RETRIES, year_until=end_date, year_since=start_date) for ticker in batch]
                     await asyncio.gather(*tasks)
+                    # Check if the data in the batch is successfully downloaded
+                    if check_if_curr_data_downloaded(tickers):  
+                        # If yes, change the download status of the firms in the meta data
+                        update_list_of_firms(tickers)
+                    
+
 
         # Run the async function
         asyncio.run(async_download_executor())

@@ -137,8 +137,6 @@ def merge_stock_idea_articles(root_path: str):
     """
     count = 0
     for year_folder in sorted(os.listdir(root_path)):
-        if year_folder != "2024":
-            continue
         year_path = os.path.join(root_path, year_folder)
         if not os.path.isdir(year_path):
             continue

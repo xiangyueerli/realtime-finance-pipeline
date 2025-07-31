@@ -1,3 +1,4 @@
+
 """
 Real-time Financial Document Query Interface
 
@@ -142,6 +143,27 @@ def find_transcripts(
     return results
 
 
+def find_news_data(
+    company_perm_id: ObjectId,
+    start_date: datetime,
+    end_date: datetime
+) -> List[dict]:
+    """
+    Query news articles from NEWS_COLLECTION by company_perm_id and date range.
+    The date filter is based on 'emeaTimestamp'.
+    """
+    query = {
+        "company_perm_id": company_perm_id,
+        "emeaTimestamp": {
+            "$gte": start_date,
+            "$lte": end_date
+        }
+    }
+    collection = db[NEWS_COLLECTION]
+    results = list(collection.find(query).sort("emeaTimestamp", 1))  # 可选按时间升序排序
+    return results
+
+
 def query_across_collections(company_name, start_date, end_date):
     """
     Query across multiple collections (10-K, 10-Q, Transcripts, Stock Ideas)
@@ -166,6 +188,9 @@ def query_across_collections(company_name, start_date, end_date):
         final_response["annual_reports"] = find_annual_reports(ticker_id, start_date, end_date)
         final_response["quarter_reports"] = find_quarter_reports(ticker_id, start_date, end_date)
         final_response["transcripts"] = find_transcripts(ticker_id, start_date, end_date)
+    
+    if perm_id:
+        final_response["news"] = find_news_data(perm_id, start_date, end_date)
 
     try:
         stock_ideas = find_stock_idea_articles(
@@ -224,6 +249,15 @@ def analyze_final_response(final_response):
     print("Quarter distribution (Transcripts):")
     for q, count in transcript_quarter_counter.items():
         print(f"  {q.upper()}: {count} transcripts")
+        
+    print("\n========== News Articles ==========")
+    news = final_response.get("news", [])
+    print(f"Total: {len(news)}")
+    news_dates = [r.get("emeaTimestamp", "")[:4] for r in news if r.get("emeaTimestamp")]
+    year_counter = Counter(news_dates)
+    print("Year distribution (News):")
+    for year, count in sorted(year_counter.items()):
+        print(f"  {year}: {count} articles")
 
     print("\n========== Stock Ideas Articles ==========")
     articles = final_response.get("stock_ideas", [])

@@ -43,3 +43,7 @@ html/
 *.tar.xz
 airflow/data/SP500/sec/market/pdf/
 airflow/beifen/
+
+
+# pickle files
+*.pkl

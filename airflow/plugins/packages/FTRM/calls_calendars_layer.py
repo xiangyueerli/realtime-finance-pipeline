@@ -89,6 +89,10 @@ def fetch_calls_calendars():
     # Return the DataFrame as a dictionary (XComs can only store serializable data)
     # return calls_df.to_dict()
     
+    
+    
+    
+    #####
     # earning_df.to_dict() will returns
     # {
     #     'time': {
@@ -106,36 +110,32 @@ def fetch_calls_calendars():
     
     # (In progress) Let's reorganise the data format later. First of all, input and output checking 
     #Example: Push Cron Expression in First DAG
+    ####
 
-# def fetch_cron_expression(time_slot):
-#     schedule_map = {
-#         "pre_market": "*/5 11-13 * * *",
-#         "after_hours": "*/5 20-22 * * *",
-#     }
-#     # time_slot = "pre_market"  # Example: This could be dynamically determined
-#     cron_expression = schedule_map.get(time_slot, "*/5 11-13 * * *")
-#     print(f"Cron expression: {cron_expression}")
-#     return cron_expression
+def push_2_meta_data(xcom_data):
+    """
+    Push the XCom data to the PostgreSQL meta data
+    """
+    # This function will be implemented later
+    pass
 
-# Example: Push Cron Expression in First DAG
-# @task(task_id="fetch_cron_expression")
-# def fetch_cron_expression():
-#     schedule_map = {
-#         "pre_market": "*/5 11-13 * * *",
-#         "after_hours": "*/5 20-22 * * *",
-#     }
-#     time_slot = "pre_market"  # Example: This could be dynamically determined
-#     cron_expression = schedule_map.get(time_slot, "*/5 11-13 * * *")
-#     print(f"Cron expression: {cron_expression}")
-#     return cron_expression
+def check_if_data_downloaded(xcom_data):
+    """
+    Check if the data for the ticker is already downloaded from the meta data
+    """
+    # This function will be implemented later
+    return False  # For now, assume no data is downloaded
 
-# Example: Use Cron Expression in Second DAG
-# dynamic_cron_expression = XCom.get(task_ids="fetch_cron_expression", dag_id="fetch_calenders")
+def update_list_of_firms(xcom_data):
+    """
+    Update the list of firms in the meta data
+    """
+    # This function will be implemented later
+    pass
 
-# with DAG(
-#     dag_id="dynamic_scheduled_dag",
-#     schedule=dynamic_cron_expression,  # Use the dynamic cron expression
-#     start_date=pendulum.datetime(2025, 1, 1, tz="UTC"),
-#     catchup=False,
-# ) as dag:
-#     ...
+def check_if_curr_data_downloaded(ticker):
+    """
+    Check if the current data for the ticker is already downloaded from the meta data
+    """
+    # This function will be implemented later
+    return False  # For now, assume no current data is downloaded
