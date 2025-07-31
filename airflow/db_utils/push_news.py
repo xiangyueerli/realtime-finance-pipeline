@@ -36,7 +36,6 @@ def merge_news():
             row["metadata"] = {
                 "uploaded_date": datetime.now().strftime("%Y-%m-%d")
             }
-            upload_file(TEST_NEWS_COLLECTION, row, ["emeaTimestamp", "headline", "assetName"])
-
+            upload_file(NEWS_COLLECTION, row, ["emeaTimestamp", "headline", "assetName"])
         except Exception as e:
             print(row, "Row not pushed")

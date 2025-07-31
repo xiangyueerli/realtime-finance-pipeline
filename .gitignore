@@ -41,5 +41,7 @@ html/
 *.tar
 *.tar.bz2
 *.tar.xz
+*.pkl
+
 airflow/data/SP500/sec/market/pdf/
 airflow/beifen/
