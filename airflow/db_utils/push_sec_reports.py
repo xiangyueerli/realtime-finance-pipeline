@@ -140,6 +140,7 @@ def push_sec_reports():
                     report_data = {
                         "year": int(date_str.split("-")[0]),
                         "quarter": quarter,
+                        "publish_date": date_str,
                         "report_type": report_type,
                         "company": valid_row.iloc[0]["Security"],
                         "ticker_symbol": valid_row.iloc[0]["Symbol"],

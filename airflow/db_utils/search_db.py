@@ -193,6 +193,23 @@ def find_price_data(
 
     return price_data_filtered
 
+def find_peer_data(ticker_tympol: str) -> list:
+    """
+    Find peer companies based on company_perm_id.
+
+    Args:
+        company_perm_id (ObjectId): ObjectId of the company in company_permid collection.
+
+    Returns:
+        List[dict]: List of peer companies (ticker info).
+    """
+    peer_doc = db[PEER_COLLECTION].find_one({"main_ticker": ticker_tympol})
+    if not peer_doc:
+        return []
+
+    return peer_doc.get("peers", [])
+
+
 def query_across_collections(company_name, start_date, end_date):
     """
     Query across multiple collections (10-K, 10-Q, Transcripts, Stock Ideas)
@@ -206,13 +223,14 @@ def query_across_collections(company_name, start_date, end_date):
 
     if len(results_ticker) > 0:
         ticker_id = results_ticker[0]["_id"]
+        ticker_tympol = results_ticker[0].get("Ticker", "")
         print("ticker_id: ", ticker_id)
+        print("ticker_tympol: ", ticker_tympol)
     if len(results_permid) > 0:
         perm_id = results_permid[0]["_id"]
         print("perm_id: ", perm_id)
 
     final_response = {}
-
     if ticker_id:
         final_response["annual_reports"] = find_annual_reports(ticker_id, start_date, end_date)
         final_response["quarter_reports"] = find_quarter_reports(ticker_id, start_date, end_date)
@@ -221,19 +239,11 @@ def query_across_collections(company_name, start_date, end_date):
     
     if perm_id:
         final_response["news"] = find_news_data(perm_id, start_date, end_date)
+        
+    if ticker_tympol:
+        final_response["peer_data"] = find_peer_data(ticker_tympol)
 
-    try:
-        stock_ideas = find_stock_idea_articles(
-            company_name=company_name,
-            start_year=start_date.year,
-            end_year=end_date.year,
-            ticker_role="both",
-            fuzzy=False,
-            limit=100
-        )
-        final_response["stock_ideas"] = stock_ideas
-    except Exception as e:
-        print(f"[Warning] Failed to fetch stock_ideas: {e}")
+    final_response["stock_ideas"] = find_stock_idea_articles(company_name=company_name, start_year=start_date.year, end_year=end_date.year)
 
     return final_response
 
@@ -284,26 +294,25 @@ def analyze_final_response(final_response):
     news = final_response.get("news", [])
     print(f"Total: {len(news)}")
     news_dates = [r.get("emeaTimestamp", "")[:4] for r in news if r.get("emeaTimestamp")]
-    year_counter = Counter(news_dates)
+    news_year_counter = Counter(news_dates)
     print("Year distribution (News):")
-    for year, count in sorted(year_counter.items()):
+    for year, count in sorted(news_year_counter.items()):
         print(f"  {year}: {count} articles")
         
     print("\n========== Price Data ==========")
     price_data = final_response.get("price_data", [])
     print(f"Total: {len(price_data)} documents")
-    
-    price_years = []
 
+    price_years = []
     for df in price_data:
         if "as_of_date" in df.columns:
             df["as_of_date"] = pd.to_datetime(df["as_of_date"], errors="coerce")
             years = df["as_of_date"].dropna().dt.year.tolist()
             price_years.extend(years)
 
-    year_counter = Counter(price_years)
+    price_year_counter = Counter(price_years)
     print("Year distribution (Price Data):")
-    for year, count in sorted(year_counter.items()):
+    for year, count in sorted(price_year_counter.items()):
         print(f"  {year}: {count} daily records")
 
     print("\n========== Stock Ideas Articles ==========")
@@ -319,3 +328,27 @@ def analyze_final_response(final_response):
     print("Top 5 authors (by article count):")
     for author, count in author_counter.most_common(5):
         print(f"  {author}: {count} articles")
+
+    print("\n========== Peer Companies ==========")
+    peer_data = final_response.get("peer_data", [])
+    print(f"Total: {len(peer_data)}")
+
+    tickers = [peer.get("ticker") for peer in peer_data if peer.get("ticker")]
+    sectors = [peer.get("sector_id") for peer in peer_data if peer.get("sector_id")]
+    sub_industries = [peer.get("sub_industry_id") for peer in peer_data if peer.get("sub_industry_id")]
+
+    ticker_counter = Counter(tickers)
+    sector_counter = Counter(sectors)
+    sub_industry_counter = Counter(sub_industries)
+
+    print("Peer Ticker Distribution:")
+    for ticker, count in ticker_counter.items():
+        print(f"  {ticker}: {count}")
+
+    print("Peer Sector ID Distribution:")
+    for sid, count in sector_counter.items():
+        print(f"  {sid}: {count}")
+
+    print("Peer SubIndustry ID Distribution:")
+    for sid, count in sub_industry_counter.items():
+        print(f"  {sid}: {count}")

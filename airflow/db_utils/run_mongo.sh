@@ -39,14 +39,18 @@ db.transcripts.find().sort({_id: -1}).limit(1)
 db.transcripts.count()
 
 #
+db.news_articles.count()
+db.news_articles.find().sort({_id: -1}).limit(1)
+db.news_articles.stats()
+
+#
 db.stock_ideas.find().sort({_id: -1}).limit(1)
 db.stock_ideas.count()
 db.stock_ideas.drop()
 
 #
-db.news_articles.count()
-db.news_articles.find().sort({_id: -1}).limit(1)
-
+db.peer_data.find().sort({_id: -1}).limit(1)
+db.peer_data.count()
 
 ### for test collections
 
@@ -71,3 +75,6 @@ db.test_stock_ideas.find().sort({_id: -1}).limit(1)
 db.test_stock_ideas.count()
 db.test_stock_ideas.drop()
 
+# 
+db.test_peer_data.find().sort({_id: -1}).limit(1)
+db.test_peer_data.count()

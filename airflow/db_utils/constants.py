@@ -19,6 +19,7 @@ NEWS_COLLECTION = "news_articles"
 PRICE_COLLECTION = "price_data" 
 EARNING_CALL_COLLECTION = "transcripts"
 STOCK_IDEA_COLLECTION = "stock_ideas"
+PEER_COLLECTION = "peer_data"
 
 # for test mode
 # SEC_REPORT_COLLECTION = "test_sec_reports"
@@ -26,3 +27,4 @@ STOCK_IDEA_COLLECTION = "stock_ideas"
 # PRICE_COLLECTION = "test_price_data" 
 # EARNING_CALL_COLLECTION = "test_transcripts"
 # STOCK_IDEA_COLLECTION = "test_stock_ideas"
+# PEER_COLLECTION = "test_peer_data"
