@@ -5,3 +5,4 @@ from .search_db import *
 from .push_transcripts import merge_transcripts
 from .push_stock_ideas import merge_stock_idea_articles
 from .push_news import merge_news
+from .push_price_data import merge_ticker_price

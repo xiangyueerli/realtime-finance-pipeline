@@ -21,6 +21,9 @@ from collections import Counter
 from .constants import *
 from .mongo_utils import get_db, filter_files
 
+import io
+import pandas as pd
+
 # Connect to MongoDB with authentication
 _, db = get_db()
 
@@ -163,6 +166,32 @@ def find_news_data(
     results = list(collection.find(query).sort("emeaTimestamp", 1))  # 可选按时间升序排序
     return results
 
+def parse_csv_data(csv_data):
+    try:
+        csvfile = io.StringIO(csv_data)
+        df = pd.read_csv(csvfile)
+        return df
+    except Exception as e:
+        print(f"Error parsing CSV data: {e}")
+        return pd.DataFrame()
+
+def find_price_data(
+    company_ticker_id: ObjectId,
+    start_date: datetime,
+    end_date: datetime
+) -> List[dict]:
+    price_data_filtered = []
+    price_data = list(db[PRICE_COLLECTION].find({
+        "company_ticker_id": company_ticker_id
+    }))
+    for doc in price_data:
+        df = parse_csv_data(doc["csv_data"])
+        if not df.empty:
+            df["as_of_date"] = pd.to_datetime(df["as_of_date"], format="%Y-%m-%d", errors="coerce")
+            filtered_df = df[(df["as_of_date"] >= start_date) & (df["as_of_date"] <= end_date)]
+            price_data_filtered.append(filtered_df)
+
+    return price_data_filtered
 
 def query_across_collections(company_name, start_date, end_date):
     """
@@ -188,6 +217,7 @@ def query_across_collections(company_name, start_date, end_date):
         final_response["annual_reports"] = find_annual_reports(ticker_id, start_date, end_date)
         final_response["quarter_reports"] = find_quarter_reports(ticker_id, start_date, end_date)
         final_response["transcripts"] = find_transcripts(ticker_id, start_date, end_date)
+        final_response["price_data"] = find_price_data(ticker_id, start_date, end_date)
     
     if perm_id:
         final_response["news"] = find_news_data(perm_id, start_date, end_date)
@@ -258,6 +288,23 @@ def analyze_final_response(final_response):
     print("Year distribution (News):")
     for year, count in sorted(year_counter.items()):
         print(f"  {year}: {count} articles")
+        
+    print("\n========== Price Data ==========")
+    price_data = final_response.get("price_data", [])
+    print(f"Total: {len(price_data)} documents")
+    
+    price_years = []
+
+    for df in price_data:
+        if "as_of_date" in df.columns:
+            df["as_of_date"] = pd.to_datetime(df["as_of_date"], errors="coerce")
+            years = df["as_of_date"].dropna().dt.year.tolist()
+            price_years.extend(years)
+
+    year_counter = Counter(price_years)
+    print("Year distribution (Price Data):")
+    for year, count in sorted(year_counter.items()):
+        print(f"  {year}: {count} daily records")
 
     print("\n========== Stock Ideas Articles ==========")
     articles = final_response.get("stock_ideas", [])
