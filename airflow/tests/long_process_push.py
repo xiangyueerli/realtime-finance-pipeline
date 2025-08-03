@@ -1,6 +1,6 @@
 """
 Author: Chunyu Yan
-Date: 2025-08.02
+Date: 2025-08-02
 
 # This scripts can be used to run long process like merge_news in tmux.
 """
@@ -16,4 +16,5 @@ from bson import ObjectId
 from datetime import datetime
 from db_utils import *
 
-merge_news()
+# merge_news()
+merge_news_batch()

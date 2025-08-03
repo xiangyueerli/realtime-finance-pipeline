@@ -158,8 +158,8 @@ def find_news_data(
     query = {
         "company_perm_id": company_perm_id,
         "emeaTimestamp": {
-            "$gte": start_date,
-            "$lte": end_date
+            "$gte": start_date.isoformat() + "Z",   # "2015-01-01T00:00:00Z"
+            "$lte": end_date.isoformat() + "Z"
         }
     }
     collection = db[NEWS_COLLECTION]
@@ -219,7 +219,7 @@ def query_across_collections(company_name, start_date, end_date):
     results_permid = list(filter_files(COMPANY_PERMID_DB, {"companyName": company_name}))
     start_date = datetime.strptime(start_date, "%Y-%m-%d")
     end_date = datetime.strptime(end_date, "%Y-%m-%d")
-    ticker_id, perm_id = None, None
+    ticker_id, perm_id, ticker_tympol = None, None, None
 
     if len(results_ticker) > 0:
         ticker_id = results_ticker[0]["_id"]
