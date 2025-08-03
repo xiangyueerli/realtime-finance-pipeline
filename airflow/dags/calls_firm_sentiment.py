@@ -100,57 +100,80 @@ with DAG(
         
         # Return the schedule data to XComs
         return {"time_slot": time_slot, "schedule_data": schedule_data}
+    
+    def connect_2_postgres():
+
+        from sqlalchemy import create_engine
+        from sqlalchemy.orm import sessionmaker
+        db_url = "postgresql://pdcm:pdcm@pdcmmetastore_container:5432/ftrm"
+        engine = create_engine(db_url, pool_size=10, max_overflow=5, echo=False)
+        SessionLocal = sessionmaker(bind=engine)
+        return SessionLocal()
             
     @task(task_id="execute_dynamic_logic")
     def execute_dynamic_logic(Xcom, save_folder, api_key, start_date, end_date, **kwargs):
         import time
         from datetime import datetime, timedelta
-        from plugins.packages.FTRM.calls_calendars_layer import push_2_meta_data, check_if_data_downloaded, update_list_of_firms
+        from plugins.packages.FTRM.calls_calendars_layer import push_metadata, check_if_data_downloaded, update_list_of_firms
 
-        # print(f"Time Slot: {time_slot}")
-        time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
-        schedule_data = Xcom['schedule_data']  # Extract schedule_data from the dictionary
-        # print('schedule_data:', list(schedule_data['time'].keys()))
-        today_firms = list(schedule_data['time'].keys())
+        try:
+            # Database connection
+            session = connect_2_postgres()
+            # Push the Xcom to the PostgreSQL meta data
+            push_metadata(session, Xcom)
+            
+            # Check if a firm's data is alreadly donwloaded from a meta data
+            # If yes, remove it from the list of firms to process. If not, keep it in the list
+            update_list_of_firms(session, Xcom)
+            
+            
+            # print(f"Time Slot: {time_slot}")
+            time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
+            schedule_data = Xcom['schedule_data']  # Extract schedule_data from the dictionary
+            # print('schedule_data:', list(schedule_data['time'].keys()))
+            today_firms = list(schedule_data['time'].keys())
 
-        # Define the time range based on the time slot
-        if time_slot == "pre_market":
-            start_time = datetime.now().replace(hour=11, minute=0, second=0, microsecond=0)  # 11:00 AM UTC
-            end_time = datetime.now().replace(hour=13, minute=0, second=0, microsecond=0)    # 1:00 PM UTC
-        elif time_slot == "after_hours":
-            start_time = datetime.now().replace(hour=20, minute=0, second=0, microsecond=0)  # 8:00 PM UTC
-            end_time = datetime.now().replace(hour=22, minute=0, second=0, microsecond=0)    # 10:00 PM UTC
-        else:
-            print("Unknown time slot. No execution.")
-            return
+            # Define the time range based on the time slot
+            if time_slot == "pre_market":
+                start_time = datetime.now().replace(hour=11, minute=0, second=0, microsecond=0)  # 11:00 AM UTC
+                end_time = datetime.now().replace(hour=13, minute=0, second=0, microsecond=0)    # 1:00 PM UTC
+            elif time_slot == "after_hours":
+                start_time = datetime.now().replace(hour=20, minute=0, second=0, microsecond=0)  # 8:00 PM UTC
+                end_time = datetime.now().replace(hour=22, minute=0, second=0, microsecond=0)    # 10:00 PM UTC
+            else:
+                print("Unknown time slot. No execution.")
+                return
 
-        print(f"Executing tasks between {start_time} and {end_time} every 5 minutes.")
-        
-        # Push the Xcom to the PostgreSQL meta data
-        push_2_meta_data(Xcom)
-        
-        # Check if a firm's data is alreadly donwloaded from a meta data
-        if check_if_data_downloaded(Xcom):
-        # If yes, remove it from the list of firms to process
-        # If not, keep it in the list
-            update_list_of_firms(Xcom)
+            print(f"Executing tasks between {start_time} and {end_time} every 5 minutes.")
+            
+    
 
-        # Simulate execution every 5 minutes within the time range
-        current_time = start_time
-        while current_time < end_time:
-            print(f"Executing task at {current_time.strftime('%Y-%m-%d %H:%M:%S')}")
-            # Add your task logic here (e.g., call APIs, process data, etc.)
-            # download_executor(save_folder, api_key, start_date, end_date, today_firms, **kwargs)
-            time.sleep(5 * 60)  # Wait for 5 minutes
-            current_time += timedelta(minutes=5)
+            # Simulate execution every 5 minutes within the time range
+            current_time = start_time
+            while current_time < end_time:
+                print(f"Executing task at {current_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                # Add your task logic here (e.g., call APIs, process data, etc.)
+                # download_executor(save_folder, api_key, start_date, end_date, today_firms, **kwargs)
+                time.sleep(5 * 60)  # Wait for 5 minutes
+                current_time += timedelta(minutes=5)
 
-        print("Finished executing tasks for the time slot.")
+            print("Finished executing tasks for the time slot.")
+            session.commit()
+            
+        except Exception as e:
+            session.rollback()
+            print(f"An error occurred: {e}")
+        finally:
+            # Close the session to release resources
+            session.close()
     
     # @task(task_id='t2_download_executor')
     @time_log
     def download_executor(save_folder, api_key, start_date, end_date, firms, **kwargs):
         import asyncio
-        from plugins.packages.FTRM.calls_calendars_layer import check_if_curr_data_downloaded, update_list_of_firms
+        from plugins.packages.FTRM.calls_calendars_layer import update_firm_status
+
+        session = connect_2_postgres()
 
         start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
         end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
@@ -178,10 +201,12 @@ with DAG(
                     tasks = [fetch_reports(ticker, session, rate_limiter, save_folder, api_key, INITIAL_BACKOFF, MAX_RETRIES, year_until=end_date, year_since=start_date) for ticker in batch]
                     await asyncio.gather(*tasks)
                     # Check if the data in the batch is successfully downloaded
-                    if check_if_curr_data_downloaded(tickers):  
-                        # If yes, change the download status of the firms in the meta data
-                        update_list_of_firms(tickers)
                     
+                    # Update metadata for successfully downloaded files
+                    # Better Time Complexity: O(n) for each batch?
+                    for ticker in batch:
+                        update_firm_status(session, ticker)
+        
 
 
         # Run the async function
