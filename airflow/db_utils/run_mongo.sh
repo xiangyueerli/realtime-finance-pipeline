@@ -78,3 +78,10 @@ db.test_stock_ideas.drop()
 # 
 db.test_peer_data.find().sort({_id: -1}).limit(1)
 db.test_peer_data.count()
+
+# 
+db.test_company_ticker.count()
+db.test_company_ticker.drop()
+
+db.test_company_permid.count()
+db.test_company_permid.drop()
