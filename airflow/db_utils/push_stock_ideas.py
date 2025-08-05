@@ -140,7 +140,7 @@ def merge_stock_idea_articles(root_path: str):
         year_path = os.path.join(root_path, year_folder)
         if not os.path.isdir(year_path):
             continue
-        for file in os.listdir(year_path):
+        for file in tqdm(os.listdir(year_path), desc="Stock Ideas Upload", unit="files"):
             if not file.endswith(".json"):
                 continue
             full_path = os.path.join(year_path, file)
@@ -151,10 +151,4 @@ def merge_stock_idea_articles(root_path: str):
                 count += 1
             except Exception as e:
                 print(f"[ERROR] Failed to process {full_path}: {e}")
-        break
     print(f"[DONE] Processed and uploaded {count} articles.")
-
-
-if __name__ == "__main__":
-    root = "/data/seanchoi/airflow/data/stock_ideas"
-    merge_stock_idea_articles(root)
