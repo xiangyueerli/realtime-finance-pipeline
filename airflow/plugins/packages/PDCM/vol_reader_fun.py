@@ -101,7 +101,7 @@ def vol_reader2(comps, rev_firms_dict, start_date, end_date, window = None, extr
             start_date = str(dt.datetime.strptime(start_date, '%Y-%m-%d')-dt.timedelta(days=window*AR + 1))[:10]
         else:
             start_date = str(dt.datetime.strptime(start_date, '%Y-%m-%d')-dt.timedelta(days=window + 1))[:10]
-            
+    
     for cc in comps:
         stock = rev_firms_dict[cc]
         print(f'Downloading {stock} stock data')
@@ -189,6 +189,7 @@ def vol_reader2(comps, rev_firms_dict, start_date, end_date, window = None, extr
             # vol_list.append(vol.to_frame())
             vol_list.append(vol)
             
+    print('ret_list', ret_list)
     df_ret = pd.concat(ret_list, axis=1)
     df_ret.columns = comps
     df_ret = df_ret.fillna(method='bfill')

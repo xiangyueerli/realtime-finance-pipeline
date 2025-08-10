@@ -14,6 +14,7 @@ import multiprocessing
 import pandas as pd
 import pyarrow.parquet as pq
 import pyarrow as pa
+import pyarrow.compute as pc
 import re
 import json
 import sys
@@ -445,17 +446,37 @@ class ConstructDTM:
     
     @staticmethod
     def convert_timestamps_to_ms(table):
-        schema = table.schema
-        new_columns = []
+        new_arrays = []
+        new_fields = []
+
         for column_name in table.column_names:
-            field = schema.field(column_name)
-            column = table[column_name]
-            # Check if column is a TIMESTAMP type
+            col = table[column_name]
+            field = table.schema.field(column_name)
+
             if pa.types.is_timestamp(field.type):
                 # Downcast to milliseconds
-                column = pa.compute.cast(column, pa.timestamp('ms'))
-            new_columns.append(column)
-        return pa.Table.from_arrays(new_columns, schema=schema)
+                col = pc.cast(col, pa.timestamp('ms'))
+                new_fields.append(pa.field(column_name, pa.timestamp('ms')))
+            else:
+                new_fields.append(field)
+
+            new_arrays.append(col)
+
+        new_schema = pa.schema(new_fields)
+        return pa.Table.from_arrays(new_arrays, schema=new_schema)
+
+    # def convert_timestamps_to_ms(table):
+    #     schema = table.schema
+    #     new_columns = []
+    #     for column_name in table.column_names:
+    #         field = schema.field(column_name)
+    #         column = table[column_name]
+    #         # Check if column is a TIMESTAMP type
+    #         if pa.types.is_timestamp(field.type):
+    #             # Downcast to milliseconds
+    #             column = pa.compute.cast(column, pa.timestamp('ms'))
+    #         new_columns.append(column)
+    #     return pa.Table.from_arrays(new_columns, schema=schema)
     
 
     def multi_stage_parquet_merge(self, save_path, start_date, end_date, batch_size=50):
@@ -491,11 +512,26 @@ class ConstructDTM:
         existing_files = [f for f in existing_files if f != '.DS_Store']
         existing_files = [os.path.join(existing_files_path, f) for f in existing_files]
         
-        for chunk_index, chunk in enumerate(chunker(existing_files, batch_size)):
+        
+        input_firm_ciks = set(self.firms_dict.keys())
+        # print('input_firm_ciks', input_firm_ciks)
+        existing_files_set = set(existing_files)
+        # print("existing_files_set", existing_files_set)
+        
+
+        # Filter existing files based on CIK match
+        filtered_files = {
+            path for path in existing_files_set
+            if path.split('_')[-1].replace('.parquet', '') in input_firm_ciks
+        }
+
+        
+        for chunk_index, chunk in enumerate(chunker(list(filtered_files), batch_size)):
             tables_in_this_batch = []
             batch_ciks = []
             # Read each file in the chunk
             for file_path in chunk:
+                print('file_path', file_path)
                 table = pq.read_table(file_path)
                 pattern = r"dtm_(\d{10})\.parquet"
                 # Check if empty
@@ -508,12 +544,15 @@ class ConstructDTM:
                 # Gather CIK from filename if possible
                 match = re.search(pattern, file_path)
                 if match:
-                    batch_ciks.append(match.group(1))
+                    cik = match.group(1)
+                    if cik in input_firm_ciks:
+                        batch_ciks.append(match.group(1))
                     
                 # Convert timestamps to milliseconds (for Spark compatibility)
                 table = self.convert_timestamps_to_ms(table)
                 tables_in_this_batch.append(table)
                 
+            print('tables_in_this_batch@@@@@@@', tables_in_this_batch)
             # If we have any data for this batch, Write an intermediate Parquet file while preprocessing
             # Generate 3-day rolling returns and volatilities for the batch of CIKs
             if tables_in_this_batch:
@@ -573,25 +612,51 @@ class ConstructDTM:
                         df_add = pd.concat([df_add, zz], axis=0)
 
                 # Reset the index of the combined DataFrame to include 'Date' as a regular column
+                
                 df_add.reset_index(inplace=True)
                 batch_df.reset_index(drop=True, inplace=True)
+                
+                # Ensure datetime type
+                df_add['Date'] = pd.to_datetime(df_add['Date'])
+                batch_df['Date'] = pd.to_datetime(batch_df['Date'])
 
+                # Compute the intersection of Date values
+                common_dates = pd.Series(list(set(df_add['Date']) & set(batch_df['Date'])))
 
+                # Filter both DataFrames
+                df_add_filtered = df_add[df_add['Date'].isin(common_dates)]
+                batch_df = batch_df[batch_df['Date'].isin(common_dates)]
+
+                # Optional: reset index if needed
+                df_add_filtered = df_add_filtered.reset_index(drop=True)
+                batch_df = batch_df.reset_index(drop=True)
+                
+                
+                
+                
+                
+                # Test
+                # os.makedirs(output_dir, exist_ok=True)  # Create directory if not exists            
+                # print('df_add', df_add)
+                # print('batch_df', batch_df)
+                
+                print('df_add_filtered', df_add_filtered.index)
+                print('batch_df', batch_df.index)
                 # Ensure that the index of the combined DataFrame matches the original `batch_df`
-                assert all(batch_df.index == df_add.index), 'Do not merge!'
+                assert all(batch_df.index == df_add_filtered.index), 'Do not merge!'
 
                 # Make a copy of the original `batch_df` to prevent modifications to the original
                 batch_df = batch_df.copy()
 
                 # Add new columns for the 3-day rolling return and volatility to the combined DataFrame
-                batch_df['_ret'] = df_add['n_ret']
-                batch_df['_vol'] = df_add['n_vol']
+                batch_df['_ret'] = df_add_filtered['n_ret']
+                batch_df['_vol'] = df_add_filtered['n_vol']
 
-            # Write intermediate file to disk
-            intermediate_file_path = os.path.join(intermedate_folder, f"batch_{chunk_index}.parquet")
-            batch_table = pa.Table.from_pandas(batch_df)
-            pq.write_table(batch_table, intermediate_file_path)
-            intermediate_file_paths.append(intermediate_file_path)
+                # Write intermediate file to disk
+                intermediate_file_path = os.path.join(intermedate_folder, f"batch_{chunk_index}.parquet")
+                batch_table = pa.Table.from_pandas(batch_df)
+                pq.write_table(batch_table, intermediate_file_path)
+                intermediate_file_paths.append(intermediate_file_path)
                     
         
         return intermediate_file_paths
@@ -615,6 +680,10 @@ class ConstructDTM:
         # intermediate_file_paths = [os.path.join(existing_files_path, f) for f in existing_files]
         
         intermediate_file_paths = self.multi_stage_parquet_merge(save_path, start_date, end_date)
+        
+        if not intermediate_file_paths:
+            print("No intermediate Parquet files found.")
+            return
         filtered_paths = []
         for file_path in intermediate_file_paths:
             file_path = self.filter_sp500(save_path, file_path, total_constituents_path, constituents_metadata_path)

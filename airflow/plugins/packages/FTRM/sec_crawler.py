@@ -9,6 +9,7 @@ import os
 from collections import Counter
 import re
 import csv
+import json
 
 import nltk
 nltk.data.path.append("/opt/airflow/nltk_data")
@@ -192,6 +193,27 @@ def get_documents(text):
     
     return documents
 
+# By Chunyu
+# Update the JSON file used to check if a file is a 10-K or 10-Q
+def update_json_k10_path(root_folder, cik, file_date_str):
+    json_file_path = os.path.join(root_folder, f"k10_list.json")
+    # read from json
+    if not os.path.exists(json_file_path):
+        with open(json_file_path, 'w') as f:
+            json.dump({}, f)
+    with open(json_file_path, 'r', encoding='utf-8') as f:
+        dic = json.load(f)
+    # update the json file
+    if cik not in dic:
+        dic[cik] = []
+    k10_list = dic[cik]
+    if file_date_str not in k10_list:
+        k10_list.append(file_date_str)
+        dic[cik] = k10_list
+    # write to json
+    with open(json_file_path, 'w') as f:
+        json.dump(dic, f, indent=4)
+
 
 def download_filing(cik, ticker, root_folder, doc_type, headers, start_date, end_date):
     cik = str(cik).zfill(10)
@@ -233,6 +255,10 @@ def download_filing(cik, ticker, root_folder, doc_type, headers, start_date, end
 
         file = LimitRequest.get(url=index_url, headers=headers)
 
+        # By Chunyu
+        # Save the 10-k names to a JSON file named k10_path.json
+        if doc_type == '10-K':
+            update_json_k10_path(root_folder, cik, file_date_str)
 
         with open(file_name,'w+') as f:
             f.write(file.text)

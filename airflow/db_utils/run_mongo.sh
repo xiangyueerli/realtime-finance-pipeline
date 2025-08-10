@@ -1,0 +1,87 @@
+################################################################################
+# Author: Chunyu Yan
+# Date: 2025-07-13
+# Title: Basic MongoDB Shell Operations for Financial Data
+# Description:
+#     This shell script provides commonly used MongoDB commands to inspect and
+#     manage SEC filing data stored in a MongoDB instance.
+#     It connects using root credentials and performs typical read/write ops.
+################################################################################
+
+
+# run mongodb
+mongo --username root --password mongo_edinburgh_123 --authenticationDatabase admin
+use financial_db
+
+# 
+show dbs
+show collections
+
+
+### for main collections
+
+# 
+db.company_ticker.find().sort({_id: -1}).limit(1)
+db.company_ticker.count()
+
+#
+db.company_permid.count()
+db.company_permid.find().sort({_id: -1}).limit(1)
+
+# 
+db.sec_reports.find().sort({_id: -1}).limit(10)
+db.sec_reports.drop()
+db.sec_reports.count()
+db.sec_reports.findOne()
+
+#
+db.transcripts.find().sort({_id: -1}).limit(1)
+db.transcripts.count()
+
+#
+db.news_articles.count()
+db.news_articles.find().sort({_id: -1}).limit(1)
+db.news_articles.stats()
+
+#
+db.stock_ideas.find().sort({_id: -1}).limit(1)
+db.stock_ideas.count()
+db.stock_ideas.drop()
+
+#
+db.peer_data.find().sort({_id: -1}).limit(1)
+db.peer_data.count()
+
+### for test collections
+
+#
+db.test_sec_reports.find().sort({_id: -1}).limit(10)
+db.test_sec_reports.drop()
+db.test_sec_reports.count()
+db.test_sec_reports.findOne()
+
+#
+db.test_transcripts.find().sort({_id: -1}).limit(1)
+db.test_transcripts.count()
+db.test_transcripts.drop()
+
+#
+db.test_news.count()
+db.test_news.find().sort({_id: -1}).limit(10)
+db.test_news.drop()
+
+#
+db.test_stock_ideas.find().sort({_id: -1}).limit(1)
+db.test_stock_ideas.count()
+db.test_stock_ideas.drop()
+
+# 
+db.test_peer_data.find().sort({_id: -1}).limit(1)
+db.test_peer_data.count()
+
+# 
+db.test_company_ticker.count()
+db.test_company_ticker.drop()
+
+db.test_company_permid.count()
+db.test_company_permid.drop()
