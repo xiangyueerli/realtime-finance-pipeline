@@ -58,8 +58,8 @@ with DAG(
     
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
-    # csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
-    csv_file_path = os.path.join(base_path, "data/constituents/market/test.csv")
+    csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
+    # csv_file_path = os.path.join(base_path, "data/constituents/market/test.csv")
     
     # Input Files
     data_raw_folder = os.path.join(base_path, "data/SP500/sec/market/html")

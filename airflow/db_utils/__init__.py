@@ -8,3 +8,4 @@ from .push_news import *
 from .push_price_data import merge_ticker_price
 from .push_peer import merge_peer_data_files
 from .mongo_stats import export_collection_stats_to_csv
+from .push_company_ticker import merge_company_data

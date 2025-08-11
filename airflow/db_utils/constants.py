@@ -11,7 +11,7 @@ DB_NAME = "financial_db"  # Database name
 COMPANY_PERMID_DB = "company_permid"
 COMPANY_TICKER_DATA = "company_ticker"
 
-# for production mode
+# # for production mode
 ANNUAL_REPORT_COLLECTION = "annual_reports"
 QUARTER_REPORT_COLLECTION = "quarter_reports"
 SEC_REPORT_COLLECTION = "sec_reports"
@@ -22,6 +22,8 @@ STOCK_IDEA_COLLECTION = "stock_ideas"
 PEER_COLLECTION = "peer_data"
 
 # for test mode
+# COMPANY_PERMID_DB = "test_company_permid"
+# COMPANY_TICKER_DATA = "test_company_ticker"
 # SEC_REPORT_COLLECTION = "test_sec_reports"
 # NEWS_COLLECTION = "test_news"
 # PRICE_COLLECTION = "test_price_data" 

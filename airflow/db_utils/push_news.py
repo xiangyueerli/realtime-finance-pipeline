@@ -41,7 +41,7 @@ def merge_news():
             print(row, "Row not pushed")
 
 
-# improvement for pushing news data
+# improvement for pushing 2,900,000 news data
 BATCH_SIZE = 100
 CHUNK_SIZE = 1000  # For querying existing dedup_keys in safe chunks
 
