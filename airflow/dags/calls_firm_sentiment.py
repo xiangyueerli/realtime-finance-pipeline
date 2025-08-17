@@ -120,7 +120,7 @@ with DAG(
             # Database connection
             session = connect_2_postgres()
             # Push the Xcom to the PostgreSQL meta data
-            push_metadata(session, Xcom)
+            push_metadata(session, Xcom, metadata_class='CallsMetadata')  # Specify the metadata class to use
             
             # Check if a firm's data is alreadly donwloaded from a meta data
             # If yes, remove it from the list of firms to process. If not, keep it in the list

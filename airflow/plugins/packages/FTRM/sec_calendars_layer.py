@@ -4,6 +4,7 @@ import seaborn as sns
 import os
 from collections import defaultdict
 from itertools import islice
+from plugins.packages.FTRM.metadata import FileMetadata
 import json
 from datetime import datetime
 
@@ -171,6 +172,119 @@ class SECCalender:
         output_file_path = "/Users/apple/PROJECT/Code_4_calendar/finance_calendars/src/finance_calendars/sec_calendar_output.json"
         with open(output_file_path, 'w') as f:
             json.dump(output_data, f, indent=4)
+            
+    def push_metadata(session, xcom_data, type, metadata_class):
+        """
+        Push the XCom data to the PostgreSQL meta data
+        """
+        cik_ticker = xcom_data.get('cik_ticker', {})  # Extract cik_ticker from Xcom
+        for cik, ticker in cik_ticker.items():
+            record = session.query(metadata_class).filter_by(ticker=ticker).first()
+            download_date = datetime.now().date()
+
+            if record:
+                record.status = 'pending'
+                record.download_date = download_date
+                record.is_deleted = False
+                record.filing_type = type
+            else:
+                new_record = metadata_class(
+                    ticker=ticker,
+                    download_date=download_date,
+                    status='pending',
+                    is_deleted=False,
+                    filing_type=type
+                )
+                session.add(new_record)
+
+        session.commit()
+    
+    def update_firm_status(self, session, ticker, metadata_class, success=True):
+        """
+        Update the status of a specific ticker in the metadata.
+
+        Args:
+            session: SQLAlchemy session object.
+            ticker: The ticker symbol to update.
+            success: Boolean indicating whether the download was successful (default: True).
+
+        Returns:
+            None
+        """
+        try:
+            # Query the metadata table for the given ticker
+            record = session.query(metadata_class).filter_by(ticker=ticker).first()
+
+            if record:
+                if success:
+                    # Update the record as completed
+                    record.status = 'completed'
+                    record.is_deleted = False
+                    record.recent_update_date = datetime.now()
+                    print(f"Updated status for ticker: {ticker} to 'completed'")
+                else:
+                    # Mark the record as failed
+                    record.status = 'failed'
+                    record.recent_update_date = datetime.now()
+                    print(f"Updated status for ticker: {ticker} to 'failed'")
+            else:
+                print(f"No record found for ticker: {ticker}")
+
+            # Commit the changes to the database
+            session.commit()
+
+        except Exception as e:
+            # Log any exceptions that occur
+            session.rollback()
+            print(f"Error updating status for ticker: {ticker}. Error: {e}")
+    
+    def check_if_data_downloaded(self, session, xcom_data, metadata_class):
+        """
+        Check if the data for the ticker is already downloaded from the metadata table.
+
+        Args:
+            session: SQLAlchemy session object.
+            xcom_data: Dictionary containing schedule data (e.g., CIKs and tickers).
+            metadata_class: The metadata class to query (e.g., SECMetadata, CallsMetadata).
+
+        Returns:
+            list: List of tickers that have already been downloaded.
+        """
+        cik_ticker = xcom_data.get('cik_ticker', {})  # Extract CIK-ticker mapping from XCom data
+        tickers = list(cik_ticker.values())  # Get the list of tickers
+
+        # Query the database for completed and non-deleted records
+        downloaded_tickers = session.query(metadata_class.ticker).filter(
+            metadata_class.ticker.in_(tickers),  # Check if the ticker is in the provided list
+            metadata_class.status == 'completed',  # Ensure the status is 'completed'
+            metadata_class.is_deleted == False  # Ensure the record is not marked as deleted
+        ).all()
+
+        # Extract the tickers from the query result and return as a list
+        return [ticker[0] for ticker in downloaded_tickers]
+        
+
+    def update_list_of_firms(self, session, xcom_data, metadata_class):
+        """
+        Update the list of firms in the XCom data by removing already downloaded tickers.
+
+        Args:
+            session: SQLAlchemy session object.
+            xcom_data: Dictionary containing schedule data (e.g., CIKs and tickers).
+            metadata_class: The metadata class to query (e.g., SECMetadata, CallsMetadata).
+
+        Returns:
+            None: Updates the `xcom_data` in place.
+        """
+        # Get the list of already downloaded tickers
+        downloaded_tickers = self.check_if_data_downloaded(session, xcom_data, metadata_class)
+
+        # Filter out the downloaded tickers from the CIK-ticker mapping
+        xcom_data['cik_ticker'] = {
+            cik: ticker
+            for cik, ticker in xcom_data['cik_ticker'].items()
+            if ticker not in downloaded_tickers
+        }
         
     def plot_date_distribution_by_quarter(self, dates_list):
         """Plot the distribution of dates grouped by quarter."""

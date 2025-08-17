@@ -12,9 +12,9 @@ with DAG(
     dag_id="fetch_sec_calenders",
 
     # During DST (Mar–Nov)
-    schedule="0 11,21 * * *",  # Run twice a day: 11:00 AM UTC (7:00 AM EST, pre-market) and 9:00 PM UTC (5:00 PM EST, after-hours)
+    schedule="0 10,20 * * *",  # Run twice a day: 10:00 AM UTC (6:00 AM EST, pre-market) and 8:00 PM UTC (4:00 PM EST, after-hours)
     # # During Standard Time (Nov–Mar)
-    # schedule="0 11 * * *",  # 12:00 AM UTC = 7:00 AM EST
+    # schedule="0 11 * * *",  # 11:00 AM UTC = 6:00 AM EST
     
     start_date=pendulum.datetime(2025, 1, 1, tz="UTC"),
     catchup=False,
@@ -25,6 +25,9 @@ with DAG(
     def fetch_schedule(**kwargs):
         from plugins.packages.FTRM.sec_calendars_layer import fetch_sec_daily_calendars
         
+        # Access execution_date from kwargs
+        execution_date = kwargs['execution_date']
+        
         # Fetch the SEC calendar data
         sec_tody_list = fetch_sec_daily_calendars()
         # Fetch the schedule data frame
@@ -33,13 +36,24 @@ with DAG(
         if sec_tody_list is None or sec_tody_list.empty:
             raise AirflowSkipException("No calls data available for today, stopping the DAG.")
     
+        # Determine the time slot dynamically based on execution time
+        hour = execution_date.hour
+        # for testing purposes
+        hour = 20  # Set to 10 for pre-market, 20 for after
+        if hour == 10:  # Pre-market time slot
+            time_slot = "pre_market"
+
+        elif hour == 20:  # After-hours time slot
+            time_slot = "after_hours"
+    
         sec_today_df = pd.DataFrame(sec_tody_list, columns=['todayTargets'])  # Convert list to DataFrame
         # sec_today_df = {'todayTargets': {0: '0000001800', 1: '000620948', 2: 'xxxxxxxxxx', 3: 'xxxxxxxxxx', erc...}}
         # Convert the DataFrame to a dictionary for XComs
         schedule_dict = sec_today_df.to_dict()
         
+        
         # Return the dictionary to XComs
-        return {"schedule_data": schedule_dict}
+        return {"time_slot": time_slot, "schedule_data": schedule_dict}
     
 
     # Push the schedule data to XComs

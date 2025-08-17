@@ -70,7 +70,7 @@ def fetch_calls_calendars():
     #Example: Push Cron Expression in First DAG
     ####
 
-def push_metadata(session, xcom_data):
+def push_metadata(session, xcom_data, metadata_class):
     """
     Push the XCom data to the PostgreSQL meta data
     """
@@ -79,13 +79,13 @@ def push_metadata(session, xcom_data):
         # Generate a unique hash ID for the ticker
         hash_id = generate_hash_id(ticker, download_date)
         
-        record = session.query(FileMetadata).filter_by(ticker=ticker).first()
+        record = session.query(metadata_class).filter_by(ticker=ticker).first()
         if record:
             record.status = 'pending'
             record.download_date = datetime.datetime.now().date()
             record.is_deleted = False
         else:
-            new_record = FileMetadata(
+            new_record = metadata_class(
                 id = hash_id,
                 ticker=ticker,
                 download_date=datetime.datetime.now().date(),
