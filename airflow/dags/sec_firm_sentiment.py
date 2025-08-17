@@ -27,12 +27,8 @@ with DAG(
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/sec/firm")
-    csv_file_path = os.path.join(base_path, "data/constituents/firms/test.csv")
-    columns = ["Name", "CIK", "Date", "Body" ]
-    firms_df = pd.read_csv(csv_file_path)
-    columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
-    firms_df = firms_df.drop(columns=columns_to_drop, errors='ignore')
-    firms_df['CIK'] = firms_df['CIK'].apply(lambda x: str(x).zfill(10))
+    csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
+
     
     # Input Files
     data_raw_folder = os.path.join(base_path, "data/SP500/sec/firm/html")
@@ -47,6 +43,27 @@ with DAG(
         cik = df['CIK'].drop_duplicates().tolist() 
         
         return cik
+    
+    @task(task_id='t1_process_schedule_data')
+    def process_schedule_data(csv_file_path=csv_file_path, **kwargs):
+        # Process the schedule data and extract CIKs
+        firms_df = pd.read_csv(csv_file_path)
+        columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
+        firms_df = firms_df.drop(columns=columns_to_drop, errors='ignore')
+        firms_df['CIK'] = firms_df['CIK'].apply(lambda x: str(x).zfill(10))
+            
+        conf = kwargs.get('dag_run').conf
+        schedule_data = conf.get('schedule_data', {})
+        if not schedule_data:
+            raise ValueError("No schedule data found in the DAG run configuration.")
+        # Extract the 'todayTargets' from the schedule data
+        firms_df = firms_df[firms_df['CIK'].isin(schedule_data.get('todayTargets', []))]
+        cik = firms_df['CIK'].drop_duplicates().tolist()
+        ticker = firms_df['Symbol'].tolist()
+        cik_ticker = dict(zip(cik, ticker))
+        
+        return cik_ticker
+    
     
     @task(task_id='t2_download_executor')
     @time_log
@@ -154,17 +171,19 @@ with DAG(
         predictor.run()
     
 
-    
+    t1_process_schedule_data = process_schedule_data(csv_file_path=csv_file_path)  # Process the schedule data and extract CIKs
+
     #FTRM
-    t2_download_executor = download_executor(csv_file_path, type = type, start_date=start_date, end_date=end_date)
+    t2_download_executor = download_executor(t1_process_schedule_data, type = type, start_date=start_date, end_date=end_date)
     t3_txt_convertor = txt_convertor(data_raw_folder, extracted_folder)
     #PDCM
-    t4_dtm_constructor = dtm_constructor(extracted_folder, final_save_path, csv_file_path, columns, start_date, end_date)
+    t4_dtm_constructor = dtm_constructor(extracted_folder, final_save_path, t1_process_schedule_data, columns, start_date, end_date)
 
     #SSPM
     t5_sent_predictor = sent_predictor(window=end_date)
 
     
-    t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_sent_predictor
+    t1_process_schedule_data >> t2_download_executor 
+    #t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_sent_predictor
 
         

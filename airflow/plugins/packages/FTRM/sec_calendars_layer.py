@@ -131,7 +131,7 @@ class SECCalender:
         else:
             raise ValueError("Invalid month value")
         
-    def fetch_sec_calendars(self, json_file_path):
+    def fetch_sec_daily_calendars(self, json_file_path):
         """
         Get a list of CIKs where today's date overlaps with their quarter windows.
         

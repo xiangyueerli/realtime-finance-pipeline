@@ -23,10 +23,10 @@ with DAG(
 
     @task(task_id="fetch_schedule")
     def fetch_schedule(**kwargs):
-        from plugins.packages.FTRM.sec_calendars_layer import fetch_sec_calendars
+        from plugins.packages.FTRM.sec_calendars_layer import fetch_sec_daily_calendars
         
         # Fetch the SEC calendar data
-        sec_tody_list = fetch_sec_calendars()
+        sec_tody_list = fetch_sec_daily_calendars()
         # Fetch the schedule data frame
         # calls_df = fetch_calls_calendars()
         print(f"Fetched Calls DataFrame: {sec_tody_list}")
