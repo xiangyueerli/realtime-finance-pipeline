@@ -37,8 +37,9 @@ with DAG(
         # Determine the time slot dynamically based on execution time
         hour = execution_date.hour
         
-        # for testing purposes
+        ### For testing purposes
         hour = 20  # Set to 10 for pre-market, 20 for after-hours
+        ### Testing purposes end
 
         if hour == 10:  # Pre-market time slot
             time_slot = "pre_market"
@@ -51,32 +52,17 @@ with DAG(
             filtered_df = calls_df[
                 (calls_df['time'] == 'time-after-hours') | (calls_df['time'] == 'time-not-supplied')
             ]
-
-        # print(filtered_df.shape)
-        # print(f"Filtered DataFrame for {time_slot}: {filtered_df}")
         
         # Convert the DataFrame to a dictionary for XComs
         schedule_dict = filtered_df.to_dict()
         
         # Return the dictionary to XComs
         return {"time_slot": time_slot, "schedule_data": schedule_dict}
-    
-    
-    # # Example: Push Cron Expression in First DAG
-    # @task(task_id="fetch_cron_expression")
-    # def fetch_cron_expression(time_slot):
-    #     schedule_map = {
-    #         "pre_market": "*/5 11-13 * * *",
-    #         "after_hours": "*/5 20-22 * * *",
-    #     }
-    #     # time_slot = "pre_market"  # Example: This could be dynamically determined
-    #     cron_expression = schedule_map.get(time_slot, "*/5 11-13 * * *")
-    #     print(f"Cron expression: {cron_expression}")
-    #     return cron_expression
+        
+
     
     # Push the schedule data to XComs
     schedule_data = fetch_schedule()
-    # toss_cron_expression = fetch_cron_expression(schedule_data['time_slot'])
     
     # Trigger the second DAG dynamically
     trigger_second_dag = TriggerDagRunOperator(

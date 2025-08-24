@@ -22,24 +22,28 @@ with DAG(
 ) as dag:
 
     @task(task_id="fetch_schedule")
-    def fetch_schedule(**kwargs):
-        from plugins.packages.FTRM.sec_calendars_layer import fetch_sec_daily_calendars
+    def fetch_schedule(sec_calenders_estimates, **kwargs):
+        from plugins.packages.FTRM.sec_calendars_layer import SECCalender
         
         # Access execution_date from kwargs
         execution_date = kwargs['execution_date']
         
+        sec_calender = SECCalender(folder_path_10q=None, folder_path_10k=None)
         # Fetch the SEC calendar data
-        sec_tody_list = fetch_sec_daily_calendars()
+        sec_tody_list = sec_calender.fetch_sec_daily_calendars(sec_calenders_estimates)
         # Fetch the schedule data frame
         # calls_df = fetch_calls_calendars()
         print(f"Fetched Calls DataFrame: {sec_tody_list}")
-        if sec_tody_list is None or sec_tody_list.empty:
+        if sec_tody_list is None or len(sec_tody_list) == 0:
             raise AirflowSkipException("No calls data available for today, stopping the DAG.")
     
         # Determine the time slot dynamically based on execution time
         hour = execution_date.hour
-        # for testing purposes
+        
+        ### For testing purposes
         hour = 20  # Set to 10 for pre-market, 20 for after
+        ### Testing purposes end
+        
         if hour == 10:  # Pre-market time slot
             time_slot = "pre_market"
 
@@ -47,7 +51,8 @@ with DAG(
             time_slot = "after_hours"
     
         sec_today_df = pd.DataFrame(sec_tody_list, columns=['todayTargets'])  # Convert list to DataFrame
-        # sec_today_df = {'todayTargets': {0: '0000001800', 1: '000620948', 2: 'xxxxxxxxxx', 3: 'xxxxxxxxxx', erc...}}
+        # sec_today_df's example: {'todayTargets': {0: '0000001800', 1: '000620948', 2: 'xxxxxxxxxx', 3: 'xxxxxxxxxx', erc...}}
+        
         # Convert the DataFrame to a dictionary for XComs
         schedule_dict = sec_today_df.to_dict()
         
@@ -55,9 +60,9 @@ with DAG(
         # Return the dictionary to XComs
         return {"time_slot": time_slot, "schedule_data": schedule_dict}
     
-
+    sec_calenders_estimates = "/data/seanchoi/airflow/data/calenders/sec_predicted_calendar_output.json"
     # Push the schedule data to XComs
-    schedule_data = fetch_schedule()
+    schedule_data = fetch_schedule(sec_calenders_estimates)
     # toss_cron_expression = fetch_cron_expression(schedule_data['time_slot'])
     
     # Trigger the second DAG dynamically

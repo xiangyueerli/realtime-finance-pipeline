@@ -34,7 +34,7 @@ with DAG(
     api_path = os.path.join(base_path, "api/ninjaapi_key.txt")
     with open(api_path, "r") as file:
         api_key = file.read().strip()
-    
+
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/calls/firm")
@@ -72,20 +72,16 @@ with DAG(
         
         # Convert the dictionary back to a DataFrame
         calls_df = pd.DataFrame(schedule_dict)
-        print(f"Schedule DataFrame for {time_slot}: {calls_df}")
 
-        print('calls_df:', calls_df)
         # Process the DataFrame dynamically based on the time slot
         if time_slot == "pre_market":
             print("Processing pre-market data...")
-            # Add logic for pre-market processing
             # Return the schedule_dict corresponding to pre-market time slot
             filtered_df = calls_df[
                 (calls_df['time'] == 'time-pre-market') | (calls_df['time'] == 'time-not-supplied')
                 ]
         if time_slot == "after_hours":
             print("Processing after-hours data...")
-            # Add logic for after-hours processing
             # Return the schedule_dict corresponding to after-hours time slot
             filtered_df = calls_df[
                 (calls_df['time'] =='time-after-hours') | (calls_df['time'] == 'time-not-supplied')
@@ -105,7 +101,7 @@ with DAG(
 
         from sqlalchemy import create_engine
         from sqlalchemy.orm import sessionmaker
-        db_url = "postgresql://pdcm:pdcm@pdcmmetastore_container:5432/ftrm"
+        db_url = "postgresql://metadata:metadata@metadata_postgres_container:5432/ftrm"
         engine = create_engine(db_url, pool_size=10, max_overflow=5, echo=False)
         SessionLocal = sessionmaker(bind=engine)
         return SessionLocal()
@@ -114,23 +110,29 @@ with DAG(
     def execute_dynamic_logic(Xcom, save_folder, api_key, start_date, end_date, **kwargs):
         import time
         from datetime import datetime, timedelta
-        from plugins.packages.FTRM.calls_calendars_layer import push_metadata, check_if_data_downloaded, update_list_of_firms
-
+        from plugins.packages.FTRM.calls_calendars_layer import push_metadata, update_list_of_firms
+        from plugins.packages.FTRM.calls_calendars_layer import CallsMetadata
         try:
             # Database connection
             session = connect_2_postgres()
             # Push the Xcom to the PostgreSQL meta data
-            push_metadata(session, Xcom, metadata_class='CallsMetadata')  # Specify the metadata class to use
+            push_metadata(
+                session = session,
+                xcom_data = Xcom,
+                metadata_class=CallsMetadata
+                )  # Specify the metadata class to use
             
             # Check if a firm's data is alreadly donwloaded from a meta data
             # If yes, remove it from the list of firms to process. If not, keep it in the list
-            update_list_of_firms(session, Xcom)
+            update_list_of_firms(
+                session = session,
+                xcom_data = Xcom,
+                metadata_class=CallsMetadata
+                )  # Specify the metadata class to use
             
             
-            # print(f"Time Slot: {time_slot}")
             time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
             schedule_data = Xcom['schedule_data']  # Extract schedule_data from the dictionary
-            # print('schedule_data:', list(schedule_data['time'].keys()))
             today_firms = list(schedule_data['time'].keys())
 
             # Define the time range based on the time slot
@@ -146,15 +148,14 @@ with DAG(
 
             print(f"Executing tasks between {start_time} and {end_time} every 5 minutes.")
             
-    
 
-            # Simulate execution every 5 minutes within the time range
+            # Simulate execution every 30 minutes within the time range
             current_time = start_time
             while current_time < end_time:
                 print(f"Executing task at {current_time.strftime('%Y-%m-%d %H:%M:%S')}")
-                # Add your task logic here (e.g., call APIs, process data, etc.)
-                # download_executor(save_folder, api_key, start_date, end_date, today_firms, **kwargs)
-                time.sleep(5 * 60)  # Wait for 5 minutes
+
+                download_executor(save_folder, api_key, start_date, end_date, today_firms, **kwargs)
+                time.sleep(30 * 60)  # Wait for 30 minutes
                 current_time += timedelta(minutes=5)
 
             print("Finished executing tasks for the time slot.")
@@ -189,10 +190,12 @@ with DAG(
                 
                 
                 #### For testing purposes, limit the number of tickers to process
+                # tickers = tickers[:3]
+                ### Testing purposes end
+                
                 # Uncomment the next line to process all tickers
-                tickers = tickers[:3]
+                tickers = list(cik_to_ticker.values())
                 print(f"Tickers to process: {tickers}")
-                # tickers = list(cik_to_ticker.values())
 
                 # Process in batches
                 for i in range(0, len(tickers), BATCH_SIZE):
@@ -203,11 +206,9 @@ with DAG(
                     # Check if the data in the batch is successfully downloaded
                     
                     # Update metadata for successfully downloaded files
-                    # Better Time Complexity: O(n) for each batch?
                     for ticker in batch:
                         update_firm_status(session, ticker)
         
-
 
         # Run the async function
         asyncio.run(async_download_executor())
@@ -259,9 +260,6 @@ with DAG(
     
     # Real-time Layer
     t1_process_schedule_data_task = process_schedule_data()
-
-    # time_slot = t1_process_schedule_data_task["time_slot"]
-
     
     # #FTRM -> You should use correct API key to run this part. The current API is expired
         
@@ -271,19 +269,17 @@ with DAG(
         api_key=api_key,
         start_date=start_date,
         end_date=end_date
-        # calender=t1_process_schedule_data_task
     )
     
-    # t2_download_executor = download_executor(save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date, calender=t1_process_schedule_data)
     # #PDCM
-    # t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
+    t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
 
     # #SSPM
-    # t4_sent_predictor = sent_predictor(window=end_date)
+    t4_sent_predictor = sent_predictor(window=end_date)
 
     
     # t2_download_executor >> t3_dtm_constructor >> t4_sent_predictor
-    t1_process_schedule_data_task >> download_executor_
+    t1_process_schedule_data_task >> download_executor_ # >> t3_dtm_constructor >> t4_sent_predictor
     
     
     

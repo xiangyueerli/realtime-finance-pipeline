@@ -1,12 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 import os
 from collections import defaultdict
 from itertools import islice
 from plugins.packages.FTRM.metadata import FileMetadata
 import json
 from datetime import datetime
+# import seaborn as sns
 
 
 class SECCalender:
@@ -165,7 +165,7 @@ class SECCalender:
         # Predicting optimal collection windows for each firm
         for cik, dates in list(collection.items()):
             if dates:  # Check if the list of dates is not empty
-                quarter_windows = sec_calendar.predict_focus_windows(cik, dates)
+                quarter_windows = self.predict_focus_windows(cik, dates)
                 output_data[cik] = quarter_windows
                 print(f"CIK: {cik}, Quarter Windows: {quarter_windows}")
                 
@@ -173,7 +173,7 @@ class SECCalender:
         with open(output_file_path, 'w') as f:
             json.dump(output_data, f, indent=4)
             
-    def push_metadata(session, xcom_data, type, metadata_class):
+    def push_metadata(self, session, xcom_data, type, metadata_class):
         """
         Push the XCom data to the PostgreSQL meta data
         """
@@ -314,9 +314,9 @@ class SECCalender:
 # firms_collection = sec_calendar.get_sec_release_dates(firm_path_dict_10q, firm_path_dict_10k)
 
 
-folder_path_10q = '' # Placeholder
-folder_path_10k = '' # Placeholder
-sec_calendar = SECCalender(folder_path_10q, folder_path_10k)
-json_file_path = "/opt/airflow/data/calenders/sec_predicted_calendar_output.json"
-ciks = sec_calendar.fetch_sec_calendars(json_file_path)
-print(f"CIKs with overlapping dates for today: {ciks}")
+# folder_path_10q = '' # Placeholder
+# folder_path_10k = '' # Placeholder
+# sec_calendar = SECCalender(folder_path_10q, folder_path_10k)
+# json_file_path = "/opt/airflow/data/calenders/sec_predicted_calendar_output.json"
+# ciks = sec_calendar.fetch_sec_daily_calendars(json_file_path)
+# print(f"CIKs with overlapping dates for today: {ciks}")

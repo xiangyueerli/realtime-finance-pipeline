@@ -107,54 +107,32 @@ services:
               cpus: '2.0'       # reserve 2 CPUs minimum
               memory: 6G        # reserve 6 GB minimum
 
-
-    pdcmmetastore:
+    metadata_postgres:
         image: postgres:14
-        container_name: pdcmmetastore_container
+        container_name: metadata_postgres_container
         environment:
-          POSTGRES_USER: pdcm
-          POSTGRES_PASSWORD: pdcm
-          POSTGRES_DB: pdcm
+          POSTGRES_USER: metadata
+          POSTGRES_PASSWORD: metadata
+          POSTGRES_DB: metadata
         volumes:
-          - pdcmmetastore-db-volume:/var/lib/postgresql/data
+          - metadata-postgres-db-volume:/var/lib/postgresql/data
         healthcheck:
           test: ["CMD", "pg_isready", "-U", "pdcm"]
           interval: 5s
           retries: 5
         restart: always
         ports:
-          - "5433:5432"  # PDCMmetastore Postgres port
+          - "5433:5432"  # Metadata Postgres port
+
+volumes:
+  metadata-postgres-db-volume:
+  postgres-db-volume:
+
+
+
 
     # TLDR: Rename pdcmmetastore to metadata_postgres for generic purpose and How to do.
-    # Let's rename pdcmmetastore to metadata_postgres for generic purpose.
-    # But, we will keep the original pdcmmetastore for backward compatibility, for now.
-    # Rename it when you are ready where you have completed FTRM metadata in pdcmmetastore instance.
 
-    # # Uncomment the following lines to use metadata_postgres instead of pdcmmetastore
-    # metadata_postgres:
-    # image: postgres:14
-    # container_name: metadata_postgres_container
-    # environment:
-    #   POSTGRES_USER: metadata
-    #   POSTGRES_PASSWORD: metadata
-    #   POSTGRES_DB: metadata
-    # volumes:
-    #   - metadata_postgres-db-volume:/var/lib/postgresql/data
-    # healthcheck:
-    #   test: ["CMD", "pg_isready", "-U", "pdcm"]
-    #   interval: 5s
-    #   retries: 5
-    # restart: always
-    # ports:
-    #   - "5433:5432"  # Metadata Postgres port
-
-    # What to do with this metadata_postgres?
-    # If you want to use it, uncomment the above lines and comment out the pdcmmetastore section.
-    # 1. Updates dependencies in other services: update the connection string in your code to use metadata_postgres instead of pdcmmetastore.
-    ## db_url = "postgresql://pdcm:pdcm@metadata_postgres_container:5432/pdcm" -> db_url = "postgresql://metadata:metadata@metadata_postgres_container:5432/metadata"      
-    # 2. Rename the Volumn in docker-compose.yml:
-    ## volumes:
-    ##     metadata-postgres-db-volume:
     # 3. Migrate Data
     ## If you rename the volume, the old data in pdcmmetastore-db-volume will not be automatically transferred to the new volume (metadata-postgres-db-volume).
     ## To migrate the data, you can copy it manually:
@@ -163,6 +141,25 @@ services:
     ## -v metadata-postgres-db-volume:/to \
     ## alpine ash -c "cd /from && cp -r . /to"
 
-volumes:
-  pdcmmetastore-db-volume:
-  postgres-db-volume:
+
+    # pdcmmetastore:
+    #     image: postgres:14
+    #     container_name: pdcmmetastore_container
+    #     environment:
+    #       POSTGRES_USER: pdcm
+    #       POSTGRES_PASSWORD: pdcm
+    #       POSTGRES_DB: pdcm
+    #     volumes:
+    #       - pdcmmetastore-db-volume:/var/lib/postgresql/data
+    #     healthcheck:
+    #       test: ["CMD", "pg_isready", "-U", "pdcm"]
+    #       interval: 5s
+    #       retries: 5
+    #     restart: always
+    #     ports:
+    #       - "5433:5432"  # PDCMmetastore Postgres port
+
+# volumes:
+#   metadata-postgres-db-volume:
+#   postgres-db-volume:
+# pdcmmetastore-db-volume:

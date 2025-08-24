@@ -1,4 +1,3 @@
-
 # # For the dockerised image
 from datetime import datetime
 from plugins.common.nasdaqAPI_finance_calendars import get_earnings_today
@@ -6,18 +5,17 @@ from plugins.common.hash_functions import generate_hash_id
 import pandas as pd
 from plugins.packages.FTRM.metadata import FileMetadata
 from sqlalchemy.orm import Session
+from airflow.exceptions import AirflowSkipException  # Import exception to stop DAG execution
 
 def fetch_calls_calendars():
     calls = get_earnings_today()
 
     # No earnings today such as weekends or holidays
-    # if calls.empty or calls is None: 
-    #     # Stop the DAG from running
-    #     # Temp
-    #     print("No earnings today, stopping the DAG.")
-    #     return None
-    # calls_df = calls[['time']]
+    if calls.empty or calls is None: 
+        raise AirflowSkipException("No calls data available. Stopping DAG execution.")
+    calls_df = calls[['time']]
 
+    ### For testing purposes, let's create a mock DataFrame similar to expected output    
 
     # # Example output of calls_df will be
     #     symbol    time                             
@@ -28,24 +26,26 @@ def fetch_calls_calendars():
     # BSET     time-after-hours  
     # ARTW    time-not-supplied  
     
-    mock_data = pd.DataFrame({
-            "symbol": ["AZZ", "MEI", "PCYO", "THTX", "BSET", "ARTW"],
-            "time": [
-                "time-after-hours",
-                "time-after-hours",
-                "time-after-hours",
-                "time-pre-market",
-                "time-after-hours",
-                "time-not-supplied"
-            ]
-        }).set_index("symbol")
-    print('Mock data created for testing purposes.')
-    print('Mock data:', mock_data)
+    # mock_data = pd.DataFrame({
+    #         "symbol": ["AZZ", "MEI", "PCYO", "THTX", "BSET", "ARTW"],
+    #         "time": [
+    #             "time-after-hours",
+    #             "time-after-hours",
+    #             "time-after-hours",
+    #             "time-pre-market",
+    #             "time-after-hours",
+    #             "time-not-supplied"
+    #         ]
+    #     }).set_index("symbol")
+    # print('Mock data created for testing purposes.')
+    # print('Mock data:', mock_data)
     
-    return mock_data
+    # return mock_data
 
-    # Return the DataFrame as a dictionary (XComs can only store serializable data)
-    # return calls_df.to_dict()
+    ### End of testing purposes
+
+    #  Return the DataFrame as a dictionary (XComs can only store serializable data)
+    return calls_df.to_dict()
     
     
     
@@ -96,26 +96,26 @@ def push_metadata(session, xcom_data, metadata_class):
     
     return None
 
-def check_if_data_downloaded(session, xcom_data):
+def check_if_data_downloaded(session, xcom_data, metadata_class):
     """
     Check if the data for the ticker is already downloaded from the meta data
     """
     tickers = list(xcom_data['schedule_data']['time'].keys())  # Extract the list of tickers from XCom data
-    downloaded_tickers = session.query(FileMetadata.ticker).filter(
-        FileMetadata.ticker.in_(tickers),  # Check if the ticker is in the provided list
-        FileMetadata.status == 'completed',  # Ensure the status is 'completed'
-        FileMetadata.is_deleted == False  # Ensure the record is not marked as deleted
+    downloaded_tickers = session.query(metadata_class.ticker).filter(
+        metadata_class.ticker.in_(tickers),  # Check if the ticker is in the provided list
+        metadata_class.status == 'completed',  # Ensure the status is 'completed'
+        metadata_class.is_deleted == False  # Ensure the record is not marked as deleted
     ).all()
 
     # Extract the tickers from the query result and return as a list
     return [ticker[0] for ticker in downloaded_tickers]
 
 
-def update_list_of_firms(session, xcom_data):
+def update_list_of_firms(session, xcom_data, metadata_class):
     """
     Update the list of firms in the XCom data by removing already downloaded tickers.
     """
-    downloaded_tickers = check_if_data_downloaded(session, xcom_data)
+    downloaded_tickers = check_if_data_downloaded(session, xcom_data, metadata_class)
     xcom_data['schedule_data']['time'] = {
         ticker: time_slot
         for ticker, time_slot in xcom_data['schedule_data']['time'].items()
