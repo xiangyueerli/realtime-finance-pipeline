@@ -82,13 +82,13 @@ def push_metadata(session, xcom_data, metadata_class):
         record = session.query(metadata_class).filter_by(ticker=ticker).first()
         if record:
             record.status = 'pending'
-            record.download_date = datetime.datetime.now().date()
+            record.download_date = datetime.now().date()
             record.is_deleted = False
         else:
             new_record = metadata_class(
                 id = hash_id,
                 ticker=ticker,
-                download_date=datetime.datetime.now().date(),
+                download_date=datetime.now().date(),
                 status='pending',
                 is_deleted=False
             )

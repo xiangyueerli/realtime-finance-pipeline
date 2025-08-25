@@ -15,7 +15,7 @@ class FileMetadata(Base):
     """
     __abstract__ = True # Mark this class as abstract (no table will be created for it)
     
-    id = Column(Integer, primary_key=True, autoincrement=True)  # Unique identifier for each record
+    id = Column(String, primary_key=True, autoincrement=True)  # Unique identifier for each record
     ticker = Column(String, nullable=False)                    # Stock ticker symbol
     download_date = Column(Date, nullable=False)               # Date when the file was downloaded
     recent_update_date = Column(DateTime, nullable=True)  # Date of the most recent update

@@ -4,12 +4,13 @@ import os
 from collections import defaultdict
 from itertools import islice
 from plugins.packages.FTRM.metadata import FileMetadata
+from plugins.common.hash_functions import generate_hash_id
 import json
 from datetime import datetime
 # import seaborn as sns
 
 
-class SECCalender:
+class SECCalendar:
     def __init__(self, folder_path_10q, folder_path_10k):
         self.folder_path_10q = folder_path_10q
         self.folder_path_10k = folder_path_10k
@@ -36,17 +37,6 @@ class SECCalender:
         except FileNotFoundError:
             print(f"The folder '{folder_path}' does not exist.")
             return defaultdict(list)
-                    
-        
-        # try:
-        #     return [
-        #         os.path.join(folder_path, folder_name)
-        #         for folder_name in os.listdir(folder_path)
-        #         if os.path.isdir(os.path.join(folder_path, folder_name))
-        #     ]
-        # except FileNotFoundError:
-        #     print(f"The folder '{folder_path}' does not exist.")
-        #     return []
 
 
     def get_sec_release_dates(self, firm_path_dict_10q, firm_path_dict_10k):
@@ -181,6 +171,7 @@ class SECCalender:
         for cik, ticker in cik_ticker.items():
             record = session.query(metadata_class).filter_by(ticker=ticker).first()
             download_date = datetime.now().date()
+            hash_id = generate_hash_id(ticker, download_date)
 
             if record:
                 record.status = 'pending'
@@ -189,6 +180,7 @@ class SECCalender:
                 record.filing_type = type
             else:
                 new_record = metadata_class(
+                    id = hash_id,
                     ticker=ticker,
                     download_date=download_date,
                     status='pending',
@@ -305,18 +297,3 @@ class SECCalender:
 
 
 
-# Example usage - If you want to run this code, make sure to set the folder paths correctly.
-# folder_path_10q = '/Users/apple/PROJECT/Code_4_SECfilings/total_sp500_10q-html'
-# folder_path_10k = '/Users/apple/PROJECT/Code_4_SECfilings/total_sp500_10k-html'
-# sec_calendar = SecCalender(folder_path_10q, folder_path_10k)
-# firm_path_dict_10q = sec_calendar.get_firm_paths_dict(folder_path_10q)
-# firm_path_dict_10k = sec_calendar.get_firm_paths_dict(folder_path_10k)
-# firms_collection = sec_calendar.get_sec_release_dates(firm_path_dict_10q, firm_path_dict_10k)
-
-
-# folder_path_10q = '' # Placeholder
-# folder_path_10k = '' # Placeholder
-# sec_calendar = SECCalender(folder_path_10q, folder_path_10k)
-# json_file_path = "/opt/airflow/data/calenders/sec_predicted_calendar_output.json"
-# ciks = sec_calendar.fetch_sec_daily_calendars(json_file_path)
-# print(f"CIKs with overlapping dates for today: {ciks}")

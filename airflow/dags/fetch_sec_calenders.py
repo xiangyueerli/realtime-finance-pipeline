@@ -11,10 +11,11 @@ import pandas as pd
 with DAG(
     dag_id="fetch_sec_calenders",
 
-    # During DST (Mar–Nov)
-    schedule="0 10,20 * * *",  # Run twice a day: 10:00 AM UTC (6:00 AM EST, pre-market) and 8:00 PM UTC (4:00 PM EST, after-hours)
-    # # During Standard Time (Nov–Mar)
-    # schedule="0 11 * * *",  # 11:00 AM UTC = 6:00 AM EST
+    # During DST (March–November)
+    schedule="0 10,13,20,23 * * *",  # Run 4 times a day: 10:00 AM, 1:00 PM, 8:00 PM, and 11:00 PM UTC (6:00 AM, 9:00 AM, 4:00 PM, and 7:00 PM ET during DST)
+
+    # During Standard Time (November–March)
+    # schedule="0 11,14,21,0 * * *",  # Run 4 times a day: 11:00 AM, 2:00 PM, 9:00 PM, and 12:00 AM UTC (6:00 AM, 9:00 AM, 4:00 PM, and 7:00 PM ET during Standard Time)
     
     start_date=pendulum.datetime(2025, 1, 1, tz="UTC"),
     catchup=False,
@@ -23,26 +24,21 @@ with DAG(
 
     @task(task_id="fetch_schedule")
     def fetch_schedule(sec_calenders_estimates, **kwargs):
-        from plugins.packages.FTRM.sec_calendars_layer import SECCalender
+        from plugins.packages.FTRM.sec_calendars_layer import SECCalendar
         
         # Access execution_date from kwargs
         execution_date = kwargs['execution_date']
         
-        sec_calender = SECCalender(folder_path_10q=None, folder_path_10k=None)
+        sec_calender = SECCalendar(folder_path_10q=None, folder_path_10k=None)
         # Fetch the SEC calendar data
         sec_tody_list = sec_calender.fetch_sec_daily_calendars(sec_calenders_estimates)
-        # Fetch the schedule data frame
-        # calls_df = fetch_calls_calendars()
+
         print(f"Fetched Calls DataFrame: {sec_tody_list}")
         if sec_tody_list is None or len(sec_tody_list) == 0:
             raise AirflowSkipException("No calls data available for today, stopping the DAG.")
     
         # Determine the time slot dynamically based on execution time
         hour = execution_date.hour
-        
-        ### For testing purposes
-        hour = 20  # Set to 10 for pre-market, 20 for after
-        ### Testing purposes end
         
         if hour == 10:  # Pre-market time slot
             time_slot = "pre_market"

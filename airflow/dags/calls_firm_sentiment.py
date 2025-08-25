@@ -4,10 +4,9 @@ from airflow import DAG
 from airflow.decorators import task
 from plugins.common.time_log_decorator import time_log
 
-import time
 import os
 import pandas as pd
-import datetime
+from datetime import datetime
 from airflow.models import XCom
 
 
@@ -22,7 +21,7 @@ with DAG(
     ############################### Configurations ################################
 
     start_date = '2025-01-01'
-    end_date = datetime.datetime.now().strftime('%Y-%m-%d')
+    end_date = datetime.now().strftime('%Y-%m-%d')
     
     # Download Executor Configurations
     RATE_LIMIT = 5 # Maximum requests per second
@@ -108,10 +107,8 @@ with DAG(
             
     @task(task_id="execute_dynamic_logic")
     def execute_dynamic_logic(Xcom, save_folder, api_key, start_date, end_date, **kwargs):
-        import time
-        from datetime import datetime, timedelta
         from plugins.packages.FTRM.calls_calendars_layer import push_metadata, update_list_of_firms
-        from plugins.packages.FTRM.calls_calendars_layer import CallsMetadata
+        from plugins.packages.FTRM.metadata import CallsMetadata
         try:
             # Database connection
             session = connect_2_postgres()
@@ -134,31 +131,10 @@ with DAG(
             time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
             schedule_data = Xcom['schedule_data']  # Extract schedule_data from the dictionary
             today_firms = list(schedule_data['time'].keys())
-
-            # Define the time range based on the time slot
-            if time_slot == "pre_market":
-                start_time = datetime.now().replace(hour=11, minute=0, second=0, microsecond=0)  # 11:00 AM UTC
-                end_time = datetime.now().replace(hour=13, minute=0, second=0, microsecond=0)    # 1:00 PM UTC
-            elif time_slot == "after_hours":
-                start_time = datetime.now().replace(hour=20, minute=0, second=0, microsecond=0)  # 8:00 PM UTC
-                end_time = datetime.now().replace(hour=22, minute=0, second=0, microsecond=0)    # 10:00 PM UTC
-            else:
-                print("Unknown time slot. No execution.")
-                return
-
-            print(f"Executing tasks between {start_time} and {end_time} every 5 minutes.")
+            print('Today firms:', today_firms)
             
+            download_executor(save_folder, api_key, start_date, end_date, today_firms, **kwargs)
 
-            # Simulate execution every 30 minutes within the time range
-            current_time = start_time
-            while current_time < end_time:
-                print(f"Executing task at {current_time.strftime('%Y-%m-%d %H:%M:%S')}")
-
-                download_executor(save_folder, api_key, start_date, end_date, today_firms, **kwargs)
-                time.sleep(30 * 60)  # Wait for 30 minutes
-                current_time += timedelta(minutes=5)
-
-            print("Finished executing tasks for the time slot.")
             session.commit()
             
         except Exception as e:
@@ -174,11 +150,13 @@ with DAG(
         import asyncio
         from plugins.packages.FTRM.calls_calendars_layer import update_firm_status
 
+
         session = connect_2_postgres()
 
-        start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
-        end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
-        
+        start_date = datetime.strptime(start_date, '%Y-%m-%d').year
+        print(f"Type of start_date: {type(start_date)}, Value: {start_date}")
+        end_date = datetime.strptime(end_date, '%Y-%m-%d').year
+        print(f"Type of end_date: {type(end_date)}, Value: {end_date}")
         async def async_download_executor():
             from plugins.packages.FTRM.extract_scripts_ninja import fetch_reports
             import aiohttp
@@ -194,7 +172,6 @@ with DAG(
                 ### Testing purposes end
                 
                 # Uncomment the next line to process all tickers
-                tickers = list(cik_to_ticker.values())
                 print(f"Tickers to process: {tickers}")
 
                 # Process in batches
@@ -272,10 +249,10 @@ with DAG(
     )
     
     # #PDCM
-    t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
+    # t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
 
-    # #SSPM
-    t4_sent_predictor = sent_predictor(window=end_date)
+    # SSPM
+    # t4_sent_predictor = sent_predictor(window=end_date)
 
     
     # t2_download_executor >> t3_dtm_constructor >> t4_sent_predictor

@@ -8,7 +8,7 @@ import time
 import os
 import pandas as pd
 import datetime
-from datetime import date
+from datetime import date, datetime
 from airflow.models.xcom_arg import XComArg
 
 with DAG(
@@ -21,7 +21,7 @@ with DAG(
     
     ############################### Configurations ################################
     start_date = '2025-01-01'
-    end_date = datetime.datetime.now().strftime('%Y-%m-%d')
+    end_date = datetime.now().strftime('%Y-%m-%d')
     
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
@@ -73,20 +73,18 @@ with DAG(
 
         from sqlalchemy import create_engine
         from sqlalchemy.orm import sessionmaker
-        # db_url = "postgresql://pdcm:pdcm@pdcmmetastore_container:5432/ftrm"
         db_url = "postgresql://metadata:metadata@metadata_postgres_container:5432/ftrm"
         engine = create_engine(db_url, pool_size=10, max_overflow=5, echo=False)
         SessionLocal = sessionmaker(bind=engine)
         return SessionLocal()
     
-    @task(task_id="execute_dynamic_logic")
+    @task(task_id='t2_download_executor')
     def execute_dynamic_logic(Xcom, save_folder, start_date, end_date, **kwargs):
-        import time
-        from datetime import datetime, timedelta
-        from plugins.packages.FTRM.sec_calendars_layer import SECCalender
+
+        from plugins.packages.FTRM.sec_calendars_layer import SECCalendar
         from plugins.packages.FTRM.metadata import SECMetadata
 
-        sec_calender = SECCalender(folder_path_10q=None, folder_path_10k=None)
+        sec_calender = SECCalendar(folder_path_10q=None, folder_path_10k=None)
 
         type = filing_type(today=None)  
         try:
@@ -109,40 +107,11 @@ with DAG(
                 metadata_class= SECMetadata
             )  # Specify the metadata class to use
             
-            
-            # print(f"Time Slot: {time_slot}")
             time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
             cik_ticker = Xcom['cik_ticker']  # Extract schedule_data from the dictionary
-            print('cik_ticker:', cik_ticker)
-            # print('schedule_data:', list(schedule_data['time'].keys()))
             
-            # # Define the time range based on the time slot
-            # if time_slot == "pre_market":
-            #     start_time = datetime.now().replace(hour=11, minute=0, second=0, microsecond=0)  # 11:00 AM UTC
-            #     end_time = datetime.now().replace(hour=13, minute=0, second=0, microsecond=0)    # 1:00 PM UTC
-            # elif time_slot == "after_hours":
-            #     start_time = datetime.now().replace(hour=20, minute=0, second=0, microsecond=0)  # 8:00 PM UTC
-            #     end_time = datetime.now().replace(hour=22, minute=0, second=0, microsecond=0)    # 10:00 PM UTC
-            # else:
-            #     print("Unknown time slot. No execution.")
-            #     return
-            
-            # start_time = datetime(2025, 8, 24, 17, 0, 0)  # 6:00 PM UTC on August 24, 2025
-            # end_time = datetime(2025, 8, 24, 19, 0, 0)    # 8:00 PM UTC on August 24, 2025
-
-            # print(f"Executing tasks between {start_time} and {end_time} every 5 minutes.")
             download_executor(cik_ticker, save_folder, type, start_date, end_date, **kwargs)
 
-            # # Simulate execution every 5 minutes within the time range
-            # current_time = start_time
-            # while current_time < end_time:
-            #     print(f"Executing task at {current_time.strftime('%Y-%m-%d %H:%M:%S')}")
-            #     # Add your task logic here (e.g., call APIs, process data, etc.)
-            #     download_executor(cik_ticker, save_folder, type, start_date, end_date, **kwargs)
-            #     time.sleep(5 * 60)  # Wait for 5 minutes
-            #     current_time += timedelta(minutes=5)
-
-            # print("Finished executing tasks for the time slot.")
             session.commit()
             
         except Exception as e:
@@ -168,16 +137,12 @@ with DAG(
         else:                       # Q4 (Oct–Dec)
             return "10-K"
         
-    @task(task_id='t2_resolve_time_range')
-    def resolve_time_range(Xcom):
-        time_slot = Xcom['time_slot']  # Resolve the time_slot from XCom data
-        start_time, end_time = get_time_range(time_slot)
-        return {'start_time': start_time, 'end_time': end_time}
-
+    
     @time_log
     def download_executor(cik_tickers, save_folder, type, start_date, end_date, **kwargs):
         from plugins.packages.FTRM.sec_crawler import download_filing
         from plugins.packages.FTRM.sec_calendars_layer import SECCalendar
+        from plugins.packages.FTRM.metadata import SECMetadata
         import os
         import pandas as pd
         from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -216,7 +181,7 @@ with DAG(
                     sec_calendar.update_firm_status(
                         session = session,
                         ticker = ticker,
-                        metadata_class = 'SECMetadata',
+                        metadata_class = SECMetadata,
                         success=True
                         )  # Mark as completed
                 except Exception as e:
@@ -224,7 +189,7 @@ with DAG(
                     sec_calendar.update_firm_status(
                         session = session,
                         ticker = ticker,
-                        metadata_class = 'SECMetadata',
+                        metadata_class = SECMetadata,
                         success=False
                         )  # Mark as failed
 
@@ -234,28 +199,14 @@ with DAG(
     # Define the time range dynamically based on the time slot
     def get_time_range(time_slot):
         if time_slot == "pre_market":
-            start_time = datetime.datetime.now().replace(hour=11, minute=0, second=0, microsecond=0)
-            end_time = datetime.datetime.now().replace(hour=13, minute=0, second=0, microsecond=0)
+            start_time = datetime.now().replace(hour=11, minute=0, second=0, microsecond=0)
+            end_time = datetime.now().replace(hour=13, minute=0, second=0, microsecond=0)
         elif time_slot == "after_hours":
-            start_time = datetime.datetime.now().replace(hour=20, minute=0, second=0, microsecond=0)
-            end_time = datetime.datetime.now().replace(hour=22, minute=0, second=0, microsecond=0)
+            start_time = datetime.now().replace(hour=20, minute=0, second=0, microsecond=0)
+            end_time = datetime.now().replace(hour=22, minute=0, second=0, microsecond=0)
         else:
             raise ValueError("Unknown time slot")
         return start_time, end_time
-
-    # # Sensor to wait for the time range
-    # @task(task_id="t2_create_time_range_sensor")
-    # def create_time_range_sensor(Xcom):
-    #     time_slot = Xcom['time_slot']
-    #     start_time, end_time = get_time_range(time_slot)
-    #     return TimeRangeSensor(
-    #         task_id=f"wait_for_{time_slot}",
-    #         start_time=start_time,
-    #         end_time=end_time,
-    #         poke_interval=300,  # Check every 5 minutes
-    #         timeout=7200,  # Timeout after 2 hours
-    #         mode="poke",  # Use poke mode
-    #     )
     
     @task(task_id='t3_txt_convertor')
     @time_log
@@ -325,36 +276,19 @@ with DAG(
         predictor = SentimentPredictor(config)
         predictor.run()
     
-    #FTRM
+    # FTRM
     t1_process_schedule_data = process_schedule_data(csv_file_path=csv_file_path)  # Process the schedule data and extract CIKs
     
-    # Resolve time range dynamically
-    resolved_time_range = resolve_time_range(t1_process_schedule_data)
-    
-    # # Define the time range sensor as a standalone task
-    # t2_time_range_sensor = TimeRangeSensor(
-    #     task_id = "wait_for_time_range",
-    #     Xcom = resolved_time_range,
-    #     poke_interval=300,  # Check every 5 minutes
-    #     timeout=7200,  # Timeout after 2 hours
-    #     mode="poke",  # Use poke mode
-    # )
-
-
-    # t2_create_time_range_sensor = create_time_range_sensor(t1_process_schedule_data)  # Create a sensor to wait for the time range
-
-    download_executor_ = execute_dynamic_logic(t1_process_schedule_data, save_folder=data_raw_folder ,start_date=start_date, end_date=end_date)  # Execute the dynamic logic based on the time slot
+    t2_download_executor = execute_dynamic_logic(t1_process_schedule_data, save_folder=data_raw_folder ,start_date=start_date, end_date=end_date)  # Execute the dynamic logic based on the time slot
         
-    # t2_download_executor = download_executor(t1_process_schedule_data, start_date=start_date, end_date=end_date)
-    # t3_txt_convertor = txt_convertor(data_raw_folder, extracted_folder)
-    #PDCM
-    # t4_dtm_constructor = dtm_constructor(extracted_folder, final_save_path, t1_process_schedule_data, ["Name", "CIK", "Date", "Body" ], start_date, end_date)
+    t3_txt_convertor = txt_convertor(data_raw_folder, extracted_folder)
+    # PDCM
+    t4_dtm_constructor = dtm_constructor(extracted_folder, final_save_path, t1_process_schedule_data, ["Name", "CIK", "Date", "Body" ], start_date, end_date)
 
-    #SSPM
-    # t5_sent_predictor = sent_predictor(window=end_date)
+    # SSPM
+    t5_sent_predictor = sent_predictor(window=end_date)
 
     
-    t1_process_schedule_data  >> resolved_time_range #>> t2_time_range_sensor  >> download_executor_ 
-    #t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_sent_predictor
+    t1_process_schedule_data >> t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_sent_predictor
 
         

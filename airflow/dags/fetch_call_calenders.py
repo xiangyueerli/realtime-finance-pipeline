@@ -9,12 +9,13 @@ import pandas as pd
 
 # Define the first DAG
 with DAG(
-    dag_id="fetch_calenders",
+    dag_id="fetch_call_calenders",
 
-    # During DST (Mar–Nov)
-    schedule="0 10,20 * * *",  # Run twice a day: 10:00 AM UTC (6:00 AM EST, pre-market) and 8:00 PM UTC (4:00 PM EST, after-hours)
-    # # During Standard Time (Nov–Mar)
-    # schedule="0 11 * * *",  # 11:00 AM UTC = 6:00 AM EST
+    # During DST (March–November)
+    schedule="10 10,13,20,23 * * *",  # Run 4 times a day: 10:10 AM, 1:10 PM, 8:10 PM, and 11:10 PM UTC (6:10 AM, 9:10 AM, 4:10 PM, and 7:10 PM ET during DST)
+
+    # During Standard Time (November–March)
+    # schedule="10 11,14,21,0 * * *",  # Run 4 times a day: 11:10 AM, 2:10 PM, 9:10 PM, and 12:10 AM UTC (6:10 AM, 9:10 AM, 4:10 PM, and 7:10 PM ET during Standard Time)
     
     start_date=pendulum.datetime(2025, 1, 1, tz="UTC"),
     catchup=False,
@@ -30,28 +31,42 @@ with DAG(
         
         # Fetch the schedule data frame
         calls_df = fetch_calls_calendars()
+        
         print(f"Fetched Calls DataFrame: {calls_df}")
-        if calls_df is None or calls_df.empty:
+        if calls_df is None or len(calls_df) == 0:
             raise AirflowSkipException("No calls data available for today, stopping the DAG.")
+        
+        # Convert the dictionary to a Pandas DataFrame
+        calls_df = pd.DataFrame.from_dict(calls_df)
         
         # Determine the time slot dynamically based on execution time
         hour = execution_date.hour
         
         ### For testing purposes
-        hour = 20  # Set to 10 for pre-market, 20 for after-hours
+        # hour = 20  # Set to 10 for pre-market, 20 for after-hours
         ### Testing purposes end
+        
 
-        if hour == 10:  # Pre-market time slot
+        if hour in [10,11,13,14]:  # Pre-market time slot
             time_slot = "pre_market"
-            filtered_df = calls_df[
-                (calls_df['time'] == 'time-pre-market') | (calls_df['time'] == 'time-not-supplied')
-            ]
+            if 'time' in calls_df.columns:
+                filtered_df = calls_df[
+                    (calls_df['time'] == 'time-pre-market') | (calls_df['time'] == 'time-not-supplied')
+                ]
+            else:
+                raise KeyError("The 'time' column is missing from the calls_df DataFrame.")
 
-        elif hour == 20:  # After-hours time slot
+        elif hour in [20,21,23,0]:  # After-hours time slot
             time_slot = "after_hours"
-            filtered_df = calls_df[
-                (calls_df['time'] == 'time-after-hours') | (calls_df['time'] == 'time-not-supplied')
-            ]
+            if 'time' in calls_df.columns:
+                filtered_df = calls_df[
+                    (calls_df['time'] == 'time-after-hours') | (calls_df['time'] == 'time-not-supplied')
+                ]
+            else:
+                raise KeyError("The 'time' column is missing from the calls_df DataFrame.")
+
+        else:
+            raise ValueError("Unexpected execution time.")
         
         # Convert the DataFrame to a dictionary for XComs
         schedule_dict = filtered_df.to_dict()
