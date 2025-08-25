@@ -26,6 +26,7 @@ with DAG(
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/sec/firm")
+
     csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
 
     

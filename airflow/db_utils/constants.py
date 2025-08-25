@@ -2,8 +2,10 @@
 MONGO_USERNAME = "root"  # Replace with your MongoDB username
 MONGO_PASSWORD = "mongo_edinburgh_123"  # Replace with your MongoDB password
 
-MONGO_HOST = "mongo_container" # run in the docker
-# MONGO_HOST = "localhost"  # Uncomment this line if running locally
+
+# MONGO_HOST = "mongo_container" # run in the docker
+MONGO_HOST = "localhost"  # Uncomment this line if running locally
+
 
 MONGO_PORT = 27017  # Default MongoDB port
 DB_NAME = "financial_db"  # Database name

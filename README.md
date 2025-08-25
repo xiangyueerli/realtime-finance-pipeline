@@ -1,5 +1,6 @@
-# README: real-time-sent-airflow
- 
+# README: realtime-financial-sentiment
+Developed by: Sean Choi (https://github.com/007seann)
+
 ## 1. Why did you start your project?
 
 This project was initiated in response to the increasing importance of real-time sentiment analysis in financial markets. As a retail investor with five years of experience and a 7.5% compound annual growth rate, I encountered firsthand how sensitive assets like Nvidia and Bitcoin are to sentiment shocks. Existing systems failed to capture the breadth and speed of multi-source financial sentiment. This gap motivated the development of an end-to-end, real-time sentiment scoring system capable of integrating multiple perspectives from financial text—such as regulatory filings, earnings call transcripts, and expert analysis reports—for better forecasting of stock returns and volatility.
@@ -25,13 +26,17 @@ This project was initiated in response to the increasing importance of real-time
 
 ## 4. What is your final decision among solutions?
 
-The final solution is a real-time, fully automated, and multi-source sentiment scoring system deployed on Microsoft Azure. It comprises:
+The final solution is a real-time, fully automated, and multi-source sentiment scoring system deployed on Microsoft Azure.
+![Architecture Diagram](image/real-time-architecture.png)
+
+It comprises:
 
 - **FTRM (Financial Text Retrieval Model)**: Fetches data from EDGAR, Seeking Alpha, and APIs.
 - **PDCM (Parallel Data Construction Model)**: Uses Apache Spark to transform and structure data efficiently.
 - **SSPM (Sentiment Score Prediction Model)**: Produces return- and volatility-predictive sentiment scores using a supervised model adapted from Zheng et al.’s lexicon learning method.
 
 This system not only supports real-time decision-making for traders and analysts but also provides a transparent, extensible, and scalable framework for future research and deployment.
+
 
 
 ## How to Run the System
@@ -79,8 +84,8 @@ Open in browser:
 http://20.77.80.201:3000/home
 ```
 Login credentials:
-- **Username**: `admin`
-- **Password**: `admin`
+- **Username**: Request to the author
+- **Password**: Request to the author
 
 ---
 

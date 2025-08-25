@@ -629,10 +629,10 @@ class ConstructDTM:
                 df_add_filtered = df_add[df_add['Date'].isin(common_dates)]
                 batch_df = batch_df[batch_df['Date'].isin(common_dates)]
 
+
                 # Optional: reset index if needed
                 df_add_filtered = df_add_filtered.reset_index(drop=True)
                 batch_df = batch_df.reset_index(drop=True)
-                
                 
                 
                 # Test
