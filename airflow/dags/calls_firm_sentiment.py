@@ -4,16 +4,15 @@ from airflow import DAG
 from airflow.decorators import task
 from plugins.common.time_log_decorator import time_log
 
-import time
 import os
 import pandas as pd
-import datetime
-
+from datetime import datetime
+from airflow.models import XCom
 
 
 with DAG(
     dag_id="calls_firm_sentiment",
-    schedule="0 0 1 1,4,7,10 *",
+    schedule=None,  # Triggered dynamically by the first DAG
     start_date=pendulum.datetime(2025, 1, 1, tz="UTC"),
     catchup=False,
 
@@ -22,7 +21,7 @@ with DAG(
     ############################### Configurations ################################
 
     start_date = '2025-01-01'
-    end_date = datetime.datetime.now().strftime('%Y-%m-%d')
+    end_date = datetime.now().strftime('%Y-%m-%d')
     
     # Download Executor Configurations
     RATE_LIMIT = 5 # Maximum requests per second
@@ -34,11 +33,12 @@ with DAG(
     api_path = os.path.join(base_path, "api/ninjaapi_key.txt")
     with open(api_path, "r") as file:
         api_key = file.read().strip()
-    
+
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/calls/firm")
-    csv_file_path = os.path.join(base_path, "data/constituents/firms/nvidia_constituents_final.csv")
+    # csv_file_path = os.path.join(base_path, "data/constituents/firms/nvidia_constituents_final.csv")
+    csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
     columns = ["Name", "CIK", "Date", "Body" ]
     firms_df = pd.read_csv(csv_file_path)
     columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
@@ -62,13 +62,101 @@ with DAG(
         
         return cik
     
-    @task(task_id='t2_download_executor')
-    @time_log
-    def download_executor(save_folder, api_key, start_date, end_date, **kwargs):
-        import asyncio
-        start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d').year
-        end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d').year
+    @task(task_id="t1_process_schedule_data")
+    def process_schedule_data(**kwargs):
+        # Retrieve the passed data from the execution context
+        conf = kwargs.get("dag_run").conf
+        time_slot = conf.get("time_slot", "unknown")
+        schedule_dict = conf.get("schedule_data", {})
         
+        # Convert the dictionary back to a DataFrame
+        calls_df = pd.DataFrame(schedule_dict)
+
+        # Process the DataFrame dynamically based on the time slot
+        if time_slot == "pre_market":
+            print("Processing pre-market data...")
+            # Return the schedule_dict corresponding to pre-market time slot
+            filtered_df = calls_df[
+                (calls_df['time'] == 'time-pre-market') | (calls_df['time'] == 'time-not-supplied')
+                ]
+        if time_slot == "after_hours":
+            print("Processing after-hours data...")
+            # Return the schedule_dict corresponding to after-hours time slot
+            filtered_df = calls_df[
+                (calls_df['time'] =='time-after-hours') | (calls_df['time'] == 'time-not-supplied')
+                ]
+            print('Filtered DataFrame:!!!', filtered_df)
+        else:
+            print("Unknown time slot. No data to process.")
+            filtered_df = pd.DataFrame()  # Return an empty DataFrame if the time slot is unknown
+            
+        # Convert the filtered DataFrame to a dictionary for XComs
+        schedule_data = filtered_df.to_dict()
+        
+        # Return the schedule data to XComs
+        return {"time_slot": time_slot, "schedule_data": schedule_data}
+    
+    def connect_2_postgres():
+
+        from sqlalchemy import create_engine
+        from sqlalchemy.orm import sessionmaker
+        db_url = "postgresql://metadata:metadata@metadata_postgres_container:5432/ftrm"
+        engine = create_engine(db_url, pool_size=10, max_overflow=5, echo=False)
+        SessionLocal = sessionmaker(bind=engine)
+        return SessionLocal()
+            
+    @task(task_id="execute_dynamic_logic")
+    def execute_dynamic_logic(Xcom, save_folder, api_key, start_date, end_date, **kwargs):
+        from plugins.packages.FTRM.calls_calendars_layer import push_metadata, update_list_of_firms
+        from plugins.packages.FTRM.metadata import CallsMetadata
+        try:
+            # Database connection
+            session = connect_2_postgres()
+            # Push the Xcom to the PostgreSQL meta data
+            push_metadata(
+                session = session,
+                xcom_data = Xcom,
+                metadata_class=CallsMetadata
+                )  # Specify the metadata class to use
+            
+            # Check if a firm's data is alreadly donwloaded from a meta data
+            # If yes, remove it from the list of firms to process. If not, keep it in the list
+            update_list_of_firms(
+                session = session,
+                xcom_data = Xcom,
+                metadata_class=CallsMetadata
+                )  # Specify the metadata class to use
+            
+            
+            time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
+            schedule_data = Xcom['schedule_data']  # Extract schedule_data from the dictionary
+            today_firms = list(schedule_data['time'].keys())
+            print('Today firms:', today_firms)
+            
+            download_executor(save_folder, api_key, start_date, end_date, today_firms, **kwargs)
+
+            session.commit()
+            
+        except Exception as e:
+            session.rollback()
+            print(f"An error occurred: {e}")
+        finally:
+            # Close the session to release resources
+            session.close()
+    
+    # @task(task_id='t2_download_executor')
+    @time_log
+    def download_executor(save_folder, api_key, start_date, end_date, firms, **kwargs):
+        import asyncio
+        from plugins.packages.FTRM.calls_calendars_layer import update_firm_status
+
+
+        session = connect_2_postgres()
+
+        start_date = datetime.strptime(start_date, '%Y-%m-%d').year
+        print(f"Type of start_date: {type(start_date)}, Value: {start_date}")
+        end_date = datetime.strptime(end_date, '%Y-%m-%d').year
+        print(f"Type of end_date: {type(end_date)}, Value: {end_date}")
         async def async_download_executor():
             from plugins.packages.FTRM.extract_scripts_ninja import fetch_reports
             import aiohttp
@@ -76,7 +164,15 @@ with DAG(
             rate_limiter = asyncio.Semaphore(RATE_LIMIT)
             connector = aiohttp.TCPConnector(limit_per_host=CONCURRENCY_LIMIT)
             async with aiohttp.ClientSession(connector=connector) as session:
-                tickers = list(cik_to_ticker.values())
+                tickers = firms
+                
+                
+                #### For testing purposes, limit the number of tickers to process
+                # tickers = tickers[:3]
+                ### Testing purposes end
+                
+                # Uncomment the next line to process all tickers
+                print(f"Tickers to process: {tickers}")
 
                 # Process in batches
                 for i in range(0, len(tickers), BATCH_SIZE):
@@ -84,6 +180,12 @@ with DAG(
                     print(f"Processing batch {i // BATCH_SIZE + 1}: {batch}")
                     tasks = [fetch_reports(ticker, session, rate_limiter, save_folder, api_key, INITIAL_BACKOFF, MAX_RETRIES, year_until=end_date, year_since=start_date) for ticker in batch]
                     await asyncio.gather(*tasks)
+                    # Check if the data in the batch is successfully downloaded
+                    
+                    # Update metadata for successfully downloaded files
+                    for ticker in batch:
+                        update_firm_status(session, ticker)
+        
 
         # Run the async function
         asyncio.run(async_download_executor())
@@ -133,17 +235,30 @@ with DAG(
         predictor = SentimentPredictor(config)
         predictor.run()
     
+    # Real-time Layer
+    t1_process_schedule_data_task = process_schedule_data()
+    
+    # #FTRM -> You should use correct API key to run this part. The current API is expired
+        
+    download_executor_ = execute_dynamic_logic(
+        Xcom=t1_process_schedule_data_task,
+        save_folder=final_save_path,
+        api_key=api_key,
+        start_date=start_date,
+        end_date=end_date
+    )
+    
+    # #PDCM
+    # t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
+
+    # SSPM
+    # t4_sent_predictor = sent_predictor(window=end_date)
 
     
-    #FTRM -> You should use correct API key to run this part. The current API is expired
-    t2_download_executor = download_executor(save_folder=final_save_path, api_key=api_key, start_date=start_date, end_date=end_date)
-    #PDCM
-    t3_dtm_constructor = dtm_constructor(data_folder=extracted_folder, save_folder=final_save_path, csv_file_path=csv_file_path, columns=columns, start_date=start_date, end_date=end_date)
-
-    #SSPM
-    t4_sent_predictor = sent_predictor(window=end_date)
-
+    # t2_download_executor >> t3_dtm_constructor >> t4_sent_predictor
+    t1_process_schedule_data_task >> download_executor_ # >> t3_dtm_constructor >> t4_sent_predictor
     
-    t2_download_executor >> t3_dtm_constructor >> t4_sent_predictor
+    
+    
 
         

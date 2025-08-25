@@ -54,7 +54,8 @@ class ConstructDTM:
         
         # --------------- Configure Database --------------- #
         # Adjust connection string for your environment
-        db_url = "postgresql://pdcm:pdcm@pdcmmetastore_container:5432/pdcm"
+        # db_url = "postgresql://pdcm:pdcm@pdcmmetastore_container:5432/pdcm"
+        db_url = "postgresql://metadata:metadata@metadata_postgres_container:5432/pdcm"
         self.engine = create_engine(db_url, echo=True)
         self.SessionLocal = sessionmaker(bind=self.engine)
 
@@ -408,7 +409,8 @@ class ConstructDTM:
         # 1) Distribute tasks to workers
         # rdd = self.spark.sparkContext.parallelize(firms_ciks)
 
-        db_url = "postgresql://pdcm:pdcm@pdcmmetastore_container:5432/pdcm"
+        # db_url = "postgresql://pdcm:pdcm@pdcmmetastore_container:5432/pdcm"
+        db_url = "postgresql://metadata:metadata@metadata_postgres_container:5432/pdcm"
         
         results = []
         for cik in firms_ciks:
@@ -627,12 +629,10 @@ class ConstructDTM:
                 df_add_filtered = df_add[df_add['Date'].isin(common_dates)]
                 batch_df = batch_df[batch_df['Date'].isin(common_dates)]
 
+
                 # Optional: reset index if needed
                 df_add_filtered = df_add_filtered.reset_index(drop=True)
                 batch_df = batch_df.reset_index(drop=True)
-                
-                
-                
                 
                 
                 # Test

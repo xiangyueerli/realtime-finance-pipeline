@@ -278,22 +278,3 @@ def executor(data_folder, save_folder):
         
         # All tasks are completed, shutdown the executor
         executor.shutdown()
-
-
-# root_folder = 'data'
-# root_folder_fillings = 'fillings'
-
-
-# with concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
-#     futures = []
-#     for cik in os.listdir(root_folder):
-#         future = executor.submit(process_fillings_for_cik, cik)
-#         futures.append(future)
-        
-        
-#     # Wait for all tasks to complete
-#     for future in futures:
-#         future.result()
-    
-#     # All tasks are completed, shutdown the executor
-#     executor.shutdown()

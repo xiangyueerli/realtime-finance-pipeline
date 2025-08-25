@@ -1,25 +1,3 @@
-"""
-Airflow DAG: calls_pipeline
-
-Author: Chunyu Yan
-Date: 2025-07-29
-Description:
-    This DAG automates the quarterly pipeline to fetch earnings call transcripts
-    using the Ninja API and uploads the parsed content to MongoDB. The process includes:
-
-    1. Downloading call transcripts for S&P 500 companies via Ninja API
-    2. Saving raw JSONs to local folders
-    3. Parsing and structuring transcript data
-    4. Uploading structured data (with company, date, CIK) to MongoDB
-
-    Execution Frequency:
-        - Scheduled quarterly (Jan 1, Apr 1, Jul 1, Oct 1)
-
-    Notes:
-        - You must use a valid API key for Ninja API.
-        - JSON files are saved under $AIRFLOW_HOME/data/SP500/calls/market/json
-        - MongoDB stores the final transcript records.
-"""
 
 import pendulum
 import os
@@ -34,6 +12,7 @@ from airflow.decorators import task
 from plugins.common.time_log_decorator import time_log
 
 
+
 with DAG(
     dag_id="calls_pipeline",
     schedule="0 0 1 1,4,7,10 *",  # Quarterly
@@ -43,9 +22,11 @@ with DAG(
     
     ################################## Config ##################################
 
+
     start_date = '2024-01-01'
     end_date = datetime.datetime.now().strftime('%Y-%m-%d')
     
+
     # API and concurrency settings
     RATE_LIMIT = 5               # Max requests per second
     CONCURRENCY_LIMIT = 50       # Max concurrent aiohttp connections
@@ -54,10 +35,12 @@ with DAG(
     MAX_RETRIES = 5              # Max retry attempts per request
 
     # Paths
+
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     api_path = os.path.join(base_path, "api/ninjaapi_key.txt")
     with open(api_path, "r") as file:
         api_key = file.read().strip()
+
 
     final_save_path = os.path.join(base_path, "data/SP500/calls/market")
     extracted_folder = os.path.join(final_save_path, "json")
@@ -65,6 +48,7 @@ with DAG(
 
     # Read firm metadata
     columns = ["Name", "CIK", "Date", "Body"]
+
     firms_df = pd.read_csv(csv_file_path)
     columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
     firms_df = firms_df.drop(columns=columns_to_drop, errors='ignore')
@@ -96,6 +80,7 @@ with DAG(
             connector = aiohttp.TCPConnector(limit_per_host=CONCURRENCY_LIMIT)
             async with aiohttp.ClientSession(connector=connector) as session:
                 tickers = list(cik_to_ticker.values())
+
                 for i in range(0, len(tickers), BATCH_SIZE):
                     batch = tickers[i:i + BATCH_SIZE]
                     print(f"Processing batch {i // BATCH_SIZE + 1}: {batch}")
@@ -115,19 +100,24 @@ with DAG(
                     ]
                     await asyncio.gather(*tasks)
 
+
         asyncio.run(async_download_executor())
 
         
     @task(task_id='t2_push_to_mongodb')
     def push_to_mongodb():
+
+
         """
         Parse local transcript JSONs and upload structured documents to MongoDB.
         """
+
         try:
             merge_transcripts()
             logger.info("✅ Successfully pushed transcripts to MongoDB.")
         except Exception as e:
             raise RuntimeError(f"❌ Failed to push transcripts to MongoDB: {e}")
+
 
     
     t1_download_executor = download_executor(
@@ -139,3 +129,4 @@ with DAG(
     t2_push_to_mongodb = push_to_mongodb()
 
     t1_download_executor >> t2_push_to_mongodb
+

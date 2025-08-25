@@ -3,13 +3,13 @@ import pendulum
 from airflow import DAG
 from airflow.decorators import task
 from plugins.common.time_log_decorator import time_log
-
+from plugins.common.sensors.time_range_sensor import TimeRangeSensor
 import time
 import os
 import pandas as pd
 import datetime
-
-
+from datetime import date, datetime
+from airflow.models.xcom_arg import XComArg
 
 with DAG(
     dag_id="sec_firm_sentiment",
@@ -20,19 +20,15 @@ with DAG(
 ) as dag:
     
     ############################### Configurations ################################
-    type = ['10-K', '10-Q']
     start_date = '2025-01-01'
-    end_date = datetime.datetime.now().strftime('%Y-%m-%d')
+    end_date = datetime.now().strftime('%Y-%m-%d')
     
     # Save File Paths
     base_path = os.getenv("AIRFLOW_HOME", "/opt/airflow")
     final_save_path = os.path.join(base_path, "data/SP500/sec/firm")
-    csv_file_path = os.path.join(base_path, "data/constituents/firms/test.csv")
-    columns = ["Name", "CIK", "Date", "Body" ]
-    firms_df = pd.read_csv(csv_file_path)
-    columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
-    firms_df = firms_df.drop(columns=columns_to_drop, errors='ignore')
-    firms_df['CIK'] = firms_df['CIK'].apply(lambda x: str(x).zfill(10))
+
+    csv_file_path = os.path.join(base_path, "data/constituents/market/sp500_union_constituents.csv")
+
     
     # Input Files
     data_raw_folder = os.path.join(base_path, "data/SP500/sec/firm/html")
@@ -48,42 +44,170 @@ with DAG(
         
         return cik
     
+    @task(task_id='t1_process_schedule_data')
+    def process_schedule_data(csv_file_path=csv_file_path, **kwargs):
+        conf = kwargs.get('dag_run').conf
+        time_slot = conf.get('time_slot', 'pre_market')  # Default to pre-market if not provided
+        schedule_data = conf.get('schedule_data', {})
+        
+        print('schedule_data:', schedule_data)
+        if not schedule_data:
+            raise ValueError("No schedule data found in the DAG run configuration.")
+        
+        # Process the schedule data and extract CIKs
+        firms_df = pd.read_csv(csv_file_path)
+        columns_to_drop = ['Security', 'GICS Sector', 'GICS Sub-Industry', 'Headquarters Location', 'Date added', 'Founded']
+        firms_df = firms_df.drop(columns=columns_to_drop, errors='ignore')
+        firms_df['CIK'] = firms_df['CIK'].apply(lambda x: str(x).zfill(10))
+            
+        # Extract the 'todayTargets' from the schedule data
+        today_targets = list(schedule_data.get('todayTargets', {}).values())
+        firms_df = firms_df[firms_df['CIK'].isin(today_targets)]
+        cik = firms_df['CIK'].drop_duplicates().tolist()
+        ticker = firms_df['Symbol'].tolist()
+        cik_ticker = dict(zip(cik, ticker))
+        print('cik_ticker:', cik_ticker)
+
+        return {'time_slot': time_slot, 'cik_ticker': cik_ticker}
+    
+    def connect_2_postgres():
+
+        from sqlalchemy import create_engine
+        from sqlalchemy.orm import sessionmaker
+        db_url = "postgresql://metadata:metadata@metadata_postgres_container:5432/ftrm"
+        engine = create_engine(db_url, pool_size=10, max_overflow=5, echo=False)
+        SessionLocal = sessionmaker(bind=engine)
+        return SessionLocal()
+    
     @task(task_id='t2_download_executor')
+    def execute_dynamic_logic(Xcom, save_folder, start_date, end_date, **kwargs):
+
+        from plugins.packages.FTRM.sec_calendars_layer import SECCalendar
+        from plugins.packages.FTRM.metadata import SECMetadata
+
+        sec_calender = SECCalendar(folder_path_10q=None, folder_path_10k=None)
+
+        type = filing_type(today=None)  
+        try:
+            # Need to implement interface by data type 
+            # Database connection
+            session = connect_2_postgres()
+            # Push the Xcom to the PostgreSQL meta data
+            sec_calender.push_metadata(
+                session = session, 
+                xcom_data = Xcom,
+                type = type,
+                metadata_class = SECMetadata
+            )  # Specify the metadata class to use
+            
+            # Check if a firm's data is alreadly donwloaded from a meta data
+            # If yes, remove it from the list of firms to process. If not, keep it in the list
+            sec_calender.update_list_of_firms(
+                session = session,
+                xcom_data = Xcom,
+                metadata_class= SECMetadata
+            )  # Specify the metadata class to use
+            
+            time_slot = Xcom['time_slot']  # Extract time_slot from the dictionary
+            cik_ticker = Xcom['cik_ticker']  # Extract schedule_data from the dictionary
+            
+            download_executor(cik_ticker, save_folder, type, start_date, end_date, **kwargs)
+
+            session.commit()
+            
+        except Exception as e:
+            session.rollback()
+            print(f"An error occurred: {e}")
+        finally:
+            # Close the session to release resources
+            session.close()
+    
+
+    def filing_type(today=None):
+        if today is None:
+            today = date.today()
+
+        month = today.month
+
+        if month in [1, 2, 3]:      # Q1
+            return "10-Q"
+        elif month in [4, 5, 6]:    # Q2
+            return "10-Q"
+        elif month in [7, 8, 9]:    # Q3
+            return "10-Q"
+        else:                       # Q4 (Oct–Dec)
+            return "10-K"
+        
+    
     @time_log
-    def download_executor(firm_list_path, type, start_date, end_date, **kwargs):
+    def download_executor(cik_tickers, save_folder, type, start_date, end_date, **kwargs):
         from plugins.packages.FTRM.sec_crawler import download_filing
+        from plugins.packages.FTRM.sec_calendars_layer import SECCalendar
+        from plugins.packages.FTRM.metadata import SECMetadata
         import os
         import pandas as pd
+        from concurrent.futures import ThreadPoolExecutor, as_completed
         
-        try:
-            df = pd.read_csv(firm_list_path, encoding = 'utf-8')
-            cik = df['CIK'].drop_duplicates().tolist()
-            ticker = df['Symbol'].tolist()
-            cik_ticker = dict(zip(cik, ticker))
-        except UnicodeDecodeError:
-            df = pd.read_csv(firm_list_path, encoding = 'ISO-8859-1')
-            cik = df['CIK'].drop_duplicates().tolist()
-            ticker = df['Symbol'].tolist()
-            cik_ticker = dict(zip(cik, ticker))
-            
-        # root_folder = '10k-html'
-        for t in type:
-            doc_type = t
-            headers = {'User-Agent': 'University of Edinburgh s2101367@ed.ac.uk'} # User Emails
+        max_workers = os.cpu_count()  # Use all available CPU cores
 
-            if not os.path.exists(data_raw_folder):
-                os.makedirs(data_raw_folder)
-            # The `download_fillings` function is a custom function imported from the
-            # `plugins.packages.FTRM.sec_crawler` module. This function is used to download filings
-            # for a list of companies based on their CIK (Central Index Key) and ticker symbols. The
-            # function takes parameters such as the dictionary mapping CIK to ticker symbols, the data
-            # folder path where the filings will be saved, the type of document to download (e.g.,
-            # '10-K' or '10-Q'), headers for the HTTP request, start date, and end date for the
-            # filings to be downloaded.
-            cik = list(cik_ticker.keys())[0]
-            ticker = list(cik_ticker.values())[0]
-            download_filing(cik, ticker, data_raw_folder, doc_type,headers, start_date, end_date)
+        headers = {'User-Agent': 'University of Edinburgh schoi3@ed.ac.uk'} # User Emails
+
+        if not os.path.exists(save_folder):
+            os.makedirs(save_folder)
+        # The `download_fillings` function is a custom function imported from the
+        # `plugins.packages.FTRM.sec_crawler` module. This function is used to download filings
+        # for a list of companies based on their CIK (Central Index Key) and ticker symbols. The
+        # function takes parameters such as the dictionary mapping CIK to ticker symbols, the data
+        # folder path where the filings will be saved, the type of document to download (e.g.,
+        # '10-K' or '10-Q'), headers for the HTTP request, start date, and end date for the
+        # filings to be downloaded.
         
+        session = connect_2_postgres()
+        
+        sec_calendar = SECCalendar(folder_path_10q=None, folder_path_10k=None)
+        
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            futures = []
+            for cik, ticker in cik_tickers.items():
+                futures.append(
+                    executor.submit(download_filing, cik, ticker, save_folder, type, headers, start_date, end_date)
+                )
+                print('future', futures)
+                print(f"Submitting task for CIK: {cik}, Ticker: {ticker}")
+
+            for future, (cik, ticker) in zip(as_completed(futures), cik_tickers.items()):
+                try:
+                    # Check if the download was successful
+                    future.result()  # Raise exceptions if any occurred during execution
+                    sec_calendar.update_firm_status(
+                        session = session,
+                        ticker = ticker,
+                        metadata_class = SECMetadata,
+                        success=True
+                        )  # Mark as completed
+                except Exception as e:
+                    print(f"Error occurred while downloading for ticker {ticker}: {e}")
+                    sec_calendar.update_firm_status(
+                        session = session,
+                        ticker = ticker,
+                        metadata_class = SECMetadata,
+                        success=False
+                        )  # Mark as failed
+
+        # Close the session
+        session.close()
+    
+    # Define the time range dynamically based on the time slot
+    def get_time_range(time_slot):
+        if time_slot == "pre_market":
+            start_time = datetime.now().replace(hour=11, minute=0, second=0, microsecond=0)
+            end_time = datetime.now().replace(hour=13, minute=0, second=0, microsecond=0)
+        elif time_slot == "after_hours":
+            start_time = datetime.now().replace(hour=20, minute=0, second=0, microsecond=0)
+            end_time = datetime.now().replace(hour=22, minute=0, second=0, microsecond=0)
+        else:
+            raise ValueError("Unknown time slot")
+        return start_time, end_time
     
     @task(task_id='t3_txt_convertor')
     @time_log
@@ -153,18 +277,19 @@ with DAG(
         predictor = SentimentPredictor(config)
         predictor.run()
     
-
+    # FTRM
+    t1_process_schedule_data = process_schedule_data(csv_file_path=csv_file_path)  # Process the schedule data and extract CIKs
     
-    #FTRM
-    t2_download_executor = download_executor(csv_file_path, type = type, start_date=start_date, end_date=end_date)
+    t2_download_executor = execute_dynamic_logic(t1_process_schedule_data, save_folder=data_raw_folder ,start_date=start_date, end_date=end_date)  # Execute the dynamic logic based on the time slot
+        
     t3_txt_convertor = txt_convertor(data_raw_folder, extracted_folder)
-    #PDCM
-    t4_dtm_constructor = dtm_constructor(extracted_folder, final_save_path, csv_file_path, columns, start_date, end_date)
+    # PDCM
+    t4_dtm_constructor = dtm_constructor(extracted_folder, final_save_path, t1_process_schedule_data, ["Name", "CIK", "Date", "Body" ], start_date, end_date)
 
-    #SSPM
+    # SSPM
     t5_sent_predictor = sent_predictor(window=end_date)
 
     
-    t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_sent_predictor
+    t1_process_schedule_data >> t2_download_executor >> t3_txt_convertor >> t4_dtm_constructor >> t5_sent_predictor
 
         
